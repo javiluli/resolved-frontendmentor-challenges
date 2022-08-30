@@ -1,9 +1,9 @@
 import { Route, Routes } from 'react-router-dom'
+import { Box as MuiBox } from '@mui/material'
 
-// import Challenge from '@/pages/Challenge'
-import Home from '@/pages/Home'
 import Layout from '@/pages/Layout'
-import MuiBox from '@mui/material/Box'
+import Home from '@/pages/Home'
+import Challenge from '@/pages/Challenge'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/challenge/:id" element={<Challenge />} /> */}
+          <Route path="/challenge/:id" element={<Challenge />} />
 
           <Route path="/*" element={<Home />} />
         </Route>

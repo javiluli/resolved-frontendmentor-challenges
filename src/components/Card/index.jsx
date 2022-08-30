@@ -9,19 +9,18 @@ import PropTypes from 'prop-types'
 const Card = ({ title, descripcion, img, url }) => {
   return (
     <MuiBox>
-      <Link to={url} target="_blank" style={{ textDecoration: 'none' }}>
-        <MuiCard sx={{ boxShadow: '0 0 20px hsla(0, 0%, 0%, 0.1)' }}>
-          <MuiCardMedia component="img" image={img} />
+      <MuiCard variant="outlined">
+        <MuiCardMedia component="img" image={img} />
 
-          <MuiCardContent>
-            <MuiTypography gutterBottom variant="h5" component="div">
+        <MuiCardContent>
+          <Link to={url} style={{ textDecoration: 'none' }}>
+            <MuiTypography sx={{ color: 'text.primary' }} variant="h5" component="div" gutterBottom>
               {title}
             </MuiTypography>
-
-            <MuiTypography gutterBottom>{descripcion}</MuiTypography>
-          </MuiCardContent>
-        </MuiCard>
-      </Link>
+          </Link>
+          <MuiTypography gutterBottom>{descripcion}</MuiTypography>
+        </MuiCardContent>
+      </MuiCard>
     </MuiBox>
   )
 }

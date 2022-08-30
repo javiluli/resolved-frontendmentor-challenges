@@ -24,23 +24,6 @@ const themeObj = {
       },
     },
   },
-
-  dark: {
-    palette: {
-      type: 'dark',
-      primary: {
-        main: '#1b82f9',
-      },
-      text: {
-        primary: '#fff',
-        secondary: 'rgba(255, 255, 255, 0.7)',
-      },
-      background: {
-        paper: 'hsl(0, 0%, 10%)',
-        default: 'hsl(0, 0%, 6%)',
-      },
-    },
-  },
 }
 
 function ColorContextProvider({ children }) {

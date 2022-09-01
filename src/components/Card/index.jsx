@@ -6,19 +6,31 @@ import MuiCardMedia from '@mui/material/CardMedia'
 import MuiTypography from '@mui/material/Typography'
 import PropTypes from 'prop-types'
 
-const Card = ({ title, descripcion, img, url }) => {
+import Tag from '@/components/Tag'
+
+const Card = ({ title, descripcion, img, url, languages }) => {
   return (
     <MuiBox>
-      <MuiCard variant="outlined">
+      <MuiCard sx={{ borderRadius: 4 }} variant="outlined">
         <MuiCardMedia component="img" image={img} />
 
         <MuiCardContent>
+          <MuiBox sx={{ mb: 1 }}>
+            {languages.map(({ title, color }) => (
+              <Tag key={title} color={color}>
+                {title}
+              </Tag>
+            ))}
+          </MuiBox>
+
           <Link to={url} style={{ textDecoration: 'none' }}>
-            <MuiTypography sx={{ color: 'text.primary' }} variant="h5" component="div" gutterBottom>
+            <MuiTypography sx={{ color: 'text.primary', fontWeight: 900 }} variant="h6" component="h1" gutterBottom>
               {title}
             </MuiTypography>
           </Link>
-          <MuiTypography gutterBottom>{descripcion}</MuiTypography>
+          <MuiTypography sx={{ color: 'text.secondary' }} variant="body2" component="p" gutterBottom>
+            {descripcion}
+          </MuiTypography>
         </MuiCardContent>
       </MuiCard>
     </MuiBox>
@@ -44,4 +56,8 @@ Card.propTypes = {
    * Link
    */
   url: PropTypes.string.isRequired,
+  /**
+   * Array de elementos de tipo <String>
+   */
+  languages: PropTypes.array.isRequired,
 }

@@ -19,9 +19,16 @@ const Home = () => {
           <Title />
 
           <MuiBox sx={{ display: 'flex', justifyContent: 'center' }} component="section">
-            <MuiMasonry columns={{ xs: 1, md: 2, lg: 3 }} spacing={{ xs: 1, md: 3, lg: 4 }}>
-              {challens.map(({ id, title, descripcion, img }) => (
-                <Card key={id} title={title} descripcion={descripcion} img={img} url={`/challenge/${id}`} />
+            <MuiMasonry columns={{ xs: 1, sm: 2, lg: 3 }} spacing={2}>
+              {challens.map(({ id, title, descripcion, img, languages }) => (
+                <Card
+                  key={id}
+                  title={title}
+                  descripcion={descripcion}
+                  img={img}
+                  url={`/challenge/${id}`}
+                  languages={languages}
+                />
               ))}
             </MuiMasonry>
           </MuiBox>

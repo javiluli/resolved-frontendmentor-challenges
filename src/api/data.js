@@ -102,6 +102,26 @@ const challens = [
     descripcion: 'A perfect project for newbies who are starting to build confidence with layouts!',
     codesandbox: 'https://codesandbox.io/s/order-summary-component-9dlswh',
   },
+  {
+    id: 'stats-preview-card-component',
+    title: 'Stats preview card component',
+    img: 'https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/sucvvhutd4codsxpzvw7.jpg',
+    difficulty: 'newbie',
+    level: 1,
+    languages: [
+      {
+        title: 'HTML',
+        color: 'rgb(106, 190, 205)',
+      },
+      {
+        title: 'CSS',
+        color: 'rgb(62, 84, 163)',
+      },
+    ],
+    descripcion:
+      "This is a great small challenge to help get you used to building to a design. There's no JS in this project, so you'll be able to focus on your HTML & CSS skills.",
+    codesandbox: 'https://codesandbox.io/s/stats-preview-card-component-wqhpdb',
+  },
 ]
 
 export default challens

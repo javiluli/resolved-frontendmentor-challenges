@@ -39,6 +39,30 @@ const challens = [
     descripcion: 'This HTML & CSS-only challenge will be perfect for anyone starting to build responsive projects.',
     codesandbox: 'https://codesandbox.io/s/product-preview-card-component-m8b6fu',
   },
+  {
+    id: 'interactive-rating-component',
+    title: 'Interactive rating component',
+    img: 'https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/hxx2bhmtmeelt0a98zos.jpg',
+    difficulty: 'newbie',
+    level: 1,
+    languages: [
+      {
+        title: 'HTML',
+        color: 'rgb(106, 190, 205)',
+      },
+      {
+        title: 'CSS',
+        color: 'rgb(62, 84, 163)',
+      },
+      {
+        title: 'JS',
+        color: 'rgb(207, 99, 144)',
+      },
+    ],
+    descripcion:
+      'This is a nice, small project to practice handling user interactions and updating the DOM. Perfect for anyone who has learned the basics of JavaScript!',
+    codesandbox: 'https://codesandbox.io/s/interactive-rating-component-32dyoy',
+  },
 ]
 
 export default challens

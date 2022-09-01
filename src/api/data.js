@@ -63,6 +63,26 @@ const challens = [
       'This is a nice, small project to practice handling user interactions and updating the DOM. Perfect for anyone who has learned the basics of JavaScript!',
     codesandbox: 'https://codesandbox.io/s/interactive-rating-component-32dyoy',
   },
+  {
+    id: 'nft-preview-card-component',
+    title: 'NFT preview card component',
+    img: 'https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/rinokvkluq95madbvtmk.jpg',
+    difficulty: 'newbie',
+    level: 1,
+    languages: [
+      {
+        title: 'HTML',
+        color: 'rgb(106, 190, 205)',
+      },
+      {
+        title: 'CSS',
+        color: 'rgb(62, 84, 163)',
+      },
+    ],
+    descripcion:
+      'This HTML & CSS only challenge is perfect for anyone just starting out or anyone wanting a small project to play around with.',
+    codesandbox: 'https://codesandbox.io/s/nft-preview-card-component-kk8gm4',
+  },
 ]
 
 export default challens

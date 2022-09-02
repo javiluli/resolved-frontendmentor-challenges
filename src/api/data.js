@@ -250,6 +250,30 @@ const challens = [
       'A nice layout-based challenge for beginners. This will test anyone who is new to multi-column and responsive layouts.',
     codesandbox: 'https://codesandbox.io/s/four-card-feature-section-tuzkv4',
   },
+  {
+    id: 'base-apparel-coming-soon-page',
+    title: 'Base Apparel coming soon page',
+    img: 'https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/tjmihf4uv326gkkz7mbk.jpg',
+    difficulty: 'newbie',
+    level: 1,
+    languages: [
+      {
+        title: 'HTML',
+        color: 'rgb(106, 190, 205)',
+      },
+      {
+        title: 'CSS',
+        color: 'rgb(62, 84, 163)',
+      },
+      {
+        title: 'JS',
+        color: 'rgb(207, 99, 144)',
+      },
+    ],
+    descripcion:
+      "This layout looks simple enough, but there are some interesting details to it that will test your CSS skills. You'll also get to practice basic form validation.",
+    codesandbox: 'https://codesandbox.io/s/base-apparel-coming-soon-page-kee3h9',
+  },
 ]
 
 export default challens

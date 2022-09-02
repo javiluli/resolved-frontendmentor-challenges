@@ -186,6 +186,26 @@ const challens = [
       "In this challenge, you'll be building out an FAQ accordion. This is an extremely common front-end pattern, so it's a great opportunity to get some practice in!",
     codesandbox: 'https://codesandbox.io/s/faq-accordion-card-ijv1oz',
   },
+  {
+    id: 'social-proof-section',
+    title: 'Social proof section',
+    img: 'https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/bnjpxmx9fudsmerfj6eo.jpg',
+    difficulty: 'newbie',
+    level: 1,
+    languages: [
+      {
+        title: 'HTML',
+        color: 'rgb(106, 190, 205)',
+      },
+      {
+        title: 'CSS',
+        color: 'rgb(62, 84, 163)',
+      },
+    ],
+    descripcion:
+      "This project will test your layout skills. If you're starting to get confident with Flexbox or Grid, this will provide a nice challenge!",
+    codesandbox: 'https://codesandbox.io/s/social-proof-section-dmwfs6',
+  },
 ]
 
 export default challens

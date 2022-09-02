@@ -317,6 +317,30 @@ const challens = [
       'In this challenge, you will build out the pricing component to the designs provided. This is perfect for beginners and people who want to complete a smaller challenge.',
     codesandbox: 'https://codesandbox.io/s/single-price-grid-component-2823sj',
   },
+  {
+    id: 'ping-single-column-coming-soon-page',
+    title: 'Ping single column coming soon page',
+    img: 'https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/qjiprcu1e19yvujjrflv.jpg',
+    difficulty: 'newbie',
+    level: 1,
+    languages: [
+      {
+        title: 'HTML',
+        color: 'rgb(106, 190, 205)',
+      },
+      {
+        title: 'CSS',
+        color: 'rgb(62, 84, 163)',
+      },
+      {
+        title: 'JS',
+        color: 'rgb(207, 99, 144)',
+      },
+    ],
+    descripcion:
+      'This challenge is great for beginners and offers a chance to practice basic client-side form validation.',
+    codesandbox: 'https://codesandbox.io/s/ping-single-column-coming-soon-page-k8r1en',
+  },
 ]
 
 export default challens

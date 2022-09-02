@@ -230,6 +230,26 @@ const challens = [
       "This project will test your layout skills. If you're starting to get confident with Flexbox or Grid, this will provide a nice challenge!",
     codesandbox: 'https://codesandbox.io/s/article-preview-component-cf9zkc',
   },
+  {
+    id: 'four-card-feature-section',
+    title: 'Four card feature section',
+    img: 'https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/a3b5gbgtfbtiqrdawpwp.jpg',
+    difficulty: 'newbie',
+    level: 1,
+    languages: [
+      {
+        title: 'HTML',
+        color: 'rgb(106, 190, 205)',
+      },
+      {
+        title: 'CSS',
+        color: 'rgb(62, 84, 163)',
+      },
+    ],
+    descripcion:
+      'A nice layout-based challenge for beginners. This will test anyone who is new to multi-column and responsive layouts.',
+    codesandbox: 'https://codesandbox.io/s/four-card-feature-section-tuzkv4',
+  },
 ]
 
 export default challens

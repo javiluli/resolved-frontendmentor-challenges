@@ -206,6 +206,30 @@ const challens = [
       "This project will test your layout skills. If you're starting to get confident with Flexbox or Grid, this will provide a nice challenge!",
     codesandbox: 'https://codesandbox.io/s/social-proof-section-dmwfs6',
   },
+  {
+    id: 'article-preview-component',
+    title: 'Article preview component',
+    img: 'https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/tm7zwaa7fprabjbwbemt.jpg',
+    difficulty: 'newbie',
+    level: 1,
+    languages: [
+      {
+        title: 'HTML',
+        color: 'rgb(106, 190, 205)',
+      },
+      {
+        title: 'CSS',
+        color: 'rgb(62, 84, 163)',
+      },
+      {
+        title: 'JS',
+        color: 'rgb(207, 99, 144)',
+      },
+    ],
+    descripcion:
+      "This project will test your layout skills. If you're starting to get confident with Flexbox or Grid, this will provide a nice challenge!",
+    codesandbox: 'https://codesandbox.io/s/article-preview-component-cf9zkc',
+  },
 ]
 
 export default challens

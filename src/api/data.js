@@ -274,6 +274,29 @@ const challens = [
       "This layout looks simple enough, but there are some interesting details to it that will test your CSS skills. You'll also get to practice basic form validation.",
     codesandbox: 'https://codesandbox.io/s/base-apparel-coming-soon-page-kee3h9',
   },
+  {
+    id: 'intro-component-with-sign-up-form',
+    title: 'Intro component with sign-up form',
+    img: 'https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/ficuxtmo5kmd5bb8lmws.jpg',
+    difficulty: 'newbie',
+    level: 1,
+    languages: [
+      {
+        title: 'HTML',
+        color: 'rgb(106, 190, 205)',
+      },
+      {
+        title: 'CSS',
+        color: 'rgb(62, 84, 163)',
+      },
+      {
+        title: 'JS',
+        color: 'rgb(207, 99, 144)',
+      },
+    ],
+    descripcion: 'Practice building out a sign-up form complete with client-side validation using JavaScript.',
+    codesandbox: 'https://codesandbox.io/s/intro-component-with-sign-up-form-c3jqvz',
+  },
 ]
 
 export default challens

@@ -297,6 +297,26 @@ const challens = [
     descripcion: 'Practice building out a sign-up form complete with client-side validation using JavaScript.',
     codesandbox: 'https://codesandbox.io/s/intro-component-with-sign-up-form-c3jqvz',
   },
+  {
+    id: 'single-price-grid-component',
+    title: 'Single price grid component',
+    img: 'https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/i6wu7n5sthrxgfpfibvx.jpg',
+    difficulty: 'newbie',
+    level: 1,
+    languages: [
+      {
+        title: 'HTML',
+        color: 'rgb(106, 190, 205)',
+      },
+      {
+        title: 'CSS',
+        color: 'rgb(62, 84, 163)',
+      },
+    ],
+    descripcion:
+      'In this challenge, you will build out the pricing component to the designs provided. This is perfect for beginners and people who want to complete a smaller challenge.',
+    codesandbox: 'https://codesandbox.io/s/single-price-grid-component-2823sj',
+  },
 ]
 
 export default challens

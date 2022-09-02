@@ -122,6 +122,26 @@ const challens = [
       "This is a great small challenge to help get you used to building to a design. There's no JS in this project, so you'll be able to focus on your HTML & CSS skills.",
     codesandbox: 'https://codesandbox.io/s/stats-preview-card-component-wqhpdb',
   },
+  {
+    id: '3-column-preview-card-component',
+    title: '3-column preview card component',
+    img: 'https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/juir90bwmmvlo86g9paz.jpg',
+    difficulty: 'newbie',
+    level: 1,
+    languages: [
+      {
+        title: 'HTML',
+        color: 'rgb(106, 190, 205)',
+      },
+      {
+        title: 'CSS',
+        color: 'rgb(62, 84, 163)',
+      },
+    ],
+    descripcion:
+      "This challenge is perfect if you're just getting started. The shift between the layouts will be a nice test if you're new to building responsive projects.",
+    codesandbox: 'https://codesandbox.io/s/3-column-preview-card-component-wnsc4f',
+  },
 ]
 
 export default challens

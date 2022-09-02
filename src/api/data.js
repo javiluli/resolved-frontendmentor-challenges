@@ -162,6 +162,30 @@ const challens = [
       "This is a perfect challenge to test your layout skills. The card layout doesn't shift, so it's also great for those that haven't dived into responsive websites yet!",
     codesandbox: 'https://codesandbox.io/s/profile-card-component-wh4efq',
   },
+  {
+    id: 'faq-accordion-card',
+    title: 'FAQ accordion card',
+    img: 'https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/ua4zwoxu3i9avrzrusre.jpg',
+    difficulty: 'newbie',
+    level: 1,
+    languages: [
+      {
+        title: 'HTML',
+        color: 'rgb(106, 190, 205)',
+      },
+      {
+        title: 'CSS',
+        color: 'rgb(62, 84, 163)',
+      },
+      {
+        title: 'JS',
+        color: 'rgb(207, 99, 144)',
+      },
+    ],
+    descripcion:
+      "In this challenge, you'll be building out an FAQ accordion. This is an extremely common front-end pattern, so it's a great opportunity to get some practice in!",
+    codesandbox: 'https://codesandbox.io/s/faq-accordion-card-ijv1oz',
+  },
 ]
 
 export default challens

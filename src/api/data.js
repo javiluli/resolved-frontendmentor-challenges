@@ -142,6 +142,26 @@ const challens = [
       "This challenge is perfect if you're just getting started. The shift between the layouts will be a nice test if you're new to building responsive projects.",
     codesandbox: 'https://codesandbox.io/s/3-column-preview-card-component-wnsc4f',
   },
+  {
+    id: 'profile-card-component',
+    title: 'Profile card component',
+    img: 'https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/dia0o9uigiiz4gebiqps.jpg',
+    difficulty: 'newbie',
+    level: 1,
+    languages: [
+      {
+        title: 'HTML',
+        color: 'rgb(106, 190, 205)',
+      },
+      {
+        title: 'CSS',
+        color: 'rgb(62, 84, 163)',
+      },
+    ],
+    descripcion:
+      "This is a perfect challenge to test your layout skills. The card layout doesn't shift, so it's also great for those that haven't dived into responsive websites yet!",
+    codesandbox: 'https://codesandbox.io/s/profile-card-component-wh4efq',
+  },
 ]
 
 export default challens

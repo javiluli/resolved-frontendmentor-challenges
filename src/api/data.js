@@ -341,6 +341,25 @@ const challens = [
       'This challenge is great for beginners and offers a chance to practice basic client-side form validation.',
     codesandbox: 'https://codesandbox.io/s/ping-single-column-coming-soon-page-k8r1en',
   },
+  {
+    id: 'huddle-landing-page-with-a-single-introductory-section',
+    title: 'Huddle landing page with a single introductory section',
+    img: 'https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/aaykth21moiquxkubywu.jpg',
+    difficulty: 'newbie',
+    level: 1,
+    languages: [
+      {
+        title: 'HTML',
+        color: 'rgb(106, 190, 205)',
+      },
+      {
+        title: 'CSS',
+        color: 'rgb(62, 84, 163)',
+      },
+    ],
+    descripcion: 'A perfect challenge for beginners, this project will get you working with a two column layout.',
+    codesandbox: 'https://codesandbox.io/s/huddle-landing-page-with-a-single-introductory-section-u75twp',
+  },
 ]
 
 export default challens

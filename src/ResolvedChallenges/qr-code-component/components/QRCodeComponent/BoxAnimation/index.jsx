@@ -1,6 +1,5 @@
-import { Box as MuiBox } from '@mui/material'
+import { Box as MuiBox, keyframes } from '@mui/material'
 import PropTypes from 'prop-types'
-import { keyframes } from '@mui/material'
 
 const animation = keyframes`
   0%, 100% {

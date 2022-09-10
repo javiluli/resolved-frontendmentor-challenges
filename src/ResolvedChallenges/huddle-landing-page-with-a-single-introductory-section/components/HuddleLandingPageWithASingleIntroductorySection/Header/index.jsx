@@ -1,12 +1,21 @@
 // MUI
 import MuiBox from '@mui/material/Box'
-// components
-import BoxImage from '../../BoxImage'
 // Images
 import logo from '../../../images/logo.svg'
 
 const Header = () => {
-  return <MuiBox sx={{ width: 150 }}>{<BoxImage img={logo} />}</MuiBox>
+  return (
+    <MuiBox sx={{ width: 200 }}>
+      <MuiBox
+        sx={{
+          width: '100%',
+        }}
+        component="img"
+        alt="Image"
+        src={logo}
+      />
+    </MuiBox>
+  )
 }
 
 export default Header

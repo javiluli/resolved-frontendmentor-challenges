@@ -15,8 +15,7 @@ const Accordion = () => {
         </MuiAccordionSummary>
         <MuiAccordionDetails>
           <MuiTypography variant="body1" component="p">
-            You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium
-            plan.
+            You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
           </MuiTypography>
         </MuiAccordionDetails>
       </MuiAccordion>
@@ -42,8 +41,7 @@ const Accordion = () => {
         </MuiAccordionSummary>
         <MuiAccordionDetails>
           <MuiTypography variant="body1" component="p">
-            Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will
-            be emailed to you.
+            Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.
           </MuiTypography>
         </MuiAccordionDetails>
       </MuiAccordion>

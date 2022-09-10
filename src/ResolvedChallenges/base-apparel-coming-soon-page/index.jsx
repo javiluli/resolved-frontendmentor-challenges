@@ -2,7 +2,7 @@
 import './styles.css'
 import theme from './theme'
 // Component from challengers
-import BaseApparelComingSoonPage from './components/BaseApparelComingSoonPage'
+import { BaseApparelComingSoonPage } from './components'
 // Common cmponents
 import MainChallengeContainer from '@/components/MainChallengeContainer'
 

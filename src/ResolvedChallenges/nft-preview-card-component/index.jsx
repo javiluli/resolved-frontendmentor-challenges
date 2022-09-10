@@ -2,7 +2,7 @@
 import './styles.css'
 import theme from './theme'
 // Component from challengers
-import NTFPreviewCardComponent from './components/NTFPreviewCardComponent'
+import { NTFPreviewCardComponent } from './components'
 // Common cmponents
 import MainChallengeContainer from '@/components/MainChallengeContainer'
 

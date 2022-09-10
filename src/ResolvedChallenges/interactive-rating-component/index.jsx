@@ -4,8 +4,7 @@ import theme from './theme'
 // Others
 import { useState } from 'react'
 // Component from challengers
-import ComponentAfterSubmit from './components/ComponentAfterSubmit'
-import ComponentBeforeSubmit from './components/ComponentBeforeSubmit'
+import { InteractiveRatingComponent } from './components'
 // Common cmponents
 import MainChallengeContainer from '@/components/MainChallengeContainer'
 
@@ -14,7 +13,7 @@ const Index = () => {
 
   return (
     <MainChallengeContainer theme={theme}>
-      {!rating ? <ComponentBeforeSubmit onRating={setRating} /> : <ComponentAfterSubmit rating={rating} />}
+      <InteractiveRatingComponent />
     </MainChallengeContainer>
   )
 }

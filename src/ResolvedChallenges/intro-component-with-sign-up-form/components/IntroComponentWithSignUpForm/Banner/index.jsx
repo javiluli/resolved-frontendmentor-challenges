@@ -12,10 +12,7 @@ const Banner = () => {
 
   return (
     <MuiBox sx={{ width: '100%' }}>
-      <MuiPaper
-        sx={{ padding: '1.5em 4em', borderRadius: '0.75em', boxShadow: '0 8px 0 hsla(0, 0%, 0%, 0.1)' }}
-        elevation={0}
-      >
+      <MuiPaper sx={{ padding: '1.5em 4em', borderRadius: '0.75em', boxShadow: '0 8px 0 hsla(0, 0%, 0%, 0.1)' }} elevation={0}>
         <MuiTypography sx={{ color: 'text.primary', fontWeight: 600 }} align={'center'} variant="body1">
           Try it free 7 days
           <MuiTypography sx={{ marginLeft: '0.25em', fontWeight: 300 }} align={'center'} component="span">

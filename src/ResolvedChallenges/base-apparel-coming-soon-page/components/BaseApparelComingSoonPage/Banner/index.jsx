@@ -15,7 +15,8 @@ const Banner = () => {
   return (
     <Muibox
       sx={{
-        maxHeight: '100vh',
+        // maxHeight: '100vh',
+        width: '100%',
       }}
       component="img"
       alt="Image"

@@ -1,1 +1,11 @@
-node.js.yml
+**/.github
+**/dist
+**/node_modules
+**/public
+
+index.html
+netlify.toml
+package-lock.json
+package.json
+README.md
+vite.config.js

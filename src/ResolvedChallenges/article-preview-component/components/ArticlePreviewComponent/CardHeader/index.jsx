@@ -6,8 +6,8 @@ import MuiCardHeader from '@mui/material/CardHeader'
 import MuiAvatar from '@mui/material/Avatar'
 import MuiIconButton from '@mui/material/IconButton'
 // Images
-import img__avatarMichelle from '../../images/avatar-michelle.jpg'
-import img__iconShare from '../../images/icon-share.svg'
+import avatarMichelle from '../../../images/avatar-michelle.jpg'
+import iconShare from '../../../images/icon-share.svg'
 
 const CardHeader = ({ onShare }) => {
   return (
@@ -16,7 +16,7 @@ const CardHeader = ({ onShare }) => {
         sx={{ padding: 0 }}
         avatar={
           <MuiAvatar aria-label="profile">
-            <MuiCardMedia component="img" image={img__avatarMichelle} alt="Image" />
+            <MuiCardMedia component="img" image={avatarMichelle} alt="Image" />
           </MuiAvatar>
         }
         title=" Michelle Appleton"
@@ -25,7 +25,7 @@ const CardHeader = ({ onShare }) => {
 
       <MuiBox sx={{ backgroundColor: 'background.default', borderRadius: '100%' }}>
         <MuiIconButton onClick={() => onShare(true)}>
-          <MuiCardMedia sx={{ width: '18px', padding: '2px' }} component="img" image={img__iconShare} alt="Image" />
+          <MuiCardMedia sx={{ width: '18px', padding: '2px' }} component="img" image={iconShare} alt="Image" />
         </MuiIconButton>
       </MuiBox>
     </MuiCardActions>

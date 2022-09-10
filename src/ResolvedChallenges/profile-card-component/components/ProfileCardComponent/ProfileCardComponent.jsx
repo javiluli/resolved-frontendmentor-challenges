@@ -1,15 +1,15 @@
+// MUI
 import MuiBox from '@mui/material/Box'
 import MuiStack from '@mui/material/Stack'
 import MuiCard from '@mui/material/Card'
 import MuiCardContent from '@mui/material/CardContent'
 import MuiCardMedia from '@mui/material/CardMedia'
 import MuiTypography from '@mui/material/Typography'
+// Images
+import bgPatternCard from '../../images/bg-pattern-card.svg'
+import profile from '../../images/image-victor.jpg'
 
-import img__bgPatternCard from '../../images/bg-pattern-card.svg'
-
-import img__profile from '../../images/image-victor.jpg'
-
-const Card = () => {
+const ProfileCardComponent = () => {
   return (
     <MuiCard
       sx={{
@@ -24,7 +24,7 @@ const Card = () => {
           padding: 0,
         }}
       >
-        <MuiCardMedia sx={{ position: 'absolute' }} component="img" image={img__bgPatternCard} />
+        <MuiCardMedia sx={{ position: 'absolute' }} component="img" image={bgPatternCard} />
       </MuiCardContent>
       <MuiCardContent sx={{ marginTop: '3em' }}>
         <MuiCardMedia
@@ -37,7 +37,7 @@ const Card = () => {
             borderColor: 'background.paper',
           }}
           component="img"
-          image={img__profile}
+          image={profile}
         />
         <MuiTypography sx={{ textAlign: 'center' }} variant="body1" color="text.primary">
           Victor Crest
@@ -88,4 +88,4 @@ const Card = () => {
   )
 }
 
-export default Card
+export default ProfileCardComponent

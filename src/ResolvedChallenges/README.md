@@ -7,6 +7,12 @@
 │   styles.css
 │
 ├───components
+│   │   index.jsx
+│   │
+│   └───ChallenName
+│           index.jsx
+│           ChallenName.jsx
+│
 ├───design
 ├───images
 └───theme
@@ -24,8 +30,8 @@ Estructura del `index.jsx`.
 import './styles.css'
 import theme from './theme'
 
-// Componente final del challenge completado
-import ChallengeComponent from './components/...'
+// Componente nombrado del challenge completado
+import { ChallengeComponent } from './components'
 
 // Componente externo al challenge (ver en /src/components/MainChallengeContainer)
 import MainChallengeContainer from '@/components/MainChallengeContainer'
@@ -47,15 +53,32 @@ Contiene el título del challenge completado y una imagen principal como previsu
 
 ## styles.css
 
-Contiene fichero `.CSS` que implementa el tipo de fuente/tipografias.
+Contiene fichero `.CSS` que implementa el tipo de fuente/tipografías desde [Google Fonts](https://fonts.google.com/)
 
 ## components
 
-Contiene todos los componentes que forman el **Challenge**, dentro una carpeta con el nombre que haga referencia al **Challenge** y dentro de la misma, un `index.jsx` que hará de componente principal.
+Esta carpeta contiene 2 elementos principales.
+
+1. Una carpeta principal con el nombre del **Challenge**. Esta carpeta a su vez contiene.
+
+   - Un fichero, con el mismo nombre de la carpeta que lo contiene, con el código del **Challenge**.
+   - Un fichero `index.jsx` con el siguiente código, el cual exporta de forma nombrada el componente con el `export default`, el fichero con código del **Challenge**.
+
+   ```jsx
+   export { default as ChallengeName } from './ChallengeName'
+   ```
+
+   > Tambien puede contener otras carpetas con otros componentes, funciones, etc.
+
+2. Un fichero `index.jsx` con el siguiente código, el cual exporta la carpeta del **Challenge**.
+
+   ```jsx
+   export * from './ChallengeName'
+   ```
 
 ## design
 
-Contiene las imágenes del **Challenge** con los diseños para los distintos tamaños responsives.
+Contiene las imágenes del **Challenge** con los diseños para los distintos tamaños "responsives".
 
 La imagen llamada `desktop-preview.jpg` será la utilizada en los `README.md` del mismo directorio.
 
@@ -67,7 +90,7 @@ La imagen llamada `desktop-preview.jpg` será la utilizada en los `README.md` de
 
 ## images
 
-Contiene ficheros `.png`, `.jpg` y `.svg` para usar en el **Challenge**. Para los iconos se usará la librería que proporciona [MUI](https://mui.com/material-ui/material-icons/).
+Contiene ficheros `.png`, `.jpg` y `.svg` para usar en el **Challenge**. Para los iconos se utilizará la librería que proporciona [MUI](https://mui.com/material-ui/material-icons/).
 
 ## theme
 
@@ -98,7 +121,7 @@ const theme = createTheme({
     MuiTypography: {
       styleOverrides: {
         root: {
-          fontFamily: 'Outfit',
+          fontFamily: 'Roboto',
         },
       },
     },

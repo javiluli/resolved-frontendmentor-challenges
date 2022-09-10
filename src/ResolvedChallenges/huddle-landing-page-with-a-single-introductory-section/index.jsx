@@ -2,7 +2,7 @@
 import './styles.css'
 import theme from './theme'
 // Component from challengers
-import HuddleLandingPageWithASingleIntroductorySection from './components/HuddleLandingPageWithASingleIntroductorySection'
+import { HuddleLandingPageWithASingleIntroductorySection } from './components'
 // Common cmponents
 import MainChallengeContainer from '@/components/MainChallengeContainer'
 

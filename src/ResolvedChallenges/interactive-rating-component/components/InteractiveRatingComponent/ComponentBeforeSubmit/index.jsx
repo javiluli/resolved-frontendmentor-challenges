@@ -1,11 +1,14 @@
+// Others
+import { useState } from 'react'
+// MUI
 import MuiButton from '@mui/material/Button'
 import MuiCard from '@mui/material/Card'
 import MuiCardActions from '@mui/material/CardActions'
 import MuiCardContent from '@mui/material/CardContent'
 import MuiRating from '@mui/material/Rating'
 import MuiTypography from '@mui/material/Typography'
+// MUI icons
 import StarRoundedIcon from '@mui/icons-material/StarRounded'
-import { useState } from 'react'
 
 const ComponentBeforeSubmit = ({ onRating }) => {
   const [value, setValue] = useState(2)
@@ -34,8 +37,7 @@ const ComponentBeforeSubmit = ({ onRating }) => {
           How did we do?
         </MuiTypography>
         <MuiTypography variant="body2" color="text.secondary">
-          Please let us know we did with youe support request. All feedback is appreciated to help us improve our
-          offwring!
+          Please let us know we did with youe support request. All feedback is appreciated to help us improve our offwring!
         </MuiTypography>
 
         <MuiCardActions sx={{ display: 'flex', flexDirection: 'column', gap: '1em', padding: 0 }}>
@@ -43,7 +45,7 @@ const ComponentBeforeSubmit = ({ onRating }) => {
             sx={{ fontSize: '2.5em' }}
             name="rating"
             value={value}
-            onChange={(event, newValue) => {
+            onChange={(e, newValue) => {
               setValue(newValue)
             }}
             icon={<StarRoundedIcon style={{ margin: '0 0.30em' }} fontSize="2.5em" />}

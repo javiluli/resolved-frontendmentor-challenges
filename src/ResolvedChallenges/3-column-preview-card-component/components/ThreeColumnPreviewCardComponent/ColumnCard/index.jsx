@@ -1,13 +1,14 @@
+// Others
 import PropTypes from 'prop-types'
 // MUI
+import MuiButton from '@mui/material/Button'
 import MuiCard from '@mui/material/Card'
 import MuiCardActions from '@mui/material/CardActions'
 import MuiCardContent from '@mui/material/CardContent'
 import MuiCardMedia from '@mui/material/CardMedia'
-import MuiButton from '@mui/material/Button'
 import MuiTypography from '@mui/material/Typography'
 
-const Card = ({ icon, title, paragraph, color }) => {
+const ColumnCard = ({ icon, title, paragraph, color }) => {
   return (
     <MuiCard
       sx={{
@@ -33,9 +34,9 @@ const Card = ({ icon, title, paragraph, color }) => {
   )
 }
 
-export default Card
+export default ColumnCard
 
-Card.propTypes = {
+ColumnCard.propTypes = {
   /**
    * Icono en la cabecera
    */

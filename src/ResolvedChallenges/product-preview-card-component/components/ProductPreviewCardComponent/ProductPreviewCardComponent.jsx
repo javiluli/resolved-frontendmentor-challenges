@@ -41,19 +41,13 @@ const ProductPreviewCardComponent = () => {
             Gabrielle Essence Eau De Parfum
           </MuiTypography>
           <MuiTypography sx={{ marginBottom: 1.5 }} variant="subtitle1" color="text.secondary" component="p">
-            A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of
-            CHANEL.
+            A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.
           </MuiTypography>
           <MuiTypography sx={{ marginRight: 2 }} variant="subtitle2" color="primary.main" component="span">
             $149.99
           </MuiTypography>
 
-          <MuiTypography
-            sx={{ textDecoration: 'line-through' }}
-            variant="caption"
-            color="text.secondary"
-            component="span"
-          >
+          <MuiTypography sx={{ textDecoration: 'line-through' }} variant="caption" color="text.secondary" component="span">
             $169.99
           </MuiTypography>
         </MuiCardContent>

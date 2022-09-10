@@ -76,11 +76,7 @@ const NFTPreviewCardComponent = () => {
           </MuiGrid>
           <MuiGrid container item sx={{ justifyContent: 'space-between' }}>
             <MuiGrid item>
-              <MuiCardMedia
-                sx={{ display: 'inline-block', marginRight: 1, width: '0.5em' }}
-                component="img"
-                image={img__iconEthereum}
-              />
+              <MuiCardMedia sx={{ display: 'inline-block', marginRight: 1, width: '0.5em' }} component="img" image={img__iconEthereum} />
               <MuiTypography variant="body1" color="primary.main" component="span">
                 0.041 ETH
               </MuiTypography>

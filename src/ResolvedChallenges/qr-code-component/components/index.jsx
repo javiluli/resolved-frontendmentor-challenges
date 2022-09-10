@@ -1,1 +1,1 @@
-export * from './QRCodeComponent';
+export * from './QRCodeComponent'

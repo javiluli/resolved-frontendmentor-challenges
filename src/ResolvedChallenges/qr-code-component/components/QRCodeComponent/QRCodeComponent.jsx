@@ -32,21 +32,10 @@ const QRCodeComponent = () => {
       </MuiCardContent>
 
       <MuiCardContent>
-        <MuiTypography
-          sx={{ textAlign: 'center', fontWeight: 700 }}
-          variant="h5"
-          component="h1"
-          color="text.primary"
-          gutterBottom
-        >
+        <MuiTypography sx={{ textAlign: 'center', fontWeight: 700 }} variant="h5" component="h1" color="text.primary" gutterBottom>
           Inprove your front-end skills by building projects
         </MuiTypography>
-        <MuiTypography
-          sx={{ textAlign: 'center', fontWeight: 400 }}
-          variant="subtitle1"
-          component="p"
-          color="text.secondary"
-        >
+        <MuiTypography sx={{ textAlign: 'center', fontWeight: 400 }} variant="subtitle1" component="p" color="text.secondary">
           Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
         </MuiTypography>
       </MuiCardContent>

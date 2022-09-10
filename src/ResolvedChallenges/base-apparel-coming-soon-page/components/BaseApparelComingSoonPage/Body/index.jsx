@@ -41,8 +41,8 @@ const Body = () => {
       </MuiTypography>
 
       <MuiTypography sx={{ color: 'text.primary' }} align={matches ? 'left' : 'center'} variant="body1">
-        Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date
-        with announcements and our launch deals.
+        Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements
+        and our launch deals.
       </MuiTypography>
     </Muibox>
   )

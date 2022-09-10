@@ -39,20 +39,13 @@ const Form = () => {
           error={!!error}
           InputProps={{
             startAdornment: (
-              <MuiInputAdornment position="start">
-                {error && <MuiErrorIcon sx={{ color: 'error.main' }} />}
-              </MuiInputAdornment>
+              <MuiInputAdornment position="start">{error && <MuiErrorIcon sx={{ color: 'error.main' }} />}</MuiInputAdornment>
             ),
           }}
         />
 
         <MuiBox sx={{ position: 'absolute', top: 0, right: 0 }}>
-          <MuiIconButton
-            sx={{ padding: '14px 1em', color: '#fff' }}
-            aria-label="arrow"
-            value={value}
-            onClick={handleClick}
-          >
+          <MuiIconButton sx={{ padding: '14px 1em', color: '#fff' }} aria-label="arrow" value={value} onClick={handleClick}>
             <MuiArrowIcon />
           </MuiIconButton>
         </MuiBox>

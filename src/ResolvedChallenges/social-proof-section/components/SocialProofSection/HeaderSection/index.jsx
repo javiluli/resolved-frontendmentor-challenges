@@ -19,8 +19,8 @@ const HeaderSection = () => {
         10,000+ of our users love our products.
       </MuiTypographyResponsive>
       <MuiTypographyResponsive sx={{ color: 'text.secondary' }} variant="subtitle1" component="p" gutterBottom>
-        We only provide great products combined with excellent customer service. See what our satisfied customers are
-        saying about our services.
+        We only provide great products combined with excellent customer service. See what our satisfied customers are saying about our
+        services.
       </MuiTypographyResponsive>
     </MuiBox>
   )

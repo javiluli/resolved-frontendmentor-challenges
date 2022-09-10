@@ -31,29 +31,17 @@ const BaseApparelComingSoonPage = () => {
                 backgroundColor: 'background.paper',
               }}
             >
-              <MuiTypography
-                sx={{ mb: 2, fontWeight: 700 }}
-                variant="h1"
-                component="h1"
-                color="text.primary"
-                gutterBottom
-              >
+              <MuiTypography sx={{ mb: 2, fontWeight: 700 }} variant="h1" component="h1" color="text.primary" gutterBottom>
                 Join our community
               </MuiTypography>
 
-              <MuiTypography
-                sx={{ fontWeight: 700 }}
-                variant="subtitle1"
-                component="h2"
-                color="text.secondary"
-                gutterBottom
-              >
+              <MuiTypography sx={{ fontWeight: 700 }} variant="subtitle1" component="h2" color="text.secondary" gutterBottom>
                 30-day, hassle-free money back guarantee
               </MuiTypography>
 
               <MuiTypography variant="body1" color="common.black" gutterBottom>
-                Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers
-                who are serious about honing their skills.
+                Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious
+                about honing their skills.
               </MuiTypography>
             </MuiBox>
           </MuiGrid>
@@ -68,13 +56,7 @@ const BaseApparelComingSoonPage = () => {
                 backgroundColor: 'hsl(179, 62%, 43%)',
               }}
             >
-              <MuiTypography
-                sx={{ mb: 2, fontWeight: 700 }}
-                variant="h2"
-                component="h2"
-                color="common.white"
-                gutterBottom
-              >
+              <MuiTypography sx={{ mb: 2, fontWeight: 700 }} variant="h2" component="h2" color="common.white" gutterBottom>
                 Monthly Subscription
               </MuiTypography>
 

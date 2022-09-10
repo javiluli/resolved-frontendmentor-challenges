@@ -281,8 +281,7 @@ const challens = [
         color: 'rgb(62, 84, 163)',
       },
     ],
-    descripcion:
-      'A nice layout-based challenge for beginners. This will test anyone who is new to multi-column and responsive layouts.',
+    descripcion: 'A nice layout-based challenge for beginners. This will test anyone who is new to multi-column and responsive layouts.',
     source_code: `${gh_repo}/four-card-feature-section`,
     live_preview: `${url_base_live}/four-card-feature-section`,
     try_challenge: 'https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK',
@@ -384,12 +383,10 @@ const challens = [
         color: 'rgb(207, 99, 144)',
       },
     ],
-    descripcion:
-      'This challenge is great for beginners and offers a chance to practice basic client-side form validation.',
+    descripcion: 'This challenge is great for beginners and offers a chance to practice basic client-side form validation.',
     source_code: `${gh_repo}/ping-single-column-coming-soon-page`,
     live_preview: `${url_base_live}/ping-single-column-coming-soon-page`,
-    try_challenge:
-      'https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da',
+    try_challenge: 'https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da',
     codesandbox: 'https://codesandbox.io/s/ping-single-column-coming-soon-page-k8r1en',
   },
   {
@@ -411,8 +408,7 @@ const challens = [
     descripcion: 'A perfect challenge for beginners, this project will get you working with a two column layout.',
     source_code: `${gh_repo}/huddle-landing-page-with-a-single-introductory-section`,
     live_preview: `${url_base_live}/huddle-landing-page-with-a-single-introductory-section`,
-    try_challenge:
-      'https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0',
+    try_challenge: 'https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0',
     codesandbox: 'https://codesandbox.io/s/huddle-landing-page-with-a-single-introductory-section-u75twp',
   },
 ]

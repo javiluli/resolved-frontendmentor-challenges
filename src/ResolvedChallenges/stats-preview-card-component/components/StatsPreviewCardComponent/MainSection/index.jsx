@@ -30,8 +30,7 @@ const MainSection = () => {
         that help your business grow.
       </MuiTypography>
       <MuiTypography sx={{ lineHeight: '1.6em' }} variant="subtitle2" color="text.secondary" paragraph>
-        Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and
-        overall efficiency.
+        Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.
       </MuiTypography>
     </MuiBoxResponsive>
   )

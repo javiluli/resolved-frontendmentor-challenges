@@ -50,11 +50,7 @@ const DrawerMenu = () => {
         <Collapse in={open} timeout="auto" unmountOnExit>
           {challens.map(({ id, title }) => (
             <Link to={`/challenge/${id}`} key={id} style={{ width: '100%', textDecoration: 'none' }}>
-              <MenuItem
-                sx={{ borderRadius: '5px' }}
-                onClick={toggleDrawer('left', false)}
-                onKeyDown={toggleDrawer('left', false)}
-              >
+              <MenuItem sx={{ borderRadius: '5px' }} onClick={toggleDrawer('left', false)} onKeyDown={toggleDrawer('left', false)}>
                 <Typography variant="body2" color="text.secondary" sx={{ fontSize: '0.8rem', lineHeight: 1.25 }}>
                   {title}
                 </Typography>

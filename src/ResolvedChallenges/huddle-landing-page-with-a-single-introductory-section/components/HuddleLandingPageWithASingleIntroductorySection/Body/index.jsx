@@ -26,8 +26,8 @@ const Header = () => {
       </MuiBox>
       <MuiBox>
         <MuiTypography align={matches ? 'left' : 'center'} gutterBottom sx={{ color: 'text.primary' }} variant="body1">
-          Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create
-          connections with your users as you engage in genuine discussion.
+          Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users
+          as you engage in genuine discussion.
         </MuiTypography>
       </MuiBox>
 

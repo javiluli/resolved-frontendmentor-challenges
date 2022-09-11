@@ -1,11 +1,11 @@
 // MUI
-import MuiBox from '@mui/material/Box'
 import MuiMasonry from '@mui/lab/Masonry'
-import MuiContainer from '@mui/system/Container'
+import MuiBox from '@mui/material/Box'
 import MuiStack from '@mui/material/Stack'
+import MuiContainer from '@mui/system/Container'
 // Components
-import Header from '@/components/Header'
 import Card from '@/components/Card'
+import Header from '@/components/Header'
 import Title from '@/components/Title'
 // Data API
 import challens from '@/api/data'
@@ -19,9 +19,17 @@ const Home = () => {
           <Title />
 
           <MuiBox sx={{ display: 'flex', justifyContent: 'center' }} component="section">
-            <MuiMasonry columns={{ xs: 1, sm: 2, lg: 3 }} spacing={2}>
-              {challens.map(({ id, title, descripcion, img, languages }) => (
-                <Card key={id} title={title} descripcion={descripcion} img={img} url={`/challenge/${id}`} languages={languages} />
+            <MuiMasonry columns={{ sm: 1, md: 2, lg: 3 }} spacing={2}>
+              {challens.map(({ id, title, subtitle, img, languages, difficulty }) => (
+                <Card
+                  key={id}
+                  title={title}
+                  subtitle={subtitle}
+                  img={img}
+                  url={`/challenge/${id}`}
+                  languages={languages}
+                  difficulty={difficulty}
+                />
               ))}
             </MuiMasonry>
           </MuiBox>

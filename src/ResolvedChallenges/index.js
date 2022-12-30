@@ -16,3 +16,4 @@ export { default as SinglePriceGridComponent } from './single-price-grid-compone
 export { default as PingSingleColumnComingSoonPage } from './ping-single-column-coming-soon-page'
 export { default as HuddleLandingPageWithASingleIntroductorySection } from './huddle-landing-page-with-a-single-introductory-section'
 export { default as AdviceGeneratorApp } from './advice-generator-app'
+export { default as ExpensesChartComponent } from './expenses-chart-component'

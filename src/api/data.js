@@ -299,6 +299,21 @@ const Challens = [
     codesandbox: '',
     stackblitz: '',
   },
+  {
+    id: '19',
+    slug: 'expenses-chart-component',
+    title: 'Expenses chart component',
+    preview_image: 'https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/xhxtaym7uzypzb37rpcc.jpg',
+    difficulty: Difficulty.JUNIOR,
+    languages: [Languages.HTML, Languages.CSS, Languages.JS],
+    challenge_description:
+      "In this challenge, you'll create a bar chart component from scratch. We provide a local JSON file, so you can add the chart data dynamically if you choose.",
+    source_code: `${GH_REPOSITORY}/expenses-chart-component`,
+    live_preview: `${URL_BASE_PREVIEW}/expenses-chart-component`,
+    try_challenge: 'https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt',
+    codesandbox: '',
+    stackblitz: '',
+  },
 ]
 
 export default Challens

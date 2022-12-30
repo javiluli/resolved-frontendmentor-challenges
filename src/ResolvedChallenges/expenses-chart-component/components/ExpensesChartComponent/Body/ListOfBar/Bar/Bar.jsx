@@ -52,9 +52,9 @@ Bar.propTypes = {
   /**
    * Cantidad del gasto (u otro numerico)
    */
-  expen: PropTypes.number,
+  expen: PropTypes.string,
   /**
    * Cantidad mas alta
    */
-  maxExpense: PropTypes.number,
+  maxExpense: PropTypes.string,
 }

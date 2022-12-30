@@ -41,7 +41,7 @@ const ListOfBar = () => {
   return (
     <MuiStack direction="row" spacing={0} justifyContent="space-between" sx={{ height: 170 }}>
       {Weekdays.map(({ day, expen }) => (
-        <Bar weekday={day} expen={expen} maxExpense={maxExpen} />
+        <Bar key={day} weekday={day} expen={expen} maxExpense={maxExpen} />
       ))}
     </MuiStack>
   )

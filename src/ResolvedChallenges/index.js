@@ -15,3 +15,4 @@ export { default as IntroComponentWithSignUpForm } from './intro-component-with-
 export { default as SinglePriceGridComponent } from './single-price-grid-component'
 export { default as PingSingleColumnComingSoonPage } from './ping-single-column-coming-soon-page'
 export { default as HuddleLandingPageWithASingleIntroductorySection } from './huddle-landing-page-with-a-single-introductory-section'
+export { default as AdviceGeneratorApp } from './advice-generator-app'

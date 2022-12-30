@@ -284,6 +284,21 @@ const Challens = [
     codesandbox: 'https://codesandbox.io/s/huddle-landing-page-with-a-single-introductory-section-u75twp',
     stackblitz: '',
   },
+  {
+    id: '18',
+    slug: 'advice-generator-app',
+    title: 'Advice generator app',
+    preview_image: 'https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/sfl8uqvq75wnnr559ksp.jpg',
+    difficulty: Difficulty.JUNIOR,
+    languages: [Languages.HTML, Languages.CSS, Languages.JS, Languages.API],
+    challenge_description:
+      "The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice.",
+    source_code: `${GH_REPOSITORY}/advice-generator-app`,
+    live_preview: `${URL_BASE_PREVIEW}/advice-generator-app`,
+    try_challenge: 'https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db',
+    codesandbox: '',
+    stackblitz: '',
+  },
 ]
 
 export default Challens

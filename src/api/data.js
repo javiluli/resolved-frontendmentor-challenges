@@ -131,8 +131,8 @@ const Challens = [
     languages: [Languages.HTML, Languages.CSS],
     challenge_description:
       "This challenge is perfect if you're just getting started. The shift between the layouts will be a nice test if you're new to building responsive projects.",
-    source_code: `${GH_REPOSITORY}/3-column-preview-card-component`,
-    live_preview: `${URL_BASE_PREVIEW}/3-column-preview-card-component`,
+    source_code: `${GH_REPOSITORY}/three-column-preview-card-component`,
+    live_preview: `${URL_BASE_PREVIEW}/three-column-preview-card-component`,
     try_challenge: 'https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-',
     codesandbox: 'https://codesandbox.io/s/3-column-preview-card-component-wnsc4f',
     stackblitz: '',

@@ -1,15 +1,16 @@
-import MuiBox from '@mui/system/Box'
+import IconShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined'
 import MuiButton from '@mui/material/Button'
 import MuiCard from '@mui/material/Card'
 import MuiCardActions from '@mui/material/CardActions'
 import MuiCardContent from '@mui/material/CardContent'
 import MuiCardMedia from '@mui/material/CardMedia'
 import MuiTypography from '@mui/material/Typography'
-import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined'
-import img__productDesktop from '../../images/image-product-desktop.jpg'
-import img__productMobile from '../../images/image-product-mobile.jpg'
-import useMediaQuery from '@mui/material/useMediaQuery'
 import { useTheme } from '@mui/material/styles'
+import useMediaQuery from '@mui/material/useMediaQuery'
+import MuiStack from '@mui/system/Stack'
+
+import imgProductDesktop from '../../assets/images/image-product-desktop.jpg'
+import imgProductMobile from '../../assets/images/image-product-mobile.jpg'
 
 const ProductPreviewCardComponent = () => {
   const theme = useTheme()
@@ -18,7 +19,7 @@ const ProductPreviewCardComponent = () => {
   // variables responsives
   const display = matches ? 'flex' : 'block'
   const maxWidth = matches ? 550 : 350
-  const img = matches ? img__productDesktop : img__productMobile
+  const imgProduct = matches ? imgProductDesktop : imgProductMobile
   const imgWidth = matches ? '50%' : '100%'
 
   return (
@@ -27,37 +28,39 @@ const ProductPreviewCardComponent = () => {
         display: display,
         maxWidth: maxWidth,
         backgroundColor: 'background.paper',
-        boxShadow: '0 0 20px rgba(0, 0, 0, 0.1)',
-        borderRadius: '0.75em',
+        borderRadius: '1em',
       }}
+      elevation={1}
     >
-      <MuiCardMedia component="img" image={img} sx={{ minWidth: imgWidth }} />
-      <MuiBox sx={{ display: 'flex', flexDirection: 'column', padding: '1.5em 2em' }}>
+      <MuiCardMedia component="img" image={imgProduct} sx={{ minWidth: imgWidth }} />
+      <MuiStack sx={{ padding: '1.5em 2em' }}>
         <MuiCardContent sx={{ flex: '1 0 auto', padding: '0' }}>
-          <MuiTypography sx={{ textTransform: 'uppercase', letterSpacing: 5 }} color="text.secondary" variant="caption">
+          <MuiTypography color="text.secondary" variant="caption" sx={{ textTransform: 'uppercase', letterSpacing: 5 }}>
             perfume
           </MuiTypography>
-          <MuiTypography variant="body1" color="text.primary" component="h1" gutterBottom>
+
+          <MuiTypography variant="h4" component="h1" color="text.primary" sx={{ fontFamily: 'Fraunces' }} gutterBottom>
             Gabrielle Essence Eau De Parfum
           </MuiTypography>
-          <MuiTypography sx={{ marginBottom: 1.5 }} variant="subtitle1" color="text.secondary" component="p">
+
+          <MuiTypography variant="subtitle1" component="p" color="text.secondary" sx={{ fontSize: '0.75rem' }} gutterBottom>
             A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.
           </MuiTypography>
-          <MuiTypography sx={{ marginRight: 2 }} variant="subtitle2" color="primary.main" component="span">
-            $149.99
-          </MuiTypography>
 
-          <MuiTypography sx={{ textDecoration: 'line-through' }} variant="caption" color="text.secondary" component="span">
-            $169.99
+          <MuiTypography variant="h5" component="p" color="primary.main" sx={{ fontFamily: 'Fraunces' }} gutterBottom>
+            $149.99
+            <MuiTypography variant="caption" component="span" color="text.secondary" sx={{ marginLeft: 2, textDecoration: 'line-through' }}>
+              $169.99
+            </MuiTypography>
           </MuiTypography>
         </MuiCardContent>
 
         <MuiCardActions sx={{ padding: '0.5em 0' }}>
-          <MuiButton variant="contained" size="large" startIcon={<ShoppingCartOutlinedIcon />}>
+          <MuiButton variant="contained" size="large" startIcon={<IconShoppingCartOutlinedIcon />}>
             Add to cart
           </MuiButton>
         </MuiCardActions>
-      </MuiBox>
+      </MuiStack>
     </MuiCard>
   )
 }

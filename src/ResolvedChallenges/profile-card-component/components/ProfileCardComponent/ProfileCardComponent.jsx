@@ -1,90 +1,125 @@
-// MUI
 import MuiBox from '@mui/material/Box'
-import MuiStack from '@mui/material/Stack'
 import MuiCard from '@mui/material/Card'
 import MuiCardContent from '@mui/material/CardContent'
 import MuiCardMedia from '@mui/material/CardMedia'
+import MuiDivider from '@mui/material/Divider'
+import MuiStack from '@mui/material/Stack'
 import MuiTypography from '@mui/material/Typography'
-// Images
-import bgPatternCard from '../../images/bg-pattern-card.svg'
-import profile from '../../images/image-victor.jpg'
+
+import imgBgPatternBottom from '../../assets/images/bg-pattern-bottom.svg'
+import imgBgPatternCard from '../../assets/images/bg-pattern-card.svg'
+import imgBgPatternTop from '../../assets/images/bg-pattern-top.svg'
+import imgProfile from '../../assets/images/image-victor.jpg'
 
 const ProfileCardComponent = () => {
   return (
-    <MuiCard
+    <MuiStack
+      justifyContent="center"
+      alignItems="center"
       sx={{
-        width: 280,
-        borderRadius: '1.25em',
-        boxShadow: '2px 2px 25px rgba(0, 0, 0, 0.15)',
+        position: 'relative',
+        width: '100%',
+        height: '100vh',
+        overflow: 'hidden',
       }}
     >
-      <MuiCardContent
+      <MuiBox
         sx={{
-          position: 'relative',
-          padding: 0,
+          position: 'absolute',
+          top: -600,
+          left: -200,
+          width: '978px',
+          height: '978px',
+          backgroundImage: `url(${imgBgPatternTop})`,
+          backgroundRepeat: 'no-repeat',
+        }}
+      />
+
+      <MuiBox
+        sx={{
+          position: 'absolute',
+          bottom: -600,
+          right: -200,
+          width: '978px',
+          height: '978px',
+          backgroundImage: `url(${imgBgPatternBottom})`,
+          backgroundRepeat: 'no-repeat',
+        }}
+      />
+
+      <MuiCard
+        sx={{
+          width: 320,
+          borderRadius: '1rem',
+          boxShadow: '0px 48px 100px 0px rgba(17, 12, 46, 0.1)',
+          zIndex: 0,
         }}
       >
-        <MuiCardMedia sx={{ position: 'absolute' }} component="img" image={bgPatternCard} />
-      </MuiCardContent>
-      <MuiCardContent sx={{ marginTop: '3em' }}>
-        <MuiCardMedia
+        <MuiCardContent
           sx={{
             position: 'relative',
-            width: '100px',
-            margin: '0.5em auto',
-            borderRadius: '100%',
-            border: '4px solid transparent',
-            borderColor: 'background.paper',
+            padding: 0,
           }}
-          component="img"
-          image={profile}
-        />
-        <MuiTypography sx={{ textAlign: 'center' }} variant="body1" color="text.primary">
-          Victor Crest
-          <MuiTypography sx={{ margin: '0 0.25em' }} variant="caption" color="text.secondary">
-            26
-          </MuiTypography>
-        </MuiTypography>
-        <MuiTypography sx={{ textAlign: 'center' }} variant="subtitle1" color="text.secondary">
-          London
-        </MuiTypography>
-
-        <MuiStack
-          direction="row"
-          justifyContent="space-around"
-          alignItems="center"
-          spacing={2}
-          sx={{ marginTop: '1em', paddingTop: '1em', borderTop: '1px solid #ccc' }}
         >
-          <MuiBox sx={{ textAlign: 'center' }}>
-            <MuiTypography sx={{ marginBottom: 0 }} variant="body1" color="text.primary">
-              80K
-            </MuiTypography>
-            <MuiTypography variant="body2" color="text.secondary">
-              Followers
-            </MuiTypography>
-          </MuiBox>
+          <MuiCardMedia sx={{ position: 'absolute' }} component="img" image={imgBgPatternCard} />
+        </MuiCardContent>
 
-          <MuiBox sx={{ textAlign: 'center' }}>
-            <MuiTypography sx={{ marginBottom: 0 }} variant="body1" color="text.primary">
-              803K
+        <MuiCardContent sx={{ marginTop: '3em' }}>
+          <MuiCardMedia
+            sx={{
+              position: 'relative',
+              width: '100px',
+              margin: '0.5em auto',
+              borderRadius: '100%',
+              border: '4px solid transparent',
+              borderColor: 'background.paper',
+            }}
+            component="img"
+            image={imgProfile}
+          />
+          <MuiTypography variant="h6" component="h1" color="text.primary" textAlign="center" sx={{ fontWeight: 700 }} gutterBottom>
+            Victor Crest
+            <MuiTypography variant="h6" component="span" color="text.secondary" sx={{ mx: '0.25em' }}>
+              26
             </MuiTypography>
-            <MuiTypography variant="body2" color="text.secondary">
-              Likes
-            </MuiTypography>
-          </MuiBox>
+          </MuiTypography>
+          <MuiTypography variant="subtitle1" color="text.secondary" textAlign="center" gutterBottom>
+            London
+          </MuiTypography>
 
-          <MuiBox sx={{ textAlign: 'center' }}>
-            <MuiTypography sx={{ marginBottom: 0 }} variant="body1" color="text.primary">
-              1.4K
-            </MuiTypography>
-            <MuiTypography variant="body2" color="text.secondary">
-              Photos
-            </MuiTypography>
-          </MuiBox>
-        </MuiStack>
-      </MuiCardContent>
-    </MuiCard>
+          <MuiDivider />
+
+          <MuiStack direction="row" justifyContent="space-around" alignItems="center" spacing={2}>
+            <MuiBox sx={{ textAlign: 'center' }}>
+              <MuiTypography variant="h6" color="text.primary" sx={{ fontWeight: 700 }}>
+                80K
+              </MuiTypography>
+              <MuiTypography variant="caption" color="text.secondary">
+                Followers
+              </MuiTypography>
+            </MuiBox>
+
+            <MuiBox sx={{ textAlign: 'center' }}>
+              <MuiTypography variant="h6" color="text.primary" sx={{ fontWeight: 700 }}>
+                803K
+              </MuiTypography>
+              <MuiTypography variant="caption" color="text.secondary">
+                Likes
+              </MuiTypography>
+            </MuiBox>
+
+            <MuiBox sx={{ textAlign: 'center' }}>
+              <MuiTypography variant="h6" color="text.primary" sx={{ fontWeight: 700 }}>
+                1.4K
+              </MuiTypography>
+              <MuiTypography variant="caption" color="text.secondary">
+                Photos
+              </MuiTypography>
+            </MuiBox>
+          </MuiStack>
+        </MuiCardContent>
+      </MuiCard>
+    </MuiStack>
   )
 }
 

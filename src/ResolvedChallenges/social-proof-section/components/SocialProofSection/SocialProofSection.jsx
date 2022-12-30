@@ -1,17 +1,18 @@
-// MUI
+import MuiBox from '@mui/material/Box'
+import MuiContainer from '@mui/material/Container'
+import MuiGrid from '@mui/material/Grid'
+import MuiStack from '@mui/material/Stack'
 import { styled, useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
-import MuiBox from '@mui/material/Box'
-import MuiGrid from '@mui/material/Grid'
-import MuiContainer from '@mui/material/Container'
-// Components
-import HeaderSection from './HeaderSection'
-import StatsSection from './StatsSection'
-import CommentsSection from './CommentsSection'
-// Images
-import imgColton from '../../images/image-colton.jpg'
-import imgIrene from '../../images/image-irene.jpg'
-import imgAnne from '../../images/image-anne.jpg'
+
+import imgBgPatternBottomDesktop from '../../assets/images/bg-pattern-bottom-desktop.svg'
+import imgBgPatternTopDesktop from '../../assets/images/bg-pattern-top-desktop.svg'
+import imgAnne from '../../assets/images/image-anne.jpg'
+import imgColton from '../../assets/images/image-colton.jpg'
+import imgIrene from '../../assets/images/image-irene.jpg'
+import { CommentsSection } from './CommentsSection'
+import { HeaderSection } from './HeaderSection'
+import { StatsSection } from './StatsSection'
 
 const dataStats = [
   {
@@ -55,42 +56,74 @@ const MuiBoxFlexGrow = styled(MuiBox)(({ theme }) => ({
 
 const SocialProofSection = () => {
   const theme = useTheme()
-  const matches = useMediaQuery(theme.breakpoints.up('lg'))
+  const matches = useMediaQuery(theme.breakpoints.down('lg'))
 
   return (
-    <MuiContainer sx={{ padding: '4em 2em' }}>
-      <MuiGrid container spacing={4}>
-        <MuiGrid item xs={12} lg={3}>
-          <HeaderSection />
-        </MuiGrid>
+    <MuiStack
+      justifyContent="center"
+      sx={{
+        position: 'relative',
+        width: '100%',
+        minHeight: '100vh',
+        overflow: 'hidden',
+      }}
+    >
+      <MuiContainer sx={{ padding: '4em 2em' }}>
+        {!matches ? (
+          <MuiBox
+            sx={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '584px',
+              height: '362px',
+              backgroundImage: `url(${imgBgPatternTopDesktop})`,
+              backgroundRepeat: 'no-repeat',
+            }}
+          />
+        ) : null}
 
-        <MuiGrid container item xs={12} lg={8}>
-          <MuiBoxFlexGrow>
-            <MuiGrid container direction="column" item spacing={2} sx={{ alignItems: matches ? 'flex-end' : '' }}>
-              {dataStats.map(({ text }, index) => (
-                <MuiGrid
-                  item
-                  xs
-                  sx={{
-                    marginRight: matches ? `-${index * 50}px` : '',
-                  }}
-                >
-                  <StatsSection text={text} />
-                </MuiGrid>
-              ))}
-            </MuiGrid>
-          </MuiBoxFlexGrow>
-        </MuiGrid>
+        {!matches ? (
+          <MuiBox
+            sx={{
+              position: 'absolute',
+              bottom: 0,
+              right: 0,
+              width: '1085px',
+              height: '673px',
+              backgroundImage: `url(${imgBgPatternBottomDesktop})`,
+              backgroundRepeat: 'no-repeat',
+            }}
+          />
+        ) : null}
 
-        <MuiGrid container item xs={12} spacing={2}>
-          {dataComments.map(({ avatar, name, comment }, index) => (
-            <MuiGrid item xs={12} lg={4} sx={{ marginTop: matches ? `${index * 20}px` : '' }}>
-              <CommentsSection avatar={avatar} name={name} comment={comment} />
-            </MuiGrid>
-          ))}
+        <MuiGrid container spacing={4}>
+          <MuiGrid item xs={12} lg={6}>
+            <HeaderSection />
+          </MuiGrid>
+
+          <MuiGrid container item xs={12} lg={6}>
+            <MuiBoxFlexGrow>
+              <MuiGrid container direction="column" item spacing={2}>
+                {dataStats.map(({ text }, index) => (
+                  <MuiGrid item key={index} sx={{ marginLeft: matches ? '' : `${index * 50}px` }}>
+                    <StatsSection text={text} />
+                  </MuiGrid>
+                ))}
+              </MuiGrid>
+            </MuiBoxFlexGrow>
+          </MuiGrid>
+
+          <MuiGrid container item xs={12} spacing={2} sx={{ marginTop: '4em' }}>
+            {dataComments.map(({ avatar, name, comment }, index) => (
+              <MuiGrid item key={index} xs={12} lg={4} sx={{ marginTop: matches ? '' : `${index * 30}px` }}>
+                <CommentsSection avatar={avatar} name={name} comment={comment} />
+              </MuiGrid>
+            ))}
+          </MuiGrid>
         </MuiGrid>
-      </MuiGrid>
-    </MuiContainer>
+      </MuiContainer>
+    </MuiStack>
   )
 }
 

@@ -5,83 +5,111 @@ import MuiCardActions from '@mui/material/CardActions'
 import MuiCardContent from '@mui/material/CardContent'
 import MuiCardMedia from '@mui/material/CardMedia'
 import MuiLink from '@mui/material/Link'
+import MuiStack from '@mui/material/Stack'
 import MuiTypography from '@mui/material/Typography'
-import img__iconMusic from '../../images/icon-music.svg'
-import img__illustrationHero from '../../images/illustration-hero.svg'
+import { useTheme } from '@mui/material/styles'
+import useMediaQuery from '@mui/material/useMediaQuery'
+
+import imgIconMusic from '../../assets/images/icon-music.svg'
+import imgIllustrationHero from '../../assets/images/illustration-hero.svg'
+import imgPatternBackgroundDesktop from '../../assets/images/pattern-background-desktop.svg'
+import imgPatternBackgroundMobile from '../../assets/images/pattern-background-mobile.svg'
 
 const OrderSummaryComponent = () => {
+  const theme = useTheme()
+  const matches = useMediaQuery(theme.breakpoints.up('sm'))
+
+  // variables responsives
+  const imgPatternBackground = matches ? imgPatternBackgroundDesktop : imgPatternBackgroundMobile
+
   return (
-    <MuiCard
+    <MuiStack
+      justifyContent="center"
+      alignItems="center"
       sx={{
-        maxWidth: 340,
-        backgroundColor: 'background.paper',
-        borderRadius: '1em',
-        boxShadow: '0 0 20px rgba(0, 0, 0, 0.1)',
+        width: '100%',
+        height: '100vh',
+        backgroundImage: `url(${imgPatternBackground})`,
+        backgroundSize: 'contain',
+        backgroundRepeat: 'no-repeat',
       }}
     >
-      <MuiCardContent
+      <MuiCard
         sx={{
-          position: 'relative',
-          padding: 0,
-          backgroundColor: 'primary.main',
-          overflow: 'hidden',
+          maxWidth: 320,
+          borderRadius: '1em',
+          boxShadow: '0 0 20px rgba(0, 0, 0, 0.1)',
         }}
       >
-        <MuiCardMedia sx={{ position: 'relative', zIndex: 100 }} component="img" image={img__illustrationHero} />
-      </MuiCardContent>
+        <MuiCardMedia component="img" image={imgIllustrationHero} />
 
-      <MuiBox sx={{ padding: '1em 3em' }}>
-        <MuiCardContent sx={{ padding: '0' }}>
-          <MuiTypography sx={{ textAlign: 'center' }} variant="subtitle1">
-            Order Summary
-          </MuiTypography>
-          <MuiTypography sx={{ textAlign: 'center' }} variant="subtitle2">
-            You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
-          </MuiTypography>
-        </MuiCardContent>
+        <MuiBox sx={{ padding: '0 1em' }}>
+          <MuiCardContent>
+            <MuiTypography variant="h6" align="center" sx={{ fontWeight: 900 }} gutterBottom>
+              Order Summary
+            </MuiTypography>
+            <MuiTypography variant="body2" align="center" color="text.secondary">
+              You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+            </MuiTypography>
+          </MuiCardContent>
 
-        <MuiCardActions sx={{ padding: '0' }}>
-          <MuiBox
-            sx={{
-              width: '100%',
-              display: 'flex',
-              flexDirection: 'column',
-              gap: '1em',
-            }}
-          >
-            <MuiBox
+          <MuiCardActions>
+            <MuiStack
+              spacing={3}
               sx={{
                 width: '100%',
-                display: 'flex',
-                flexDirection: 'row',
-                alignItems: 'center',
-                gap: '0.75em',
-                padding: '1em',
-                margin: '1em 0',
-                backgroundColor: 'hsl(225, 100%, 98%)',
-                borderRadius: '0.75em',
               }}
             >
-              <MuiCardMedia sx={{ width: '2.5em' }} component="img" image={img__iconMusic} />
+              <MuiStack
+                direction="row"
+                justifyContent="center"
+                alignItems="center"
+                spacing={2}
+                sx={{
+                  padding: '1em',
+                  backgroundColor: 'primary.light',
+                  borderRadius: '0.75em',
+                }}
+              >
+                <MuiCardMedia component="img" image={imgIconMusic} sx={{ width: '2.75em' }} />
 
-              <MuiBox sx={{ width: '100%', display: 'flex', flexDirection: 'column' }}>
-                <MuiTypography variant="body1" component="span">
-                  Anual Plan
-                </MuiTypography>
-                <MuiTypography variant="body2" component="span">
-                  $59.99/year
-                </MuiTypography>
-              </MuiBox>
+                <MuiBox sx={{ width: '100%', display: 'flex', flexDirection: 'column' }}>
+                  <MuiTypography variant="body1" component="span" sx={{ fontWeight: 900 }}>
+                    Anual Plan
+                  </MuiTypography>
+                  <MuiTypography variant="body2" component="span" color="text.secondary">
+                    $59.99/year
+                  </MuiTypography>
+                </MuiBox>
 
-              <MuiLink component="span">Change</MuiLink>
-            </MuiBox>
+                <MuiLink variant="caption" component="span" sx={{ fontWeight: 900 }}>
+                  Change
+                </MuiLink>
+              </MuiStack>
 
-            <MuiButton>Proceed to Payment</MuiButton>
-            <MuiButton variant="text">Cancel Order</MuiButton>
-          </MuiBox>
-        </MuiCardActions>
-      </MuiBox>
-    </MuiCard>
+              <MuiStack spacing={3}>
+                <MuiButton sx={{ boxShadow: '0 10px 20px 0px hsla(245, 75%, 52%, 0.3)' }}>Proceed to Payment</MuiButton>
+
+                <MuiLink
+                  underline="none"
+                  variant="body1"
+                  align="center"
+                  color="text.secondary"
+                  sx={{
+                    fontWeight: 900,
+                    '&:hover': {
+                      color: 'inherit',
+                    },
+                  }}
+                >
+                  Cancel Order
+                </MuiLink>
+              </MuiStack>
+            </MuiStack>
+          </MuiCardActions>
+        </MuiBox>
+      </MuiCard>
+    </MuiStack>
   )
 }
 

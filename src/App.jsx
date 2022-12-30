@@ -1,17 +1,16 @@
-import { Route, Routes } from 'react-router-dom'
-import { Box as MuiBox } from '@mui/material'
-
+import { All, Challenge, Home } from '@/pages'
 import Layout from '@/pages/Layout'
-import Home from '@/pages/Home'
-import Challenge from '@/pages/Challenge'
+import { Box as MuiBox } from '@mui/material'
+import { Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
-    <MuiBox sx={{ position: 'relative', backgroundColor: 'background.default' }} id="__NEXT">
+    <MuiBox sx={{ position: 'relative', backgroundColor: 'background.default' }}>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Home />} />
-          <Route path="/challenge/:id" element={<Challenge />} />
+          <Route path="/c/:id" element={<Challenge />} />
+          <Route path="/all" element={<All />} />
 
           <Route path="/*" element={<Home />} />
         </Route>

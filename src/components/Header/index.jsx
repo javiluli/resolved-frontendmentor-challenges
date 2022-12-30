@@ -1,7 +1,7 @@
 // MUI
+import DrawerMenu from '@/components/DrawerMenu'
 import MuiBox from '@mui/material/Box'
 import MuiStack from '@mui/material/Stack'
-import DrawerMenu from '@/components/DrawerMenu'
 
 const Header = () => {
   return (

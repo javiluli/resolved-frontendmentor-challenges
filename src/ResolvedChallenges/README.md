@@ -1,61 +1,78 @@
-# Estructura de carpetas de cada challenge
+# Estructura de carpetas de un challenge
 
 ```bash
 /
 │   index.jsx
 │   README.md
-│   styles.css
+│
+├───assets
+│   ├───css
+│   │       fonts.css
+│   │
+│   └───images
 │
 ├───components
-│   │   index.jsx
+│   │   index.js
 │   │
-│   └───ChallenName
-│           index.jsx
-│           ChallenName.jsx
+│   └───[ComponentName]
+│           index.js
+│           [ComponentName].jsx
 │
 ├───design
-├───images
-└───theme
-        index.jsx
+│
+└───themes
+        theme.js
 ```
 
-## index.jsx
+## Fichero index.jsx
 
 Contiene los componentes principales junto a otros elementos como estilos CSS, theme, componente de envoltura principal con `ThemeProvider` y el componente principal de un **Challenge**.
+
+Fichero principal que contiene:
+
+- Tipografias en un fichero `fonts.css`
+- _ThemeProvider_ para incluir el tema customizado con colores, tamaños, etc, de **Material-UI**
+- Tema customizado de **Material-UI** en el fichero `theme.js`
+- LLamada al componente encapsulado del **Challenge** completado
+
+> Los textos entre corchetes "[]" son texto de guia, estos se deben cambiar para las referencias correctas
 
 Estructura del `index.jsx`.
 
 ```jsx
-// CSS and MUI theme
-import './styles.css'
-import theme from './theme'
+import { ThemeProvider } from '@mui/material'
+import MuiStack from '@mui/material/Stack'
 
-// Componente nombrado del challenge completado
-import { ChallengeComponent } from './components'
-
-// Componente externo al challenge (ver en /src/components/MainChallengeContainer)
-import MainChallengeContainer from '@/components/MainChallengeContainer'
+import './assets/css/fonts.css'
+import { [ComponentName] } from './components'
+import theme from './themes/theme'
 
 const Index = () => {
   return (
-    <MainChallengeContainer theme={theme}>
-      <ChallengeComponent />
-    </MainChallengeContainer>
+    <ThemeProvider theme={theme}>
+      <MuiStack
+        justifyContent="center"
+        alignItems="center"
+        sx={{
+          minHeight: '100vh',
+          backgroundColor: 'background.default',
+        }}
+      >
+        [<ComponentName />]
+      </MuiStack>
+    </ThemeProvider>
   )
 }
 
 export default Index
+
 ```
 
-## README.md
+## Fichero README.md
 
 Contiene el título del challenge completado y una imagen principal como previsual.
 
-## styles.css
-
-Contiene fichero `.CSS` que implementa el tipo de fuente/tipografías desde [Google Fonts](https://fonts.google.com/)
-
-## components
+## Carpeta components
 
 Esta carpeta contiene 2 elementos principales.
 
@@ -65,7 +82,7 @@ Esta carpeta contiene 2 elementos principales.
    - Un fichero `index.jsx` con el siguiente código, el cual exporta de forma nombrada el componente con el `export default`, el fichero con código del **Challenge**.
 
    ```jsx
-   export { default as ChallengeName } from './ChallengeName'
+   export { default as [ComponentName] } from './[ComponentName]'
    ```
 
    > Tambien puede contener otras carpetas con otros componentes, funciones, etc.
@@ -73,28 +90,42 @@ Esta carpeta contiene 2 elementos principales.
 2. Un fichero `index.jsx` con el siguiente código, el cual exporta la carpeta del **Challenge**.
 
    ```jsx
-   export * from './ChallengeName'
+   export * from './[ComponentName]'
    ```
 
-## design
+---
+
+## Carpeta assets
+
+Contiene carpetas y ficheros para el desarrollo de componentes
+
+### Carpeta css
+
+Contiene fichero `fonts.css` que implementa el tipo de fuente/tipografías desde [Google Fonts](https://fonts.google.com/)
+
+### Subcarpeta images
+
+Contiene ficheros `.png`, `.jpg` y `.svg` para usar en el **Challenge**. Para los iconos se utilizará la librería que proporciona [MUI](https://mui.com/material-ui/material-icons/).
+
+---
+
+## Subcarpeta design
 
 Contiene las imágenes del **Challenge** con los diseños para los distintos tamaños "responsives".
 
 La imagen llamada `desktop-preview.jpg` será la utilizada en los `README.md` del mismo directorio.
 
 ```md
-# Frontend Mentor - [Nombre del challenge]
+# Frontend Mentor - [ChallengeName]
 
 ![Design preview for...](./design/desktop-preview.jpg)
 ```
 
-## images
+---
 
-Contiene ficheros `.png`, `.jpg` y `.svg` para usar en el **Challenge**. Para los iconos se utilizará la librería que proporciona [MUI](https://mui.com/material-ui/material-icons/).
+## Carpeta themes
 
-## theme
-
-Contiene un fichero `index.jsx` cambiando el tema predefinido de [MUI](<[https://](https://mui.com/material-ui/customization/default-theme/)>), como los colores principales, fuentes, estilos de componentes.
+Contiene un fichero `theme.jsx` cambiando el tema predefinido de [MUI](<[https://](https://mui.com/material-ui/customization/default-theme/)>), como los colores principales, fuentes, estilos de componentes.
 
 ```jsx
 import { createTheme } from '@mui/material/styles'

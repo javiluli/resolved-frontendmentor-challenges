@@ -1,16 +1,24 @@
-// CSS and custom theme
-import './styles.css'
-import theme from './theme'
-// Component from challengers
+import { ThemeProvider } from '@mui/material'
+import MuiStack from '@mui/material/Stack'
+
+import './assets/css/fonts.css'
 import { OrderSummaryComponent } from './components'
-// Common cmponents
-import MainChallengeContainer from '@/components/MainChallengeContainer'
+import theme from './themes/theme'
 
 const Index = () => {
   return (
-    <MainChallengeContainer theme={theme}>
-      <OrderSummaryComponent />
-    </MainChallengeContainer>
+    <ThemeProvider theme={theme}>
+      <MuiStack
+        justifyContent="center"
+        alignItems="center"
+        sx={{
+          minHeight: '100vh',
+          backgroundColor: 'background.default',
+        }}
+      >
+        <OrderSummaryComponent />
+      </MuiStack>
+    </ThemeProvider>
   )
 }
 

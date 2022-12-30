@@ -1,17 +1,13 @@
-// MUI
 import MuiBox from '@mui/material/Box'
-import MuiGrid from '@mui/material/Grid'
 import MuiStack from '@mui/material/Stack'
-// MUI Hooks
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
-// Components section
-import Header from './Header'
-import Banner from './Banner'
-import Form from './Form'
-// Images
-import bgIntroMobile from '../../images/bg-intro-mobile.png'
-import bgIntroDesktop from '../../images/bg-intro-desktop.png'
+
+import bgIntroDesktop from '../../assets/images/bg-intro-desktop.png'
+import bgIntroMobile from '../../assets/images/bg-intro-mobile.png'
+import { Banner } from './Banner'
+import { Form } from './Form'
+import { Header } from './Header'
 
 const BaseApparelComingSoonPage = () => {
   const theme = useTheme()
@@ -20,35 +16,28 @@ const BaseApparelComingSoonPage = () => {
   return (
     <MuiBox
       sx={{
-        minWidth: '100%',
+        width: '100%',
         height: matches ? '100vh' : 'auto',
         backgroundImage: `url(${matches ? bgIntroDesktop : bgIntroMobile})`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        backgroundColor: 'background.primary',
       }}
     >
-      <MuiStack sx={{ height: matches ? '100%' : 'auto' }}>
-        <MuiGrid
-          sx={{ width: '100%', maxWidth: 1200, height: matches ? '100%' : 'auto', margin: '0 auto' }}
-          container
-          justifyContent="center"
-          alignItems="center"
-          spacing={3}
-        >
-          <MuiGrid sx={{ padding: 3 }} item xs={12} md={6}>
-            <MuiBox sx={{ width: '100%', maxWidth: 450, margin: '0 auto' }}>
-              <Header />
-            </MuiBox>
-          </MuiGrid>
+      <MuiStack
+        direction={{ xs: 'column', md: 'row' }}
+        justifyContent="center"
+        alignItems="center"
+        spacing={3}
+        sx={{ width: '100%', maxWidth: 1200, height: matches ? '100%' : 'auto', p: 3, margin: '0 auto' }}
+      >
+        <MuiBox sx={{ width: '100%', maxWidth: 600 }}>
+          <Header />
+        </MuiBox>
 
-          <MuiGrid sx={{ padding: 3 }} item xs={12} md={6}>
-            <MuiStack sx={{ width: '100%', maxWidth: 450, margin: '0 auto' }} justifyContent="center" alignItems="center" spacing={3}>
-              <Banner />
-              <Form />
-            </MuiStack>
-          </MuiGrid>
-        </MuiGrid>
+        <MuiStack spacing={3} sx={{ width: '100%', maxWidth: 500 }}>
+          <Banner />
+          <Form />
+        </MuiStack>
       </MuiStack>
     </MuiBox>
   )

@@ -1,20 +1,24 @@
-// CSS and custom theme
-import './styles.css'
-import theme from './theme'
-// Others
-import { useState } from 'react'
-// Component from challengers
+import { ThemeProvider } from '@mui/material'
+import MuiStack from '@mui/material/Stack'
+
+import './assets/css/fonts.css'
 import { InteractiveRatingComponent } from './components'
-// Common cmponents
-import MainChallengeContainer from '@/components/MainChallengeContainer'
+import theme from './themes/theme'
 
 const Index = () => {
-  const [rating, setRating] = useState(null)
-
   return (
-    <MainChallengeContainer theme={theme}>
-      <InteractiveRatingComponent />
-    </MainChallengeContainer>
+    <ThemeProvider theme={theme}>
+      <MuiStack
+        justifyContent="center"
+        alignItems="center"
+        sx={{
+          minHeight: '100vh',
+          backgroundColor: 'background.default',
+        }}
+      >
+        <InteractiveRatingComponent />
+      </MuiStack>
+    </ThemeProvider>
   )
 }
 

@@ -3,5 +3,8 @@
   "useTabs": false,
   "semi": false,
   "singleQuote": true,
-  "printWidth": 140
+  "printWidth": 140,
+  "importOrder": ["^@core/(.*)$", "^@server/(.*)$", "^@ui/(.*)$", "^[./]"],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
 }

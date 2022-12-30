@@ -1,7 +1,6 @@
-// MUI
 import MuiBox from '@mui/material/Box'
 import MuiStack from '@mui/material/Stack'
-// Components
+
 import LanguagesTag from './LanguagesTag'
 
 const ListOfLanguagesTag = ({ languages }) => {

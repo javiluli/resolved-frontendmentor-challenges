@@ -1,7 +1,8 @@
 import { promises as fs } from 'fs'
+
+import challens from '../../api/data.js'
 import { PLACEHOLDERS } from './const.js'
 import { getChallengesList } from './service.js'
-import challens from '../../api/data.js'
 
 // Generacion de cada fila de la "challenges list"
 const generateChallengesList = ({ title, source_code, live_preview, try_challenge }, index) =>

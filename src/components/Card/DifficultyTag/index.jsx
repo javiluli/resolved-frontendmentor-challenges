@@ -1,4 +1,3 @@
-// MUI
 import MuiBox from '@mui/material/Box'
 import MuiStack from '@mui/material/Stack'
 import MuiTypography from '@mui/material/Typography'

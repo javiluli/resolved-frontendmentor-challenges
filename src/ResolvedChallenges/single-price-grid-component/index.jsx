@@ -1,16 +1,24 @@
-// CSS and custom theme
-import './styles.css'
-import theme from './theme'
-// Component from challengers
-import { SinglePriceGridComponent } from './components/SinglePriceGridComponent'
-// Common cmponents
-import MainChallengeContainer from '@/components/MainChallengeContainer'
+import { ThemeProvider } from '@mui/material'
+import MuiStack from '@mui/material/Stack'
+
+import './assets/css/fonts.css'
+import { SinglePriceGridComponent } from './components'
+import theme from './themes/theme'
 
 const Index = () => {
   return (
-    <MainChallengeContainer theme={theme}>
-      <SinglePriceGridComponent />
-    </MainChallengeContainer>
+    <ThemeProvider theme={theme}>
+      <MuiStack
+        justifyContent="center"
+        alignItems="center"
+        sx={{
+          minHeight: '100vh',
+          backgroundColor: 'background.default',
+        }}
+      >
+        <SinglePriceGridComponent />
+      </MuiStack>
+    </ThemeProvider>
   )
 }
 

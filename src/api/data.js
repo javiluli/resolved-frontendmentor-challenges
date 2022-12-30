@@ -125,7 +125,7 @@ const Challens = [
   {
     id: '7',
     slug: 'three-column-preview-card-component',
-    title: 'three-column preview card component',
+    title: '3-column preview card component',
     preview_image: 'https://res.cloudinary.com/dz209s6jk/image/upload/q_auto,w_700/Challenges/juir90bwmmvlo86g9paz.jpg',
     difficulty: Difficulty.NEWBIE,
     languages: [Languages.HTML, Languages.CSS],

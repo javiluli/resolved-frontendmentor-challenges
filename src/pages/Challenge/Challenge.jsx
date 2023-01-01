@@ -19,7 +19,7 @@ const ContainerCircularProgress = () => {
 
 const Challenge = () => {
   const { id } = useParams()
-  const LazyComponent = lazy(() => import(`../../ResolvedChallenges/${id}/index.jsx`))
+  const LazyComponent = lazy(() => import(`../../challenges/${id}/index.jsx`))
 
   return (
     <Suspense fallback={<ContainerCircularProgress />}>

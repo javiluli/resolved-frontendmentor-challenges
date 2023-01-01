@@ -39,7 +39,7 @@ const All = () => {
     HuddleLandingPageWithASingleIntroductorySection,
     AdviceGeneratorApp,
     ExpensesChartComponent,
-  } = lazily(() => import('../../ResolvedChallenges'))
+  } = lazily(() => import('../../challenges'))
 
   return (
     <MuiBox>

@@ -1,6 +1,5 @@
 import Challens from '@/api/data'
 import Card from '@/components/Card'
-import Header from '@/components/Header'
 import Title from '@/components/Title'
 import MuiMasonry from '@mui/lab/Masonry'
 import MuiBox from '@mui/material/Box'
@@ -12,7 +11,6 @@ import { Link } from 'react-router-dom'
 const Home = () => {
   return (
     <MuiBox>
-      <Header />
       <MuiContainer sx={{ padding: '4em 1em 1em', backgroundColor: 'background.default' }} component="main">
         <MuiStack spacing={6}>
           <Title />

@@ -1,5 +1,5 @@
-const GH_REPOSITORY = 'https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/ResolvedChallenges'
-const URL_BASE_PREVIEW = 'https://rfmc.netlify.app/c'
+const GH_REPOSITORY = 'https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges'
+const URL_BASE_PREVIEW = 'https://rfmc.vercel.app/c'
 
 const Difficulty = {
   NEWBIE: {

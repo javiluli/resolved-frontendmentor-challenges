@@ -9,13 +9,13 @@ import { BoxAnimation } from './BoxAnimation'
 const QRCodeComponent = () => {
   return (
     <MuiCard
+      elevation={1}
       sx={{
         maxWidth: 300,
         padding: '1em',
         backgroundColor: 'background.paper',
         borderRadius: '2em',
       }}
-      elevation={1}
     >
       <MuiCardContent
         sx={{

@@ -32,7 +32,7 @@ const AdviceGeneratorApp = () => {
   }, [data])
 
   return (
-    <MuiBox sx={{ p: 4 }}>
+    <MuiBox sx={{ m: 4 }}>
       <MuiCard elevation={1} sx={{ position: 'relative', maxWidth: 500, p: '2.5em 2.5em 4.5em', borderRadius: 4, overflow: 'visible' }}>
         <MuiStack spacing={3}>
           <MuiCardContent sx={{ p: 0 }}>

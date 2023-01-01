@@ -20,7 +20,7 @@ const FAQAccordionCard = () => {
     <MuiStack
       justifyContent="center"
       alignItems="center"
-      sx={{ width: '100%', height: '100vh', background: 'linear-gradient(180deg, rgba(175,103,233,1) 0%, rgba(101,101,231,1) 100%)' }}
+      sx={{ p: 4, width: '100%', height: '100vh', background: 'linear-gradient(180deg, rgba(175,103,233,1) 0%, rgba(101,101,231,1) 100%)' }}
     >
       <MuiCard
         elevation={1}

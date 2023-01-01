@@ -31,7 +31,7 @@ const dataComponent = [
 
 const ThreeColumnPreviewCardComponent = () => {
   return (
-    <MuiBox sx={{ py: 4 }}>
+    <MuiBox sx={{ m: 4 }}>
       <MuiStack direction={{ sm: 'column', md: 'row' }}>
         {dataComponent.map(({ icon, title, paragraph, color }, index) => (
           <PreviewCard key={index} icon={icon} title={title} paragraph={paragraph} color={color} />

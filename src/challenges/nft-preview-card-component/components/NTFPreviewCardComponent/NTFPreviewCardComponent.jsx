@@ -14,106 +14,108 @@ import imgImageEquilibrium from '../../assets/images/image-equilibrium.jpg'
 
 const NFTPreviewCardComponent = () => {
   return (
-    <MuiCard
-      sx={{
-        maxWidth: 300,
-        padding: '1.15em',
-        borderRadius: '1em',
-      }}
-    >
-      <MuiCardContent
+    <MuiBox sx={{ m: 4 }}>
+      <MuiCard
         sx={{
-          position: 'relative',
-          padding: 0,
-          borderRadius: '0.5em',
-          overflow: 'hidden',
-          cursor: 'pointer',
-          '&:hover .MuiBox-root': {
-            backgroundColor: 'hsla(178, 100%, 50%, 0.4)',
-            opacity: 1,
-          },
+          maxWidth: 300,
+          padding: '1.15em',
+          borderRadius: '1em',
         }}
       >
-        <MuiCardMedia sx={{ position: 'relative', zIndex: 100 }} component="img" image={imgImageEquilibrium} />
-
-        <MuiBox
+        <MuiCardContent
           sx={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            width: '100%',
-            height: '100%',
-            display: 'grid',
-            opacity: 0,
-            zIndex: 101,
-            transition: 'all 0.2s ease',
+            position: 'relative',
+            padding: 0,
+            borderRadius: '0.5em',
+            overflow: 'hidden',
+            cursor: 'pointer',
+            '&:hover .MuiBox-root': {
+              backgroundColor: 'hsla(178, 100%, 50%, 0.4)',
+              opacity: 1,
+            },
           }}
         >
-          <MuiCardMedia sx={{ width: '3em', margin: 'auto' }} component="img" image={imgIconView} />
-        </MuiBox>
-      </MuiCardContent>
+          <MuiCardMedia sx={{ position: 'relative', zIndex: 100 }} component="img" image={imgImageEquilibrium} />
 
-      <MuiCardContent sx={{ padding: '1em 0 0 !important' }}>
-        <MuiStack spacing={2}>
-          <MuiTypography
-            variant="body1"
-            component="h1"
+          <MuiBox
             sx={{
-              cursor: 'pointer',
-              '&:hover': {
-                color: 'primary.main',
-              },
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              display: 'grid',
+              opacity: 0,
+              zIndex: 101,
+              transition: 'all 0.2s ease',
             }}
           >
-            Equilibrbium #3429
-          </MuiTypography>
+            <MuiCardMedia sx={{ width: '3em', margin: 'auto' }} component="img" image={imgIconView} />
+          </MuiBox>
+        </MuiCardContent>
 
-          <MuiTypography variant="body2" color="text.secondary" sx={{ fontWeight: 300 }}>
-            Our Equilibrium collection promotes balance and calm.
-          </MuiTypography>
-
-          <MuiStack direction="row" justifyContent="space-between" alignItems="center">
-            <MuiStack direction="row" alignItems="center" spacing={1}>
-              <MuiCardMedia component="img" image={imgIconEthereum} sx={{ width: '0.5em' }} />
-              <MuiTypography variant="body2" color="primary.main" component="span">
-                0.041 ETH
-              </MuiTypography>
-            </MuiStack>
-
-            <MuiStack direction="row" alignItems="center" spacing={1}>
-              <MuiCardMedia component="img" image={imgIconClock} sx={{ width: '0.85em' }} />
-              <MuiTypography variant="body2" color="text.secondary" component="span">
-                3 days left
-              </MuiTypography>
-            </MuiStack>
-          </MuiStack>
-
-          <MuiDivider sx={{ borderColor: 'primary.secondary' }} />
-
-          <MuiStack direction="row" alignItems="center" spacing={1}>
-            <MuiCardMedia component="img" image={imgImageAvatar} sx={{ display: 'inline-block', width: '2em' }} />
+        <MuiCardContent sx={{ padding: '1em 0 0 !important' }}>
+          <MuiStack spacing={2}>
+            <MuiTypography
+              variant="body1"
+              component="h1"
+              sx={{
+                cursor: 'pointer',
+                '&:hover': {
+                  color: 'primary.main',
+                },
+              }}
+            >
+              Equilibrbium #3429
+            </MuiTypography>
 
             <MuiTypography variant="body2" color="text.secondary" sx={{ fontWeight: 300 }}>
-              Creation of
-              <MuiTypography
-                variant="body2"
-                color="text.primary"
-                component="span"
-                sx={{
-                  marginLeft: '3px',
-                  cursor: 'pointer',
-                  '&:hover': {
-                    color: 'primary.main',
-                  },
-                }}
-              >
-                Jules Wyvern
-              </MuiTypography>
+              Our Equilibrium collection promotes balance and calm.
             </MuiTypography>
+
+            <MuiStack direction="row" justifyContent="space-between" alignItems="center">
+              <MuiStack direction="row" alignItems="center" spacing={1}>
+                <MuiCardMedia component="img" image={imgIconEthereum} sx={{ width: '0.5em' }} />
+                <MuiTypography variant="body2" color="primary.main" component="span">
+                  0.041 ETH
+                </MuiTypography>
+              </MuiStack>
+
+              <MuiStack direction="row" alignItems="center" spacing={1}>
+                <MuiCardMedia component="img" image={imgIconClock} sx={{ width: '0.85em' }} />
+                <MuiTypography variant="body2" color="text.secondary" component="span">
+                  3 days left
+                </MuiTypography>
+              </MuiStack>
+            </MuiStack>
+
+            <MuiDivider sx={{ borderColor: 'primary.secondary' }} />
+
+            <MuiStack direction="row" alignItems="center" spacing={1}>
+              <MuiCardMedia component="img" image={imgImageAvatar} sx={{ display: 'inline-block', width: '2em' }} />
+
+              <MuiTypography variant="body2" color="text.secondary" sx={{ fontWeight: 300 }}>
+                Creation of
+                <MuiTypography
+                  variant="body2"
+                  color="text.primary"
+                  component="span"
+                  sx={{
+                    marginLeft: '3px',
+                    cursor: 'pointer',
+                    '&:hover': {
+                      color: 'primary.main',
+                    },
+                  }}
+                >
+                  Jules Wyvern
+                </MuiTypography>
+              </MuiTypography>
+            </MuiStack>
           </MuiStack>
-        </MuiStack>
-      </MuiCardContent>
-    </MuiCard>
+        </MuiCardContent>
+      </MuiCard>
+    </MuiBox>
   )
 }
 export default NFTPreviewCardComponent

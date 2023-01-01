@@ -17,6 +17,7 @@ const ProfileCardComponent = () => {
       justifyContent="center"
       alignItems="center"
       sx={{
+        p: 4,
         position: 'relative',
         width: '100%',
         height: '100vh',

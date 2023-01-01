@@ -23,35 +23,37 @@ const QRCodeComponent = () => {
   }
 
   return (
-    <MuiCard
-      sx={{
-        maxWidth: MUIResponsive.MAX_WIDTH,
-        borderRadius: '1em',
-      }}
-    >
-      <MuiGrid container direction="row-reverse">
-        <MuiGrid item xs={12} md={6} sx={{ position: 'relative' }}>
-          <MuiCardMedia component="img" image={MUIResponsive.IMG_HEADER} />
-          <MuiBox
-            sx={{
-              position: 'absolute',
-              top: 0,
-              width: '100%',
-              height: '100%',
-              backgroundColor: 'primary.dark',
-              opacity: 0.6,
-            }}
-          />
-        </MuiGrid>
+    <MuiBox sx={{ m: 4 }}>
+      <MuiCard
+        sx={{
+          maxWidth: MUIResponsive.MAX_WIDTH,
+          borderRadius: '1em',
+        }}
+      >
+        <MuiGrid container direction="row-reverse">
+          <MuiGrid item xs={12} md={6} sx={{ position: 'relative' }}>
+            <MuiCardMedia component="img" image={MUIResponsive.IMG_HEADER} />
+            <MuiBox
+              sx={{
+                position: 'absolute',
+                top: 0,
+                width: '100%',
+                height: '100%',
+                backgroundColor: 'primary.dark',
+                opacity: 0.6,
+              }}
+            />
+          </MuiGrid>
 
-        <MuiGrid item xs={12} md={6}>
-          <MuiStack justifyContent="space-between" spacing={3} sx={{ height: '100%', padding: MUIResponsive.PADDING }}>
-            <MainSection />
-            <FooterWithStats />
-          </MuiStack>
+          <MuiGrid item xs={12} md={6}>
+            <MuiStack justifyContent="space-between" spacing={3} sx={{ height: '100%', padding: MUIResponsive.PADDING }}>
+              <MainSection />
+              <FooterWithStats />
+            </MuiStack>
+          </MuiGrid>
         </MuiGrid>
-      </MuiGrid>
-    </MuiCard>
+      </MuiCard>
+    </MuiBox>
   )
 }
 

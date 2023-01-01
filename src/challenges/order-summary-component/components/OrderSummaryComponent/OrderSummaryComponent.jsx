@@ -27,6 +27,7 @@ const OrderSummaryComponent = () => {
       justifyContent="center"
       alignItems="center"
       sx={{
+        p: 4,
         width: '100%',
         height: '100vh',
         backgroundImage: `url(${imgPatternBackground})`,

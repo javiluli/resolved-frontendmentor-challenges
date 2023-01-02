@@ -1,7 +1,7 @@
 export { default as QRCodeComponent } from './qr-code-component'
 export { default as ProductPreviewCardComponent } from './product-preview-card-component'
 export { default as InteractiveRatingComponent } from './interactive-rating-component'
-export { default as NTFPreviewCardComponent } from './nft-preview-card-component'
+export { default as NFTPreviewCardComponent } from './nft-preview-card-component'
 export { default as OrderSummaryComponent } from './order-summary-component'
 export { default as StatsPreviewCardComponent } from './stats-preview-card-component'
 export { default as ThreeColumnPreviewCardComponent } from './three-column-preview-card-component'

@@ -2,7 +2,7 @@ import { ThemeProvider } from '@mui/material'
 import MuiStack from '@mui/material/Stack'
 
 import './assets/css/fonts.css'
-import { NTFPreviewCardComponent } from './components'
+import { NFTPreviewCardComponent } from './components'
 import theme from './themes/theme'
 
 const Index = () => {
@@ -16,7 +16,7 @@ const Index = () => {
           backgroundColor: 'background.default',
         }}
       >
-        <NTFPreviewCardComponent />
+        <NFTPreviewCardComponent />
       </MuiStack>
     </ThemeProvider>
   )

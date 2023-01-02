@@ -23,7 +23,7 @@ const All = () => {
     QRCodeComponent,
     ProductPreviewCardComponent,
     InteractiveRatingComponent,
-    NTFPreviewCardComponent,
+    NFTPreviewCardComponent,
     OrderSummaryComponent,
     StatsPreviewCardComponent,
     ThreeColumnPreviewCardComponent,
@@ -56,7 +56,7 @@ const All = () => {
       </Suspense>
 
       <Suspense fallback={<ContainerCircularProgress />}>
-        <NTFPreviewCardComponent />
+        <NFTPreviewCardComponent />
       </Suspense>
 
       <Suspense fallback={<ContainerCircularProgress />}>

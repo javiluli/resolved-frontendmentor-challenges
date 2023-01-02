@@ -1,1 +1,1 @@
-export * from './NTFPreviewCardComponent'
+export * from './NFTPreviewCardComponent'

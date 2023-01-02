@@ -1,6 +1,6 @@
 import { promises as fs } from 'fs'
 
-import challens from '../../api/data.js'
+import challens from '../../api/index.js'
 import { PLACEHOLDERS } from './const.js'
 import { getChallengesList } from './service.js'
 
@@ -18,7 +18,7 @@ const generateChallengesList = ({ title, source_code, live_preview, try_challeng
     getChallengesList(challens),
   ])
 
-  // crea las insignias de shields.io
+  // Crea todas las filas de la tabla
   const elementChallengesList = challengesList.map(generateChallengesList).join('')
 
   // reemplaza los 'PLACEHOLDERS' por los datos obtenidos

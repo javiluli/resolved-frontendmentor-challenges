@@ -1,4 +1,4 @@
-import Challens from '@/api/data'
+import Challens from '@/api'
 import Card from '@/components/Card'
 import Title from '@/components/Title'
 import MuiMasonry from '@mui/lab/Masonry'

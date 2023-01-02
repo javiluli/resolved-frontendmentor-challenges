@@ -25,14 +25,6 @@ const CodeSandboxIcon = (props) => {
   )
 }
 
-const StackBlitzIcon = (props) => {
-  return (
-    <SvgIcon viewBox="0 0 24 24" {...props}>
-      <path d="M10.797 14.182H3.635L16.728 0l-3.525 9.818h7.162L7.272 24l3.524-9.818Z" />
-    </SvgIcon>
-  )
-}
-
 const FrontendMentorIcon = (props) => {
   return (
     <SvgIcon viewBox="0 0 24 24" {...props}>
@@ -42,15 +34,37 @@ const FrontendMentorIcon = (props) => {
 }
 
 const Card = ({ data }) => {
-  const { slug, title, challenge_description, preview_image, languages, difficulty, source_code, try_challenge, codesandbox, stackblitz } =
-    data
+  const {
+    slug,
+    frontendmentor: {
+      title,
+      description,
+      languages,
+      difficulty,
+      images: { desktop_preview },
+      try_challenge,
+    },
+    source_code,
+    editables: { codesandbox },
+  } = data
 
   return (
     <MuiBox>
-      <MuiCard variant="outlined" sx={{ borderRadius: 4 }}>
+      <MuiCard
+        variant="outlined"
+        sx={{
+          minWidth: 200,
+          border: 'none',
+          borderRadius: 4,
+          boxShadow: '0px 0px 2px 0px rgba(17, 12, 46, 0.2)',
+          transition: 'all 250ms cubic-bezier(0.2, 0, 0.2, 1) 0ms',
+          ':hover': { boxShadow: '0px 0px 20px 0px rgba(17, 12, 46, 0.1)', transform: 'translateY(-3px)' },
+        }}
+      >
         <Link to={`/c/${slug}`} style={{ textDecoration: 'none' }}>
-          <MuiCardMedia component="img" image={preview_image} />
+          <MuiCardMedia component="img" image={desktop_preview} />
         </Link>
+
         <MuiCardContent>
           <MuiGrid container justifyContent="space-between" spacing={2}>
             <MuiGrid item>
@@ -74,7 +88,7 @@ const Card = ({ data }) => {
             </MuiTypography>
           </Link>
           <MuiTypography variant="body2" sx={{ color: 'text.secondary' }} gutterBottom>
-            {challenge_description}
+            {description}
           </MuiTypography>
         </MuiCardContent>
 
@@ -98,15 +112,7 @@ const Card = ({ data }) => {
               </MuiLink>
             </MuiTooltip>
 
-            <MuiTooltip title="Edit in StackBlitz" placement="top">
-              <MuiLink href={stackblitz} target="_blank" rel="noopener" underline="none">
-                <MuiIconButton aria-label="StackBlitz" sx={{ color: 'text.secondary' }}>
-                  <StackBlitzIcon sx={{ fontSize: '1.25rem' }} />
-                </MuiIconButton>
-              </MuiLink>
-            </MuiTooltip>
-
-            <MuiTooltip title="See challenge in frontendmentor" placement="top">
+            <MuiTooltip title="See challenge in frontendmentor.io" placement="top">
               <MuiLink href={try_challenge} target="_blank" rel="noopener" underline="none">
                 <MuiIconButton aria-label="Frontendmentor" sx={{ color: 'text.secondary' }}>
                   <FrontendMentorIcon sx={{ fontSize: '1.25rem' }} />

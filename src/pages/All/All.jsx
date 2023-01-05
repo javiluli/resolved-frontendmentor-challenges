@@ -39,6 +39,7 @@ const All = () => {
     HuddleLandingPageWithASingleIntroductorySection,
     AdviceGeneratorApp,
     ExpensesChartComponent,
+    TipCalculatorApp,
   } = lazily(() => import('../../challenges'))
 
   return (
@@ -117,6 +118,10 @@ const All = () => {
 
       <Suspense fallback={<ContainerCircularProgress />}>
         <ExpensesChartComponent />
+      </Suspense>
+
+      <Suspense fallback={<ContainerCircularProgress />}>
+        <TipCalculatorApp />
       </Suspense>
     </MuiBox>
   )

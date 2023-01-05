@@ -398,8 +398,27 @@ const Challens = [
       codesandbox: 'https://codesandbox.io/s/expenses-chart-component-e30ehu',
     },
   },
+  {
+    id: '20',
+    slug: Slugs.TIP_CALCULATOR_APP,
+    frontendmentor: {
+      title: 'Tip calculator app',
+      description:
+        'This small app is perfect for anyone starting to get to grips with JavaScript. The calculator functionality will be a nice test!',
+      languages: [Languages.HTML, Languages.CSS, Languages.JS],
+      difficulty: Difficulty.JUNIOR,
+      images: {
+        desktop_preview: Images.TIP_CALCULATOR_APP,
+      },
+      try_challenge: 'https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX',
+      solution: 'https://www.frontendmentor.io/solutions/tip-calculator-app-iMdttbN_Gn',
+    },
+    source_code: `${GH_REPOSITORY}/${Slugs.TIP_CALCULATOR_APP}`,
+    live_preview: `${URL_BASE_PREVIEW}/${Slugs.TIP_CALCULATOR_APP}`,
+    editables: {
+      codesandbox: 'https://codesandbox.io/s/tip-calculator-app-m3787n',
+    },
+  },
 ]
 
 export default Challens
-
-// console.log(JSON.stringify(Challens))

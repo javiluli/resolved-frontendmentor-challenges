@@ -18,6 +18,7 @@ const Slugs = {
   HUDDLE_LANDING_PAGE_WITH_A_SINGLE_INTRODUCTORY_SECTION: 'huddle-landing-page-with-a-single-introductory-section',
   ADVICE_GENERATOR_APP: 'advice-generator-app',
   EXPENSES_CHART_COMPONENT: 'expenses-chart-component',
+  TIP_CALCULATOR_APP: 'tip-calculator-app',
 }
 
 export default Slugs

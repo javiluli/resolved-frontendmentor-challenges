@@ -17,3 +17,4 @@ export { default as PingSingleColumnComingSoonPage } from './ping-single-column-
 export { default as HuddleLandingPageWithASingleIntroductorySection } from './huddle-landing-page-with-a-single-introductory-section'
 export { default as AdviceGeneratorApp } from './advice-generator-app'
 export { default as ExpensesChartComponent } from './expenses-chart-component'
+export { default as TipCalculatorApp } from './tip-calculator-app'

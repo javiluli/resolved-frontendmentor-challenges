@@ -419,6 +419,27 @@ const Challens = [
       codesandbox: 'https://codesandbox.io/s/tip-calculator-app-m3787n',
     },
   },
+  {
+    id: '21',
+    slug: Slugs.TESTIMONIALS_GRID_SECTION,
+    frontendmentor: {
+      title: 'Testimonials grid section',
+      description:
+        "This challenge will be perfect practice for anyone wanting to test their CSS Grid skills. Grid is such a powerful addition to CSS, so it's worth getting to grips with it!",
+      languages: [Languages.HTML, Languages.CSS],
+      difficulty: Difficulty.JUNIOR,
+      images: {
+        desktop_preview: Images.TESTIMONIALS_GRID_SECTION,
+      },
+      try_challenge: 'https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7',
+      solution: 'https://www.frontendmentor.io/solutions/testimonials-grid-section-iAjaE4qFnF',
+    },
+    source_code: `${GH_REPOSITORY}/${Slugs.TESTIMONIALS_GRID_SECTION}`,
+    live_preview: `${URL_BASE_PREVIEW}/${Slugs.TESTIMONIALS_GRID_SECTION}`,
+    editables: {
+      codesandbox: 'https://codesandbox.io/s/testimonials-grid-section-b6rqqn',
+    },
+  },
 ]
 
 export default Challens

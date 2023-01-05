@@ -18,3 +18,4 @@ export { default as HuddleLandingPageWithASingleIntroductorySection } from './hu
 export { default as AdviceGeneratorApp } from './advice-generator-app'
 export { default as ExpensesChartComponent } from './expenses-chart-component'
 export { default as TipCalculatorApp } from './tip-calculator-app'
+export { default as TestimonialsGridSection } from './testimonials-grid-section'

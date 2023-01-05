@@ -19,6 +19,7 @@ const Slugs = {
   ADVICE_GENERATOR_APP: 'advice-generator-app',
   EXPENSES_CHART_COMPONENT: 'expenses-chart-component',
   TIP_CALCULATOR_APP: 'tip-calculator-app',
+  TESTIMONIALS_GRID_SECTION: 'testimonials-grid-section',
 }
 
 export default Slugs

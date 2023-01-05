@@ -49,7 +49,7 @@ const TipCalculatorApp = () => {
       </MuiStack>
 
       <MuiPaper component="form" elevation={1} sx={{ maxWidth: 800, padding: 4, borderRadius: 4 }}>
-        <MuiStack direction={{ xs: 'column', md: 'row' }} spacing={4} elevation={1}>
+        <MuiStack direction={{ xs: 'column', md: 'row' }} spacing={4}>
           <MuiStack spacing={3} sx={{ width: '100%' }}>
             <BillSection bill={bill} onSetBill={setBill} />
 

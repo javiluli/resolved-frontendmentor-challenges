@@ -440,6 +440,27 @@ const Challens = [
       codesandbox: 'https://codesandbox.io/s/testimonials-grid-section-b6rqqn',
     },
   },
+  {
+    id: '22',
+    slug: Slugs.SOCIAL_MEDIA_DASHBOARD_WITH_THEME_SWITCHER_MASTER,
+    frontendmentor: {
+      title: 'Social media dashboard with theme switcher',
+      description:
+        'This challenge will be a perfect chance to practice your Grid skills. The color theme switcher also adds a nice additional test.',
+      languages: [Languages.HTML, Languages.CSS, Languages.JS],
+      difficulty: Difficulty.JUNIOR,
+      images: {
+        desktop_preview: Images.SOCIAL_MEDIA_DASHBOARD_WITH_THEME_SWITCHER_MASTER,
+      },
+      try_challenge: 'https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H',
+      solution: 'https://www.frontendmentor.io/solutions/social-media-dashboard-with-theme-switcher-NBoExQGMDt',
+    },
+    source_code: `${GH_REPOSITORY}/${Slugs.SOCIAL_MEDIA_DASHBOARD_WITH_THEME_SWITCHER_MASTER}`,
+    live_preview: `${URL_BASE_PREVIEW}/${Slugs.SOCIAL_MEDIA_DASHBOARD_WITH_THEME_SWITCHER_MASTER}`,
+    editables: {
+      codesandbox: 'https://codesandbox.io/s/social-media-dashboard-with-theme-switcher-j5vne0',
+    },
+  },
 ]
 
 export default Challens

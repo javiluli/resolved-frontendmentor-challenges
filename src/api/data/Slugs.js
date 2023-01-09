@@ -20,6 +20,7 @@ const Slugs = {
   EXPENSES_CHART_COMPONENT: 'expenses-chart-component',
   TIP_CALCULATOR_APP: 'tip-calculator-app',
   TESTIMONIALS_GRID_SECTION: 'testimonials-grid-section',
+  SOCIAL_MEDIA_DASHBOARD_WITH_THEME_SWITCHER_MASTER: 'social-media-dashboard-with-theme-switcher-master',
 }
 
 export default Slugs

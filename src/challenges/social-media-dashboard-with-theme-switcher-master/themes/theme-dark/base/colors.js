@@ -35,8 +35,8 @@ const colors = {
 
   gradients: {
     primary: {
-      main: 'hsl(210, 78%, 56%)',
-      state: 'hsl(146, 68%, 55%)',
+      main: 'hsl(146, 68%, 55%)',
+      state: 'hsl(210, 78%, 56%)',
     },
   },
 

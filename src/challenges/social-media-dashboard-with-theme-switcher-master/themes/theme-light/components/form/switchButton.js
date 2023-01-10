@@ -13,6 +13,10 @@ const switchButton = {
       padding: 15,
       '&.Mui-checked': {
         paddingLeft: 15,
+        '& + .MuiSwitch-track': {
+          background: background.custom.toggle,
+          opacity: 1,
+        },
       },
     },
 
@@ -24,9 +28,7 @@ const switchButton = {
     },
 
     track: {
-      backgroundColor: background.custom.toggle,
       borderRadius: '9999px',
-      opacity: 0.5,
     },
   },
 }

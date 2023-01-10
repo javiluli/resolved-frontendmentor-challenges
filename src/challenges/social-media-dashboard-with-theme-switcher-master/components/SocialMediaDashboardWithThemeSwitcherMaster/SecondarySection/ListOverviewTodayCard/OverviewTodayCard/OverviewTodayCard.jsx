@@ -1,25 +1,25 @@
 import MuiBox from '@mui/material/Box'
-import Card from '@mui/material/Card'
-import CardContent from '@mui/material/CardContent'
-import CardMedia from '@mui/material/CardMedia'
+import MuiCard from '@mui/material/Card'
+import MuiCardContent from '@mui/material/CardContent'
+import MuiCardMedia from '@mui/material/CardMedia'
 import MuiStack from '@mui/material/Stack'
 import MuiTypography from '@mui/material/Typography'
 
-import iconDown from '../../../../assets/images/icon-down.svg'
-import iconUp from '../../../../assets/images/icon-up.svg'
+import iconDown from '../../../../../assets/images/icon-down.svg'
+import iconUp from '../../../../../assets/images/icon-up.svg'
 
-const CardOverviewToday = ({ socialMediaName, icon, data }) => {
+const OverviewTodayCard = ({ socialMediaName, icon, data }) => {
   const { title, counter, percentage } = data
 
   return (
-    <Card sx={{ width: '100%' }} elevation={0}>
-      <CardContent sx={{ px: 4, py: 3, '&:last-child': { px: 4, py: 3 } }}>
+    <MuiCard sx={{ width: '100%' }} elevation={0}>
+      <MuiCardContent sx={{ px: 4, py: 3, '&:last-child': { px: 4, py: 3 } }}>
         <MuiStack spacing={3}>
           <MuiStack direction="row" justifyContent="space-between" alignItems="center">
             <MuiTypography variant="caption" sx={{ color: 'text.secondary', fontWeight: 700 }}>
               {title}
             </MuiTypography>
-            <CardMedia component="img" image={icon} alt={`Icon social media - ${socialMediaName}`} sx={{ width: 20, height: 20 }} />
+            <MuiCardMedia component="img" image={icon} alt={`Icon social media - ${socialMediaName}`} sx={{ width: 20, height: 20 }} />
           </MuiStack>
 
           <MuiStack direction="row" justifyContent="space-between" alignItems="center">
@@ -50,9 +50,9 @@ const CardOverviewToday = ({ socialMediaName, icon, data }) => {
             </MuiStack>
           </MuiStack>
         </MuiStack>
-      </CardContent>
-    </Card>
+      </MuiCardContent>
+    </MuiCard>
   )
 }
 
-export default CardOverviewToday
+export default OverviewTodayCard

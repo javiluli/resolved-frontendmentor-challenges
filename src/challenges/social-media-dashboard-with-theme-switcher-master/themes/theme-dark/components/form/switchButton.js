@@ -12,13 +12,6 @@ const switchButton = {
 
     switchBase: {
       padding: 15,
-      '&.Mui-checked': {
-        paddingLeft: 15,
-        '& + .MuiSwitch-track': {
-          backgroundImage: linearGradient(gradients.primary.main, gradients.primary.state),
-          opacity: 1,
-        },
-      },
     },
 
     thumb: {
@@ -29,9 +22,9 @@ const switchButton = {
     },
 
     track: {
-      background: background.custom.toggle,
+      backgroundImage: linearGradient(gradients.primary.main, gradients.primary.state),
       borderRadius: '9999px',
-      opacity: 0.5,
+      opacity: 1,
     },
   },
 }

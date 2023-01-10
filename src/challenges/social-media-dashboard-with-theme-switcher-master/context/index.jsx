@@ -1,44 +1,47 @@
-import { ThemeProvider } from '@mui/material'
 import PropTypes from 'prop-types'
-import { createContext, useMemo, useState } from 'react'
+import { createContext, useContext, useMemo, useReducer } from 'react'
 
-import { dark, light } from '../themes'
-
-const ThemeOptions = {
-  LIGHT: 'light',
-  DARK: 'dark',
-}
-
-export const MaterialUI = createContext({
-  toggleThemeMode: () => {},
-  mode: ThemeOptions.LIGHT,
-})
+const MaterialUI = createContext()
 
 MaterialUI.displayName = 'MaterialUIContext'
 
-export const MaterialUIControllerProvider = ({ children }) => {
-  const [mode, setMode] = useState(ThemeOptions.LIGHT)
+function reducer(state, action) {
+  const REDUCER_OPTIONS = {
+    LIGHTMODE: { ...state, lightMode: action.value },
+  }
 
-  const colorMode = useMemo(
-    () => ({
-      toggleThemeMode: () => {
-        setMode((prevMode) => (prevMode === ThemeOptions.LIGHT ? ThemeOptions.DARK : ThemeOptions.LIGHT))
-      },
-      mode,
-    }),
-    [mode]
-  )
+  return REDUCER_OPTIONS[action.type] || state
+}
 
-  const theme = mode === ThemeOptions.LIGHT ? light : dark
+// Material Dashboard 2 React context provider
+function MaterialUIControllerProvider({ children }) {
+  const initialState = {
+    lightMode: false,
+  }
 
-  return (
-    <MaterialUI.Provider value={colorMode}>
-      <ThemeProvider theme={theme}> {children} </ThemeProvider>
-    </MaterialUI.Provider>
-  )
+  const [controller, dispatch] = useReducer(reducer, initialState)
+
+  const value = useMemo(() => [controller, dispatch], [controller, dispatch])
+
+  return <MaterialUI.Provider value={value}>{children}</MaterialUI.Provider>
+}
+
+function useMaterialUIController() {
+  const context = useContext(MaterialUI)
+
+  if (!context) {
+    throw new Error('useMaterialUIController should be used inside the MaterialUIControllerProvider.')
+  }
+
+  return context
 }
 
 // Typechecking props for the MaterialUIControllerProvider
 MaterialUIControllerProvider.propTypes = {
   children: PropTypes.node.isRequired,
 }
+
+// Context module functions
+const setLightMode = (dispatch, value) => dispatch({ type: 'LIGHTMODE', value })
+
+export { MaterialUIControllerProvider, useMaterialUIController, setLightMode }

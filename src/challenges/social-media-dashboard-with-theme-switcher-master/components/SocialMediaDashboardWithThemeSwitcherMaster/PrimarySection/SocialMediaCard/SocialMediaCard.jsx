@@ -1,14 +1,14 @@
-import Avatar from '@mui/material/Avatar'
+import MuiAvatar from '@mui/material/Avatar'
 import MuiBox from '@mui/material/Box'
-import Card from '@mui/material/Card'
-import CardContent from '@mui/material/CardContent'
-import CardHeader from '@mui/material/CardHeader'
-import CardMedia from '@mui/material/CardMedia'
+import MuiCard from '@mui/material/Card'
+import MuiCardContent from '@mui/material/CardContent'
+import MuiCardHeader from '@mui/material/CardHeader'
+import MuiCardMedia from '@mui/material/CardMedia'
 import MuiStack from '@mui/material/Stack'
 import MuiTypography from '@mui/material/Typography'
 
-import iconDown from '../../../assets/images/icon-down.svg'
-import iconUp from '../../../assets/images/icon-up.svg'
+import iconDown from '../../../../assets/images/icon-down.svg'
+import iconUp from '../../../../assets/images/icon-up.svg'
 
 const SOCIAL_MEDIA_NAME = ['facebook', 'instagram', 'twitter']
 const SOCIAL_MEDIA_COLOR = {
@@ -18,13 +18,13 @@ const SOCIAL_MEDIA_COLOR = {
   youtube: 'hsl(348, 97%, 39%)',
 }
 
-const CardFollowers = ({ data }) => {
+const SocialMediaCard = ({ data }) => {
   const { icon, userName, numberFollowers, numberFollowersToday, socialMediaName, moreFollowers } = data
 
   const socialMedia = SOCIAL_MEDIA_NAME.includes(socialMediaName) ? 'FOLLOWERS' : 'SUBSCRIBERS'
 
   return (
-    <Card sx={{ width: '100%' }} elevation={0}>
+    <MuiCard sx={{ width: '100%' }} elevation={0}>
       <MuiBox
         sx={{
           display: 'block',
@@ -33,11 +33,11 @@ const CardFollowers = ({ data }) => {
           background: SOCIAL_MEDIA_COLOR[socialMediaName],
         }}
       />
-      <CardHeader
+      <MuiCardHeader
         avatar={
-          <Avatar aria-label="social-media" sx={{ width: 20, height: 20, bgcolor: 'transparent', borderRadius: 0 }}>
-            <CardMedia component="img" image={icon} alt={`Icon social media - ${socialMediaName}`} />
-          </Avatar>
+          <MuiAvatar aria-label="social-media" sx={{ width: 20, height: 20, bgcolor: 'transparent', borderRadius: 0 }}>
+            <MuiCardMedia component="img" image={icon} alt={`Icon social media - ${socialMediaName}`} />
+          </MuiAvatar>
         }
         title={
           <MuiTypography variant="caption" component="span" sx={{ fontWeight: 700 }}>
@@ -46,7 +46,7 @@ const CardFollowers = ({ data }) => {
         }
         sx={{ justifyContent: 'center' }}
       />
-      <CardContent>
+      <MuiCardContent>
         <MuiTypography variant="h3" component="h1" sx={{ textAlign: 'center', fontWeight: 700 }}>
           {numberFollowers}
         </MuiTypography>
@@ -75,9 +75,9 @@ const CardFollowers = ({ data }) => {
             {numberFollowersToday} Today
           </MuiTypography>
         </MuiStack>
-      </CardContent>
-    </Card>
+      </MuiCardContent>
+    </MuiCard>
   )
 }
 
-export default CardFollowers
+export default SocialMediaCard

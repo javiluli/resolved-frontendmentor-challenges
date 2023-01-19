@@ -19,17 +19,21 @@ const AdviceGeneratorApp = () => {
   const theme = useTheme()
   const matches = useMediaQuery(theme.breakpoints.up('sm'))
 
-  const [quote, setQuote] = useState({ id: '', quote: '', author: '' })
-  const [toggle, setToggle] = useState(false)
+  // obtenemos todas las quotes de la API (100 maximo segun la API)
+  const { data } = useFetch()
 
-  const { data } = useFetch(toggle)
+  const [quote, setQuote] = useState({ id: '', quote: '', author: '' })
+  const [toggleQuote, setToggleQuote] = useState(false)
 
   useEffect(() => {
     if (data !== null) {
-      const { id, quote, author } = data
+      const { quotes, total } = data
+      const randomQuote = Math.floor(Math.random() * total)
+      const { id, quote, author } = quotes[randomQuote]
+
       setQuote({ id, quote, author })
     }
-  }, [data])
+  }, [data, toggleQuote])
 
   return (
     <MuiBox sx={{ m: 4 }}>
@@ -63,7 +67,7 @@ const AdviceGeneratorApp = () => {
           />
 
           <MuiCardActions sx={{ position: 'absolute', bottom: -20, left: '50%', p: 0, transform: 'translateX(-50%)' }}>
-            <MuiIconButton aria-label="casino" onClick={() => setToggle((prev) => !prev)}>
+            <MuiIconButton aria-label="casino" onClick={() => setToggleQuote((prev) => !prev)}>
               <MuiCasinoIcon fontSize="large" sx={{ p: 0.5 }} />
             </MuiIconButton>
           </MuiCardActions>

@@ -1,3 +1,5 @@
+import { json } from 'react-router-dom'
+
 import Difficulty from './data/Difficulty.js'
 import Images from './data/Images.js'
 import Languages from './data/Languages.js'
@@ -459,6 +461,27 @@ const Challens = [
     live_preview: `${URL_BASE_PREVIEW}/${Slugs.SOCIAL_MEDIA_DASHBOARD_WITH_THEME_SWITCHER_MASTER}`,
     editables: {
       codesandbox: 'https://codesandbox.io/s/social-media-dashboard-with-theme-switcher-j5vne0',
+    },
+  },
+  {
+    id: '23',
+    slug: Slugs.TIME_TRACKING_DASHBOARD,
+    frontendmentor: {
+      title: 'Time tracking dashboard',
+      description:
+        'A perfect opportunity to practice your CSS Grid skills. For anyone wanting to take it up a notch, we provide a JSON data file to practice working with data.',
+      languages: [Languages.HTML, Languages.CSS, Languages.JS],
+      difficulty: Difficulty.JUNIOR,
+      images: {
+        desktop_preview: Images.TIME_TRACKING_DASHBOARD,
+      },
+      try_challenge: 'https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw',
+      solution: 'https://www.frontendmentor.io/solutions/time-tracking-dashboard-V70uZ_-dsV',
+    },
+    source_code: `${GH_REPOSITORY}/${Slugs.TIME_TRACKING_DASHBOARD}`,
+    live_preview: `${URL_BASE_PREVIEW}/${Slugs.TIME_TRACKING_DASHBOARD}`,
+    editables: {
+      codesandbox: 'https://codesandbox.io/s/time-tracking-dashboard-j0e0cn',
     },
   },
 ]

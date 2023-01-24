@@ -42,6 +42,7 @@ const All = () => {
     TipCalculatorApp,
     TestimonialsGridSection,
     SocialMediaDashboardWithThemeSwitcherMaster,
+    TimeTrackingDashboard,
   } = lazily(() => import('../../challenges'))
 
   return (
@@ -132,6 +133,10 @@ const All = () => {
 
       <Suspense fallback={<ContainerCircularProgress />}>
         <SocialMediaDashboardWithThemeSwitcherMaster />
+      </Suspense>
+
+      <Suspense fallback={<ContainerCircularProgress />}>
+        <TimeTrackingDashboard />
       </Suspense>
     </MuiBox>
   )

@@ -22,6 +22,7 @@ const Slugs = {
   TESTIMONIALS_GRID_SECTION: 'testimonials-grid-section',
   SOCIAL_MEDIA_DASHBOARD_WITH_THEME_SWITCHER_MASTER: 'social-media-dashboard-with-theme-switcher-master',
   TIME_TRACKING_DASHBOARD: 'time-tracking-dashboard',
+  AGE_CALCULATOR_APP: 'age-calculator-app',
 }
 
 export default Slugs

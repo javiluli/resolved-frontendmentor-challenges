@@ -484,6 +484,27 @@ const Challens = [
       codesandbox: 'https://codesandbox.io/s/time-tracking-dashboard-j0e0cn',
     },
   },
+  {
+    id: '24',
+    slug: Slugs.AGE_CALCULATOR_APP,
+    frontendmentor: {
+      title: 'Age calculator app',
+      description:
+        'This challenge is designed to sharpen your JavaScript and form validation skills. Working with dates in JavaScript can be tricky, so this will be a nice test!',
+      languages: [Languages.HTML, Languages.CSS, Languages.JS],
+      difficulty: Difficulty.JUNIOR,
+      images: {
+        desktop_preview: Images.AGE_CALCULATOR_APP,
+      },
+      try_challenge: 'https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q',
+      solution: 'https://www.frontendmentor.io/solutions/age-calculator-app-OWuaGlvZm6',
+    },
+    source_code: `${GH_REPOSITORY}/${Slugs.AGE_CALCULATOR_APP}`,
+    live_preview: `${URL_BASE_PREVIEW}/${Slugs.AGE_CALCULATOR_APP}`,
+    editables: {
+      codesandbox: 'https://codesandbox.io/s/age-calculator-app-4vtzgw',
+    },
+  },
 ]
 
 export default Challens

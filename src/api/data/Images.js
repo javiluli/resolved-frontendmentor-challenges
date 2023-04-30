@@ -1,3 +1,5 @@
+import IMG_AGE_CALCULATOR_APP from '@/challenges/age-calculator-app/design/desktop-preview.jpg'
+
 import Slugs from './Slugs.js'
 
 const URL_BASE = 'https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges'
@@ -27,6 +29,7 @@ const Images = {
   TESTIMONIALS_GRID_SECTION: `${URL_BASE}/${Slugs.TESTIMONIALS_GRID_SECTION}/${URL_FOLDER_IMAGE}`,
   SOCIAL_MEDIA_DASHBOARD_WITH_THEME_SWITCHER_MASTER: `${URL_BASE}/${Slugs.SOCIAL_MEDIA_DASHBOARD_WITH_THEME_SWITCHER_MASTER}/${URL_FOLDER_IMAGE}`,
   TIME_TRACKING_DASHBOARD: `${URL_BASE}/${Slugs.TIME_TRACKING_DASHBOARD}/${URL_FOLDER_IMAGE}`,
+  AGE_CALCULATOR_APP: IMG_AGE_CALCULATOR_APP,
 }
 
 export default Images

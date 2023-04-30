@@ -5,12 +5,12 @@ import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
 import CssBaseline from '@mui/material/CssBaseline'
 import React from 'react'
-import ReactDOM from 'react-dom/client'
+import { createRoot } from 'react-dom/client'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import App from './App'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <CssBaseline />
     <ColorContextProvider>

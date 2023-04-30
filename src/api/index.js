@@ -1,5 +1,3 @@
-import { json } from 'react-router-dom'
-
 import Difficulty from './data/Difficulty.js'
 import Images from './data/Images.js'
 import Languages from './data/Languages.js'

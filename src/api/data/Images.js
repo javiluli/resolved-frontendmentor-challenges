@@ -1,35 +1,53 @@
-import IMG_AGE_CALCULATOR_APP from '@/challenges/age-calculator-app/design/desktop-preview.jpg'
-
-import Slugs from './Slugs.js'
-
-const URL_BASE = 'https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges'
-const URL_FOLDER_IMAGE = 'design/desktop-preview.jpg'
+import ADVICE_GENERATOR_APP from '@/challenges/advice-generator-app/design/desktop-preview.jpg'
+import AGE_CALCULATOR_APP from '@/challenges/age-calculator-app/design/desktop-preview.jpg'
+import ARTICLE_PREVIEW_COMPONENT from '@/challenges/article-preview-component/design/desktop-preview.jpg'
+import BASE_APPAREL_COMING_SOON_PAGE from '@/challenges/base-apparel-coming-soon-page/design/desktop-preview.jpg'
+import EXPENSES_CHART_COMPONENT from '@/challenges/expenses-chart-component/design/desktop-preview.jpg'
+import FAQ_ACCORDION_CARD from '@/challenges/faq-accordion-card/design/desktop-preview.jpg'
+import FOUR_CARD_FEATURE_SECTION from '@/challenges/four-card-feature-section/design/desktop-preview.jpg'
+import HUDDLE_LANDING_PAGE_WITH_A_SINGLE_INTRODUCTORY_SECTION from '@/challenges/huddle-landing-page-with-a-single-introductory-section/design/desktop-preview.jpg'
+import INTERACTIVE_RATING_COMPONENT from '@/challenges/interactive-rating-component/design/desktop-preview.jpg'
+import INTRO_COMPONENT_WITH_SIGN_UP_FORM from '@/challenges/intro-component-with-sign-up-form/design/desktop-preview.jpg'
+import NFT_PREVIEW_CARD_COMPONENT from '@/challenges/nft-preview-card-component/design/desktop-preview.jpg'
+import ORDER_SUMMARY_COMPONENT from '@/challenges/order-summary-component/design/desktop-preview.jpg'
+import PING_SINGLE_COLUMN_COMING_SOON_PAGE from '@/challenges/ping-single-column-coming-soon-page/design/desktop-preview.jpg'
+import PRODUCT_PREVIEW_CARD_COMPONENT from '@/challenges/product-preview-card-component/design/desktop-preview.jpg'
+import PROFILE_CARD_COMPONENT from '@/challenges/profile-card-component/design/desktop-preview.jpg'
+import QR_CODE_COMPONENT from '@/challenges/qr-code-component/design/desktop-preview.jpg'
+import SINGLE_PRICE_GRID_COMPONENT from '@/challenges/single-price-grid-component/design/desktop-preview.jpg'
+import SOCIAL_MEDIA_DASHBOARD_WITH_THEME_SWITCHER_MASTER from '@/challenges/social-media-dashboard-with-theme-switcher-master/design/desktop-preview.jpg'
+import SOCIAL_PROOF_SECTION from '@/challenges/social-proof-section/design/desktop-preview.jpg'
+import STATS_PREVIEW_CARD_COMPONENT from '@/challenges/stats-preview-card-component/design/desktop-preview.jpg'
+import TESTIMONIALS_GRID_SECTION from '@/challenges/testimonials-grid-section/design/desktop-preview.jpg'
+import THREE_COLUMN_PREVIEW_CARD_COMPONENT from '@/challenges/three-column-preview-card-component/design/desktop-preview.jpg'
+import TIME_TRACKING_DASHBOARD from '@/challenges/time-tracking-dashboard/design/desktop-preview.jpg'
+import TIP_CALCULATOR_APP from '@/challenges/tip-calculator-app/design/desktop-preview.jpg'
 
 const Images = {
-  QR_CODE_COMPONENT: `${URL_BASE}/${Slugs.QR_CODE_COMPONENT}/${URL_FOLDER_IMAGE}`,
-  PRODUCT_PREVIEW_CARD_COMPONENT: `${URL_BASE}/${Slugs.PRODUCT_PREVIEW_CARD_COMPONENT}/${URL_FOLDER_IMAGE}`,
-  INTERACTIVE_RATING_COMPONENT: `${URL_BASE}/${Slugs.INTERACTIVE_RATING_COMPONENT}/${URL_FOLDER_IMAGE}`,
-  NFT_PREVIEW_CARD_COMPONENT: `${URL_BASE}/${Slugs.NFT_PREVIEW_CARD_COMPONENT}/${URL_FOLDER_IMAGE}`,
-  ORDER_SUMMARY_COMPONENT: `${URL_BASE}/${Slugs.ORDER_SUMMARY_COMPONENT}/${URL_FOLDER_IMAGE}`,
-  STATS_PREVIEW_CARD_COMPONENT: `${URL_BASE}/${Slugs.STATS_PREVIEW_CARD_COMPONENT}/${URL_FOLDER_IMAGE}`,
-  THREE_COLUMN_PREVIEW_CARD_COMPONENT: `${URL_BASE}/${Slugs.THREE_COLUMN_PREVIEW_CARD_COMPONENT}/${URL_FOLDER_IMAGE}`,
-  PROFILE_CARD_COMPONENT: `${URL_BASE}/${Slugs.PROFILE_CARD_COMPONENT}/${URL_FOLDER_IMAGE}`,
-  FAQ_ACCORDION_CARD: `${URL_BASE}/${Slugs.FAQ_ACCORDION_CARD}/${URL_FOLDER_IMAGE}`,
-  SOCIAL_PROOF_SECTION: `${URL_BASE}/${Slugs.SOCIAL_PROOF_SECTION}/${URL_FOLDER_IMAGE}`,
-  ARTICLE_PREVIEW_COMPONENT: `${URL_BASE}/${Slugs.ARTICLE_PREVIEW_COMPONENT}/${URL_FOLDER_IMAGE}`,
-  FOUR_CARD_FEATURE_SECTION: `${URL_BASE}/${Slugs.FOUR_CARD_FEATURE_SECTION}/${URL_FOLDER_IMAGE}`,
-  BASE_APPAREL_COMING_SOON_PAGE: `${URL_BASE}/${Slugs.BASE_APPAREL_COMING_SOON_PAGE}/${URL_FOLDER_IMAGE}`,
-  INTRO_COMPONENT_WITH_SIGN_UP_FORM: `${URL_BASE}/${Slugs.INTRO_COMPONENT_WITH_SIGN_UP_FORM}/${URL_FOLDER_IMAGE}`,
-  SINGLE_PRICE_GRID_COMPONENT: `${URL_BASE}/${Slugs.SINGLE_PRICE_GRID_COMPONENT}/${URL_FOLDER_IMAGE}`,
-  PING_SINGLE_COLUMN_COMING_SOON_PAGE: `${URL_BASE}/${Slugs.PING_SINGLE_COLUMN_COMING_SOON_PAGE}/${URL_FOLDER_IMAGE}`,
-  HUDDLE_LANDING_PAGE_WITH_A_SINGLE_INTRODUCTORY_SECTION: `${URL_BASE}/${Slugs.HUDDLE_LANDING_PAGE_WITH_A_SINGLE_INTRODUCTORY_SECTION}/${URL_FOLDER_IMAGE}`,
-  ADVICE_GENERATOR_APP: `${URL_BASE}/${Slugs.ADVICE_GENERATOR_APP}/${URL_FOLDER_IMAGE}`,
-  EXPENSES_CHART_COMPONENT: `${URL_BASE}/${Slugs.EXPENSES_CHART_COMPONENT}/${URL_FOLDER_IMAGE}`,
-  TIP_CALCULATOR_APP: `${URL_BASE}/${Slugs.TIP_CALCULATOR_APP}/${URL_FOLDER_IMAGE}`,
-  TESTIMONIALS_GRID_SECTION: `${URL_BASE}/${Slugs.TESTIMONIALS_GRID_SECTION}/${URL_FOLDER_IMAGE}`,
-  SOCIAL_MEDIA_DASHBOARD_WITH_THEME_SWITCHER_MASTER: `${URL_BASE}/${Slugs.SOCIAL_MEDIA_DASHBOARD_WITH_THEME_SWITCHER_MASTER}/${URL_FOLDER_IMAGE}`,
-  TIME_TRACKING_DASHBOARD: `${URL_BASE}/${Slugs.TIME_TRACKING_DASHBOARD}/${URL_FOLDER_IMAGE}`,
-  AGE_CALCULATOR_APP: IMG_AGE_CALCULATOR_APP,
+  QR_CODE_COMPONENT: QR_CODE_COMPONENT,
+  PRODUCT_PREVIEW_CARD_COMPONENT: PRODUCT_PREVIEW_CARD_COMPONENT,
+  INTERACTIVE_RATING_COMPONENT: INTERACTIVE_RATING_COMPONENT,
+  NFT_PREVIEW_CARD_COMPONENT: NFT_PREVIEW_CARD_COMPONENT,
+  ORDER_SUMMARY_COMPONENT: ORDER_SUMMARY_COMPONENT,
+  STATS_PREVIEW_CARD_COMPONENT: STATS_PREVIEW_CARD_COMPONENT,
+  THREE_COLUMN_PREVIEW_CARD_COMPONENT: THREE_COLUMN_PREVIEW_CARD_COMPONENT,
+  PROFILE_CARD_COMPONENT: PROFILE_CARD_COMPONENT,
+  FAQ_ACCORDION_CARD: FAQ_ACCORDION_CARD,
+  SOCIAL_PROOF_SECTION: SOCIAL_PROOF_SECTION,
+  ARTICLE_PREVIEW_COMPONENT: ARTICLE_PREVIEW_COMPONENT,
+  FOUR_CARD_FEATURE_SECTION: FOUR_CARD_FEATURE_SECTION,
+  BASE_APPAREL_COMING_SOON_PAGE: BASE_APPAREL_COMING_SOON_PAGE,
+  INTRO_COMPONENT_WITH_SIGN_UP_FORM: INTRO_COMPONENT_WITH_SIGN_UP_FORM,
+  SINGLE_PRICE_GRID_COMPONENT: SINGLE_PRICE_GRID_COMPONENT,
+  PING_SINGLE_COLUMN_COMING_SOON_PAGE: PING_SINGLE_COLUMN_COMING_SOON_PAGE,
+  HUDDLE_LANDING_PAGE_WITH_A_SINGLE_INTRODUCTORY_SECTION: HUDDLE_LANDING_PAGE_WITH_A_SINGLE_INTRODUCTORY_SECTION,
+  ADVICE_GENERATOR_APP: ADVICE_GENERATOR_APP,
+  EXPENSES_CHART_COMPONENT: EXPENSES_CHART_COMPONENT,
+  TIP_CALCULATOR_APP: TIP_CALCULATOR_APP,
+  TESTIMONIALS_GRID_SECTION: TESTIMONIALS_GRID_SECTION,
+  SOCIAL_MEDIA_DASHBOARD_WITH_THEME_SWITCHER_MASTER: SOCIAL_MEDIA_DASHBOARD_WITH_THEME_SWITCHER_MASTER,
+  TIME_TRACKING_DASHBOARD: TIME_TRACKING_DASHBOARD,
+  AGE_CALCULATOR_APP: AGE_CALCULATOR_APP,
 }
 
 export default Images

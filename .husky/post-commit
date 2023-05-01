@@ -1,4 +1,0 @@
-#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
-npm run update-readme && git add README.md && git diff --quiet && git diff --staged --quiet || git commit -m "[bot] Se actualiza la tabla de challenges del README" 

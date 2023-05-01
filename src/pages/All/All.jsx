@@ -1,8 +1,34 @@
-import MuiBox from '@mui/material/Box'
+import MuiBox from '@mui/material/Box';
 import MuiCircularProgress from '@mui/material/CircularProgress'
 import MuiStack from '@mui/material/Stack'
-import { Suspense } from 'react'
-import { lazily } from 'react-lazily'
+import { Suspense, lazy } from 'react'
+
+const QRCodeComponent = lazy(() => import('@/challenges/qr-code-component'))
+const ProductPreviewCardComponent = lazy(() => import('@/challenges/product-preview-card-component'))
+const InteractiveRatingComponent = lazy(() => import('@/challenges/interactive-rating-component'))
+const NFTPreviewCardComponent = lazy(() => import('@/challenges/nft-preview-card-component'))
+const OrderSummaryComponent = lazy(() => import('@/challenges/order-summary-component'))
+const StatsPreviewCardComponent = lazy(() => import('@/challenges/stats-preview-card-component'))
+const ThreeColumnPreviewCardComponent = lazy(() => import('@/challenges/three-column-preview-card-component'))
+const ProfileCardComponent = lazy(() => import('@/challenges/profile-card-component'))
+const FAQAccordionCard = lazy(() => import('@/challenges/faq-accordion-card'))
+const SocialProofSection = lazy(() => import('@/challenges/social-proof-section'))
+const ArticlePreviewComponent = lazy(() => import('@/challenges/article-preview-component'))
+const FourCardFeatureSection = lazy(() => import('@/challenges/four-card-feature-section'))
+const BaseApparelComingSoonPage = lazy(() => import('@/challenges/base-apparel-coming-soon-page'))
+const IntroComponentWithSignUpForm = lazy(() => import('@/challenges/intro-component-with-sign-up-form'))
+const SinglePriceGridComponent = lazy(() => import('@/challenges/single-price-grid-component'))
+const PingSingleColumnComingSoonPage = lazy(() => import('@/challenges/ping-single-column-coming-soon-page'))
+const HuddleLandingPageWithASingleIntroductorySection = lazy(() =>
+  import('@/challenges/huddle-landing-page-with-a-single-introductory-section')
+)
+const AdviceGeneratorApp = lazy(() => import('@/challenges/advice-generator-app'))
+const ExpensesChartComponent = lazy(() => import('@/challenges/expenses-chart-component'))
+const TipCalculatorApp = lazy(() => import('@/challenges/tip-calculator-app'))
+const TestimonialsGridSection = lazy(() => import('@/challenges/testimonials-grid-section'))
+const SocialMediaDashboardWithThemeSwitcherMaster = lazy(() => import('@/challenges/social-media-dashboard-with-theme-switcher-master'))
+const TimeTrackingDashboard = lazy(() => import('@/challenges/time-tracking-dashboard'))
+const AgeCalculatorApp = lazy(() => import('@/challenges/age-calculator-app'))
 
 const ContainerCircularProgress = () => {
   return (
@@ -19,32 +45,6 @@ const ContainerCircularProgress = () => {
 }
 
 const All = () => {
-  const {
-    QRCodeComponent,
-    ProductPreviewCardComponent,
-    InteractiveRatingComponent,
-    NFTPreviewCardComponent,
-    OrderSummaryComponent,
-    StatsPreviewCardComponent,
-    ThreeColumnPreviewCardComponent,
-    ProfileCardComponent,
-    FAQAccordionCard,
-    SocialProofSection,
-    ArticlePreviewComponent,
-    FourCardFeatureSection,
-    BaseApparelComingSoonPage,
-    IntroComponentWithSignUpForm,
-    SinglePriceGridComponent,
-    PingSingleColumnComingSoonPage,
-    HuddleLandingPageWithASingleIntroductorySection,
-    AdviceGeneratorApp,
-    ExpensesChartComponent,
-    TipCalculatorApp,
-    TestimonialsGridSection,
-    SocialMediaDashboardWithThemeSwitcherMaster,
-    TimeTrackingDashboard,
-  } = lazily(() => import('../../challenges'))
-
   return (
     <MuiBox>
       <Suspense fallback={<ContainerCircularProgress />}>
@@ -137,6 +137,10 @@ const All = () => {
 
       <Suspense fallback={<ContainerCircularProgress />}>
         <TimeTrackingDashboard />
+      </Suspense>
+
+      <Suspense fallback={<ContainerCircularProgress />}>
+        <AgeCalculatorApp />
       </Suspense>
     </MuiBox>
   )

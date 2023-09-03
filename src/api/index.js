@@ -516,12 +516,12 @@ const Challens = [
         desktop_preview: Images.CALCULATOR_APP,
       },
       try_challenge: 'https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29',
-      solution: '',
+      solution: 'https://www.frontendmentor.io/solutions/calculator-app-0JVhYaDOct',
     },
     source_code: `${GH_REPOSITORY}/${Slugs.CALCULATOR_APP}`,
     live_preview: `${URL_BASE_PREVIEW}/${Slugs.CALCULATOR_APP}`,
     editables: {
-      codesandbox: '',
+      codesandbox: 'https://codesandbox.io/s/calculator-app-ncjn3v',
     },
   },
 ]

@@ -140,7 +140,7 @@ _**Nota**: el icono :test_tube: indica que dicho desafio tiene test unitarios._
 
 <!-- Difficulty intermediate -->
 
-[__live__i__1]: https://rfmc.vercel.app/c/age-calculator-app/calculator-app
+[__live__i__1]: https://rfmc.vercel.app/c/calculator-app
 
 <!-- ################################################## -->
 <!-- ############ Challenge links section ############ -->

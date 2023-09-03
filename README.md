@@ -1,6 +1,14 @@
-# Resolved frontendmentor challenges
+# Resolved frontendmentor.io challenges
 
 [![CodeFactor](https://www.codefactor.io/repository/github/javiluli/resolved-frontendmentor-challenges/badge)](https://www.codefactor.io/repository/github/javiluli/resolved-frontendmentor-challenges)
+
+Este proyecto junta los desafios de [frontendmentor.io](https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29). Este proyecto y los retos utilizan principalmente:
+
+- [Vite V.4](https://vitejs.dev/) y [Vitest](https://vitest.dev/)
+- [ReactJs V.18](https://es.legacy.reactjs.org/)
+- [MUI V.5](https://mui.com/material-ui/getting-started/)
+
+_**Nota**: el icono :test_tube: indica que dicho desafio tiene test unitarios._
 
 ## Difficulty Newbie
 
@@ -36,11 +44,17 @@
 | 6   | Time tracking dashboard                    | [:link:][__code__j__6] | [:link:][__live__j__6] | [:link:][__challenge__j__6] |
 | 7   | Age calculator app                         | [:link:][__code__j__7] | [:link:][__live__j__7] | [:link:][__challenge__j__7] |
 
+## Difficulty Intermediate
+
+| Nº  | Challenge name | Source code                                        | Live preview           | Try challenge               |
+| --- | -------------- | -------------------------------------------------- | ---------------------- | --------------------------- |
+| 1   | Calculator app | [:link:][__code__i__1] [:test_tube:][__test__i__1] | [:link:][__live__i__1] | [:link:][__challenge__i__1] |
+
 <!-- #################################################################################################### -->
 <!-- #################################### links to tables of contents ################################### -->
 <!-- #################################################################################################### -->
 
-<!-- _________________Legend_________________ -->
+<!-- ________________ Legend ________________ -->
 <!-- Difficulty Newbie (1) ---------- Slug: n -->
 <!-- Difficulty Junior (2) ---------- Slug: j -->
 <!-- Difficulty Intermediate (3) ---- Slug: i -->
@@ -80,6 +94,17 @@
 [__code__j__6]: https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/time-tracking-dashboard
 [__code__j__7]: https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/age-calculator-app
 
+<!-- Difficulty intermediate -->
+
+[__code__i__1]: https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/calculator-app
+
+<!-- ################################################## -->
+<!-- ############### Test links section ############### -->
+
+<!-- Difficulty intermediate -->
+
+[__test__i__1]: https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/calculator-app/components/CalculatorApp/CalculatorApp.test.jsx
+
 <!-- ################################################## -->
 <!-- ############### Live links section ############### -->
 
@@ -113,8 +138,12 @@
 [__live__j__6]: https://rfmc.vercel.app/c/time-tracking-dashboard
 [__live__j__7]: https://rfmc.vercel.app/c/age-calculator-app
 
+<!-- Difficulty intermediate -->
+
+[__live__i__1]: https://rfmc.vercel.app/c/age-calculator-app/calculator-app
+
 <!-- ################################################## -->
-<!-- ############# Challenge links section ############ -->
+<!-- ############ Challenge links section ############ -->
 
 <!-- Difficulty newbie  -->
 
@@ -145,3 +174,7 @@
 [__challenge__j__5]: https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H
 [__challenge__j__6]: https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw
 [__challenge__j__7]: https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q
+
+<!-- Difficulty intermediate -->
+
+[__challenge__i__1]: https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29

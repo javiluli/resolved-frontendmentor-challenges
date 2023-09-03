@@ -161,3 +161,44 @@ const theme = createTheme({
 
 export default theme
 ```
+
+1. Modelo de caja
+
+   - display
+   - box-sizing
+   - width
+   - height
+   - margin
+   - padding
+   - border
+   - border-radius
+
+2. Tipografía
+
+   - font-family
+   - font-size
+   - font-weight
+   - font-style
+   - line-height
+   - text-align
+   - text-transform
+   - letter-spacing
+   - text-decoration
+
+3. Color y fondo
+
+   - color
+   - background-color
+   - background-image
+   - background-position
+   - background-size
+   - background-repeat
+   - border-color
+   - border-style
+
+4. Efectos
+   - box-shadow
+   - text-shadow
+   - transition
+   - transform
+   - scroll-behavior

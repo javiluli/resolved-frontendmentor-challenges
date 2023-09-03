@@ -2,6 +2,7 @@ import ADVICE_GENERATOR_APP from '@/challenges/advice-generator-app/design/deskt
 import AGE_CALCULATOR_APP from '@/challenges/age-calculator-app/design/desktop-preview.jpg'
 import ARTICLE_PREVIEW_COMPONENT from '@/challenges/article-preview-component/design/desktop-preview.jpg'
 import BASE_APPAREL_COMING_SOON_PAGE from '@/challenges/base-apparel-coming-soon-page/design/desktop-preview.jpg'
+import CALCULATOR_APP from '@/challenges/calculator-app/design/desktop-preview.jpg'
 import EXPENSES_CHART_COMPONENT from '@/challenges/expenses-chart-component/design/desktop-preview.jpg'
 import FAQ_ACCORDION_CARD from '@/challenges/faq-accordion-card/design/desktop-preview.jpg'
 import FOUR_CARD_FEATURE_SECTION from '@/challenges/four-card-feature-section/design/desktop-preview.jpg'
@@ -48,6 +49,7 @@ const Images = {
   SOCIAL_MEDIA_DASHBOARD_WITH_THEME_SWITCHER_MASTER: SOCIAL_MEDIA_DASHBOARD_WITH_THEME_SWITCHER_MASTER,
   TIME_TRACKING_DASHBOARD: TIME_TRACKING_DASHBOARD,
   AGE_CALCULATOR_APP: AGE_CALCULATOR_APP,
+  CALCULATOR_APP: CALCULATOR_APP,
 }
 
 export default Images

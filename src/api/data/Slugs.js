@@ -23,6 +23,7 @@ const Slugs = {
   SOCIAL_MEDIA_DASHBOARD_WITH_THEME_SWITCHER_MASTER: 'social-media-dashboard-with-theme-switcher-master',
   TIME_TRACKING_DASHBOARD: 'time-tracking-dashboard',
   AGE_CALCULATOR_APP: 'age-calculator-app',
+  CALCULATOR_APP: 'calculator-app',
 }
 
 export default Slugs

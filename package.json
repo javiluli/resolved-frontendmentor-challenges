@@ -6,32 +6,38 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest"
   },
   "dependencies": {
-    "@emotion/react": "11.10.8",
-    "@emotion/styled": "11.10.8",
-    "@fontsource/roboto": "4.5.8",
-    "@mui/icons-material": "5.11.16",
-    "@mui/lab": "5.0.0-alpha.128",
-    "@mui/material": "5.12.2",
-    "@mui/styled-engine-sc": "5.12.0",
+    "@emotion/react": "11.11.1",
+    "@emotion/styled": "11.11.0",
+    "@fontsource/roboto": "5.0.8",
+    "@mui/icons-material": "5.14.7",
+    "@mui/lab": "5.0.0-alpha.142",
+    "@mui/material": "5.14.7",
+    "@mui/styled-engine-sc": "5.14.7",
+    "mathjs": "11.10.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-hook-form": "7.43.9",
-    "react-router-dom": "6.11.0",
-    "styled-components": "5.3.10"
+    "react-hook-form": "7.46.0",
+    "react-router-dom": "6.15.0",
+    "styled-components": "6.0.7"
   },
   "devDependencies": {
-    "@hookform/resolvers": "3.1.0",
-    "@trivago/prettier-plugin-sort-imports": "4.1.1",
-    "@types/react": "18.2.0",
-    "@types/react-dom": "18.2.1",
-    "@vitejs/plugin-react": "4.0.0",
-    "@vue/compiler-sfc": "3.2.47",
+    "@hookform/resolvers": "3.3.1",
+    "@testing-library/jest-dom": "6.1.2",
+    "@testing-library/react": "14.0.0",
+    "@trivago/prettier-plugin-sort-imports": "4.2.0",
+    "@types/react": "18.2.21",
+    "@types/react-dom": "18.2.7",
+    "@vitejs/plugin-react": "4.0.4",
+    "@vue/compiler-sfc": "3.3.4",
+    "jsdom": "22.1.0",
     "path": "0.12.7",
-    "prettier": "2.8.8",
-    "vite": "4.3.3",
-    "zod": "3.21.4"
+    "prettier": "3.0.3",
+    "vite": "4.4.9",
+    "vitest": "0.34.3",
+    "zod": "3.22.2"
   }
 }

@@ -503,6 +503,27 @@ const Challens = [
       codesandbox: 'https://codesandbox.io/s/age-calculator-app-4vtzgw',
     },
   },
+  {
+    id: '25',
+    slug: Slugs.CALCULATOR_APP,
+    frontendmentor: {
+      title: 'Calculator app',
+      description:
+        "This calculator app will be a great test of your CSS and JS skills especially. If you're wanting to practice using Grid, this challenge will be perfect for you!",
+      languages: [Languages.HTML, Languages.CSS, Languages.JS],
+      difficulty: Difficulty.INTERMEDIATE,
+      images: {
+        desktop_preview: Images.CALCULATOR_APP,
+      },
+      try_challenge: 'https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29',
+      solution: '',
+    },
+    source_code: `${GH_REPOSITORY}/${Slugs.CALCULATOR_APP}`,
+    live_preview: `${URL_BASE_PREVIEW}/${Slugs.CALCULATOR_APP}`,
+    editables: {
+      codesandbox: '',
+    },
+  },
 ]
 
 export default Challens

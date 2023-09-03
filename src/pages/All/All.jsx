@@ -29,6 +29,7 @@ const TestimonialsGridSection = lazy(() => import('@/challenges/testimonials-gri
 const SocialMediaDashboardWithThemeSwitcherMaster = lazy(() => import('@/challenges/social-media-dashboard-with-theme-switcher-master'))
 const TimeTrackingDashboard = lazy(() => import('@/challenges/time-tracking-dashboard'))
 const AgeCalculatorApp = lazy(() => import('@/challenges/age-calculator-app'))
+const CalculatorApp = lazy(() => import('@/challenges/calculator-app'))
 
 const ContainerCircularProgress = () => {
   return (
@@ -141,6 +142,10 @@ const All = () => {
 
       <Suspense fallback={<ContainerCircularProgress />}>
         <AgeCalculatorApp />
+      </Suspense>
+
+      <Suspense fallback={<ContainerCircularProgress />}>
+        <CalculatorApp />
       </Suspense>
     </MuiBox>
   )

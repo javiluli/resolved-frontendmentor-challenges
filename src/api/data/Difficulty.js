@@ -9,5 +9,10 @@ const Difficulty = {
     description: 'junior',
     level: 2,
   },
+  INTERMEDIATE: {
+    color: 'hsl(45.1, 96.7%, 48%)',
+    description: 'intermediate',
+    level: 3,
+  },
 }
 export default Difficulty

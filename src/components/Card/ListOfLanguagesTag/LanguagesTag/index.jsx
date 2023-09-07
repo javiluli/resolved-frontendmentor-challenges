@@ -1,18 +1,13 @@
-import MuiBox from '@mui/material/Box'
-import MuiTypography from '@mui/material/Typography'
+import MuiChip from '@mui/material/Chip'
 
-const LanguagesTag = ({ language, color }) => {
+const LanguagesTag = ({ language }) => {
   return (
-    <MuiBox sx={{ border: `1px solid ${color}`, borderRadius: 1.5, overflow: 'hidden' }}>
-      <MuiTypography
-        variant="subtitle2"
-        component="span"
-        align="center"
-        sx={{ px: 0.85, py: 0.65, color: '#ffffff', backgroundColor: color }}
-      >
-        {language}
-      </MuiTypography>
-    </MuiBox>
+    <MuiChip
+      label={language}
+      variant="outlined"
+      size="small"
+      sx={{ color: `languagesTags.${language}`, borderColor: `languagesTags.${language}` }}
+    />
   )
 }
 

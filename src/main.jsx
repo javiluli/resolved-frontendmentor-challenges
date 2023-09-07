@@ -13,10 +13,10 @@ import App from './App'
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <CssBaseline />
-    <ColorContextProvider>
-      <Routes>
-        <Route path="/*" element={<App />} />
-      </Routes>
-    </ColorContextProvider>
-  </BrowserRouter>
+    {/* <ColorContextProvider> */}
+    <Routes>
+      <Route path="/*" element={<App />} />
+    </Routes>
+    {/* </ColorContextProvider> */}
+  </BrowserRouter>,
 )

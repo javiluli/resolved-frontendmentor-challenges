@@ -1,4 +1,4 @@
-import CodeIcon from '@mui/icons-material/Code'
+import MuiCodeIcon from '@mui/icons-material/Code'
 import MuiBox from '@mui/material/Box'
 import MuiCard from '@mui/material/Card'
 import MuiCardActions from '@mui/material/CardActions'
@@ -55,7 +55,7 @@ const Card = ({ data }) => {
         sx={{
           minWidth: 200,
           border: 'none',
-          borderRadius: 4,
+          borderRadius: 6,
           boxShadow: '0px 0px 2px 0px rgba(17, 12, 46, 0.2)',
           transition: 'all 250ms cubic-bezier(0.2, 0, 0.2, 1) 0ms',
           ':hover': { boxShadow: '0px 0px 20px 0px rgba(17, 12, 46, 0.1)', transform: 'translateY(-3px)' },
@@ -83,7 +83,7 @@ const Card = ({ data }) => {
           </MuiGrid>
 
           <Link to={`/c/${slug}`} style={{ textDecoration: 'none' }}>
-            <MuiTypography variant="h6" component="h1" sx={{ color: 'text.primary', fontWeight: 900 }} gutterBottom>
+            <MuiTypography variant="subtitle1" component="h1" sx={{ color: 'text.primary', fontWeight: 900 }} gutterBottom>
               {title}
             </MuiTypography>
           </Link>
@@ -99,7 +99,7 @@ const Card = ({ data }) => {
             <MuiTooltip title="View the source on GitHub" placement="top">
               <MuiLink href={source_code} target="_blank" rel="noopener" underline="none">
                 <MuiIconButton aria-label="Github" sx={{ color: 'text.secondary' }}>
-                  <CodeIcon sx={{ fontSize: '1.25rem' }} />
+                  <MuiCodeIcon sx={{ fontSize: '1.25rem' }} />
                 </MuiIconButton>
               </MuiLink>
             </MuiTooltip>

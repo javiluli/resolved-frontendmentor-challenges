@@ -7,7 +7,6 @@ import globals from './base/globals'
 import shadows from './base/shadows'
 import typography from './base/typography'
 import pxToRem from './functions/pxToRem'
-import chip from './components/chip'
 
 export default createTheme({
   breakpoints: { ...breakpoints },
@@ -25,7 +24,5 @@ export default createTheme({
         ...globals,
       },
     },
-
-    MuiChip: { ...chip },
   },
 })

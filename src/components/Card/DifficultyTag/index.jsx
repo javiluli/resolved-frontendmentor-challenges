@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import MuiChip from '@mui/material/Chip'
 
 const DifficultyTag = ({ difficulty }) => {
@@ -5,7 +7,7 @@ const DifficultyTag = ({ difficulty }) => {
 
   return (
     <MuiChip
-      label={`${level} | ${description}`}
+      label={`${description}`}
       variant="filled"
       size="small"
       sx={{ bgcolor: `difficultyTags.${description}`, borderColor: `difficultyTags.${description}` }}

@@ -1,0 +1,470 @@
+[
+  {
+    "id": "qr-code-component",
+    "title": "QR code component",
+    "description": "A perfect first challenge if you're new to HTML and CSS. The card layout doesn't shift, so it's ideal if you haven't learned about building responsive layouts yet.",
+    "difficulty": { "color": "hsl(189, 50%, 61%)", "description": "newbie", "level": 1 },
+    "languages": ["HTML", "CSS"],
+    "images": {
+      "desktop_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/qr-code-component/design/desktop-design.jpg",
+      "desktop_preview": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/qr-code-component/design/desktop-preview.jpg",
+      "mobile_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/qr-code-component/design/mobile-design.jpg"
+    },
+    "live_preview": "https://rfmc.vercel.app/c/qr-code-component",
+    "source_code": "https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/qr-code-component",
+    "codesandbox": "https://codesandbox.io/s/qr-code-component-wefu2n",
+    "try_challenge": "https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H",
+    "solution": "https://www.frontendmentor.io/solutions/qr-code-component-cwv9rkFAiN",
+    "test_state": ":triangular_flag_on_post:"
+  },
+  {
+    "id": "product-preview-card-component",
+    "title": "Product preview card component",
+    "description": "This HTML & CSS-only challenge will be perfect for anyone starting to build responsive projects.",
+    "difficulty": { "color": "hsl(189, 50%, 61%)", "description": "newbie", "level": 1 },
+    "languages": ["HTML", "CSS"],
+    "images": {
+      "desktop_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/product-preview-card-component/design/desktop-design.jpg",
+      "desktop_preview": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/product-preview-card-component/design/desktop-preview.jpg",
+      "mobile_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/product-preview-card-component/design/mobile-design.jpg"
+    },
+    "live_preview": "https://rfmc.vercel.app/c/product-preview-card-component",
+    "source_code": "https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/product-preview-card-component",
+    "codesandbox": "https://codesandbox.io/s/product-preview-card-component-w920pf",
+    "try_challenge": "https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa",
+    "solution": "https://www.frontendmentor.io/solutions/product-preview-card-component-o-yrShdyiW",
+    "test_state": ":triangular_flag_on_post:"
+  },
+  {
+    "id": "interactive-rating-component",
+    "title": "Interactive rating component",
+    "description": "This is a nice, small project to practice handling user interactions and updating the DOM. Perfect for anyone who has learned the basics of JavaScript!",
+    "difficulty": { "color": "hsl(189, 50%, 61%)", "description": "newbie", "level": 1 },
+    "languages": ["HTML", "CSS", "JS"],
+    "images": {
+      "desktop_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/interactive-rating-component/design/desktop-design.jpg",
+      "desktop_preview": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/interactive-rating-component/design/desktop-preview.jpg",
+      "mobile_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/interactive-rating-component/design/mobile-design.jpg"
+    },
+    "live_preview": "https://rfmc.vercel.app/c/interactive-rating-component",
+    "source_code": "https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/interactive-rating-component",
+    "codesandbox": "https://codesandbox.io/s/interactive-rating-component-65wjv7",
+    "try_challenge": "https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI",
+    "solution": "https://www.frontendmentor.io/solutions/interactive-rating-component-pMXCKoDsXU",
+    "test_state": ":heavy_check_mark:"
+  },
+  {
+    "id": "nft-preview-card-component",
+    "title": "NFT preview card component",
+    "description": "This HTML & CSS only challenge is perfect for anyone just starting out or anyone wanting a small project to play around with.",
+    "difficulty": { "color": "hsl(189, 50%, 61%)", "description": "newbie", "level": 1 },
+    "languages": ["HTML", "CSS"],
+    "images": {
+      "desktop_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/nft-preview-card-component/design/desktop-design.jpg",
+      "desktop_preview": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/nft-preview-card-component/design/desktop-preview.jpg",
+      "mobile_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/nft-preview-card-component/design/mobile-design.jpg"
+    },
+    "live_preview": "https://rfmc.vercel.app/c/nft-preview-card-component",
+    "source_code": "https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/nft-preview-card-component",
+    "codesandbox": "https://codesandbox.io/s/nft-preview-card-component-sq8cm6",
+    "try_challenge": "https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U",
+    "solution": "https://www.frontendmentor.io/solutions/nft-preview-card-component-nEcLjRkVAA",
+    "test_state": ":triangular_flag_on_post:"
+  },
+  {
+    "id": "order-summary-component",
+    "title": "Order summary component",
+    "description": "A perfect project for newbies who are starting to build confidence with layouts!",
+    "difficulty": { "color": "hsl(189, 50%, 61%)", "description": "newbie", "level": 1 },
+    "languages": ["HTML", "CSS"],
+    "images": {
+      "desktop_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/order-summary-component/design/desktop-design.jpg",
+      "desktop_preview": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/order-summary-component/design/desktop-preview.jpg",
+      "mobile_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/order-summary-component/design/mobile-design.jpg"
+    },
+    "live_preview": "https://rfmc.vercel.app/c/order-summary-component",
+    "source_code": "https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/order-summary-component",
+    "codesandbox": "https://codesandbox.io/s/order-summary-component-grfw35",
+    "try_challenge": "https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj",
+    "solution": "https://www.frontendmentor.io/solutions/order-summary-component-9l521TJWQ9",
+    "test_state": ":triangular_flag_on_post:"
+  },
+  {
+    "id": "stats-preview-card-component",
+    "title": "Stats preview card component",
+    "description": "This is a great small challenge to help get you used to building to a design. There's no JS in this project, so you'll be able to focus on your HTML & CSS skills.",
+    "difficulty": { "color": "hsl(189, 50%, 61%)", "description": "newbie", "level": 1 },
+    "languages": ["HTML", "CSS"],
+    "images": {
+      "desktop_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/stats-preview-card-component/design/desktop-design.jpg",
+      "desktop_preview": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/stats-preview-card-component/design/desktop-preview.jpg",
+      "mobile_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/stats-preview-card-component/design/mobile-design.jpg"
+    },
+    "live_preview": "https://rfmc.vercel.app/c/stats-preview-card-component",
+    "source_code": "https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/stats-preview-card-component",
+    "codesandbox": "https://codesandbox.io/s/stats-preview-card-component-zyb50y",
+    "try_challenge": "https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62",
+    "solution": "https://www.frontendmentor.io/solutions/stats-preview-card-component-zWZi0ZcXBd",
+    "test_state": ":triangular_flag_on_post:"
+  },
+  {
+    "id": "three-column-preview-card-component",
+    "title": "3-column preview card component",
+    "description": "This challenge is perfect if you're just getting started. The shift between the layouts will be a nice test if you're new to building responsive projects.",
+    "difficulty": { "color": "hsl(189, 50%, 61%)", "description": "newbie", "level": 1 },
+    "languages": ["HTML", "CSS"],
+    "images": {
+      "desktop_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/three-column-preview-card-component/design/desktop-design.jpg",
+      "desktop_preview": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/three-column-preview-card-component/design/desktop-preview.jpg",
+      "mobile_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/three-column-preview-card-component/design/mobile-design.jpg"
+    },
+    "live_preview": "https://rfmc.vercel.app/c/three-column-preview-card-component",
+    "source_code": "https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/three-column-preview-card-component",
+    "codesandbox": "https://codesandbox.io/s/3-column-preview-card-component-9kd1cz",
+    "try_challenge": "https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-",
+    "solution": "https://www.frontendmentor.io/solutions/3column-preview-card-component-nYGCE8N2Uf",
+    "test_state": ":triangular_flag_on_post:"
+  },
+  {
+    "id": "profile-card-component",
+    "title": "Profile card component",
+    "description": "This is a perfect challenge to test your layout skills. The card layout doesn't shift, so it's also great for those that haven't dived into responsive websites yet!",
+    "difficulty": { "color": "hsl(189, 50%, 61%)", "description": "newbie", "level": 1 },
+    "languages": ["HTML", "CSS"],
+    "images": {
+      "desktop_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/profile-card-component/design/desktop-design.jpg",
+      "desktop_preview": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/profile-card-component/design/desktop-preview.jpg",
+      "mobile_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/profile-card-component/design/mobile-design.jpg"
+    },
+    "live_preview": "https://rfmc.vercel.app/c/profile-card-component",
+    "source_code": "https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/profile-card-component",
+    "codesandbox": "https://codesandbox.io/s/profile-card-component-61q7uf",
+    "try_challenge": "https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ",
+    "solution": "https://www.frontendmentor.io/solutions/profile-card-component-OGEgRZRIWD",
+    "test_state": ":triangular_flag_on_post:"
+  },
+  {
+    "id": "faq-accordion-card",
+    "title": "FAQ accordion card",
+    "description": "In this challenge, you'll be building out an FAQ accordion. This is an extremely common front-end pattern, so it's a great opportunity to get some practice in!",
+    "difficulty": { "color": "hsl(189, 50%, 61%)", "description": "newbie", "level": 1 },
+    "languages": ["HTML", "CSS", "JS"],
+    "images": {
+      "desktop_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/faq-accordion-card/design/desktop-design.jpg",
+      "desktop_preview": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/faq-accordion-card/design/desktop-preview.jpg",
+      "mobile_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/faq-accordion-card/design/mobile-design.jpg"
+    },
+    "live_preview": "https://rfmc.vercel.app/c/faq-accordion-card",
+    "source_code": "https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/faq-accordion-card",
+    "codesandbox": "https://codesandbox.io/s/faq-accordion-card-n9xj0b",
+    "try_challenge": "https://www.frontendmentor.io/challenges/faq-accordion-card-XlyjD0Oam",
+    "solution": "https://www.frontendmentor.io/solutions/faq-accordion-card-PBkVPesRW1",
+    "test_state": ":x:"
+  },
+  {
+    "id": "social-proof-section",
+    "title": "Social proof section",
+    "description": "This project will test your layout skills. If you're starting to get confident with Flexbox or Grid, this will provide a nice challenge!",
+    "difficulty": { "color": "hsl(189, 50%, 61%)", "description": "newbie", "level": 1 },
+    "languages": ["HTML", "CSS"],
+    "images": {
+      "desktop_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/social-proof-section/design/desktop-design.jpg",
+      "desktop_preview": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/social-proof-section/design/desktop-preview.jpg",
+      "mobile_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/social-proof-section/design/mobile-design.jpg"
+    },
+    "live_preview": "https://rfmc.vercel.app/c/social-proof-section",
+    "source_code": "https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/social-proof-section",
+    "codesandbox": "https://codesandbox.io/s/social-proof-section-44hk0o",
+    "try_challenge": "https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA",
+    "solution": "https://www.frontendmentor.io/solutions/social-proof-section-60RpGfBk_d",
+    "test_state": ":triangular_flag_on_post:"
+  },
+  {
+    "id": "article-preview-component",
+    "title": "Article preview component",
+    "description": "Practice your layout skills with this article preview component. There's lots of fun to be had playing around with animations for the sharing icons as well.",
+    "difficulty": { "color": "hsl(189, 50%, 61%)", "description": "newbie", "level": 1 },
+    "languages": ["HTML", "CSS", "JS"],
+    "images": {
+      "desktop_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/article-preview-component/design/desktop-design.jpg",
+      "desktop_preview": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/article-preview-component/design/desktop-preview.jpg",
+      "mobile_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/article-preview-component/design/mobile-design.jpg"
+    },
+    "live_preview": "https://rfmc.vercel.app/c/article-preview-component",
+    "source_code": "https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/article-preview-component",
+    "codesandbox": "https://codesandbox.io/s/article-preview-component-qsqvj0",
+    "try_challenge": "https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT",
+    "solution": "https://www.frontendmentor.io/solutions/article-preview-component-d3_gdzxc4h",
+    "test_state": ":x:"
+  },
+  {
+    "id": "four-card-feature-section",
+    "title": "Four card feature section",
+    "description": "A nice layout-based challenge for beginners. This will test anyone who is new to multi-column and responsive layouts.",
+    "difficulty": { "color": "hsl(189, 50%, 61%)", "description": "newbie", "level": 1 },
+    "languages": ["HTML", "CSS"],
+    "images": {
+      "desktop_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/four-card-feature-section/design/desktop-design.jpg",
+      "desktop_preview": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/four-card-feature-section/design/desktop-preview.jpg",
+      "mobile_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/four-card-feature-section/design/mobile-design.jpg"
+    },
+    "live_preview": "https://rfmc.vercel.app/c/four-card-feature-section",
+    "source_code": "https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/four-card-feature-section",
+    "codesandbox": "https://codesandbox.io/s/four-card-feature-section-fu4600",
+    "try_challenge": "https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK",
+    "solution": "https://www.frontendmentor.io/solutions/four-card-feature-section-lMUT30jERe",
+    "test_state": ":triangular_flag_on_post:"
+  },
+  {
+    "id": "base-apparel-coming-soon-page",
+    "title": "Base Apparel coming soon page",
+    "description": "This layout looks simple enough, but there are some interesting details to it that will test your CSS skills. You'll also get to practice basic form validation.",
+    "difficulty": { "color": "hsl(189, 50%, 61%)", "description": "newbie", "level": 1 },
+    "languages": ["HTML", "CSS", "JS"],
+    "images": {
+      "desktop_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/base-apparel-coming-soon-page/design/desktop-design.jpg",
+      "desktop_preview": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/base-apparel-coming-soon-page/design/desktop-preview.jpg",
+      "mobile_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/base-apparel-coming-soon-page/design/mobile-design.jpg"
+    },
+    "live_preview": "https://rfmc.vercel.app/c/base-apparel-coming-soon-page",
+    "source_code": "https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/base-apparel-coming-soon-page",
+    "codesandbox": "https://codesandbox.io/s/base-apparel-coming-soon-page-uu7st8",
+    "try_challenge": "https://www.frontendmentor.io/challenges/base-apparel-coming-soon-page-5d46b47f8db8a7063f9331a0",
+    "solution": "https://www.frontendmentor.io/solutions/base-apparel-coming-soon-page-z1Qs4JhKYW",
+    "test_state": ":heavy_check_mark:"
+  },
+  {
+    "IdleDeadline": "intro-component-with-sign-up-form",
+    "title": "Intro component with sign-up form",
+    "description": "Practice building out a sign-up form complete with client-side validation using JavaScript.",
+    "difficulty": { "color": "hsl(189, 50%, 61%)", "description": "newbie", "level": 1 },
+    "languages": ["HTML", "CSS", "JS"],
+    "images": {
+      "desktop_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/intro-component-with-sign-up-form/design/desktop-design.jpg",
+      "desktop_preview": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/intro-component-with-sign-up-form/design/desktop-preview.jpg",
+      "mobile_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/intro-component-with-sign-up-form/design/mobile-design.jpg"
+    },
+    "live_preview": "https://rfmc.vercel.app/c/intro-component-with-sign-up-form",
+    "source_code": "https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/intro-component-with-sign-up-form",
+    "codesandbox": "https://codesandbox.io/s/intro-component-with-sign-up-form-n446il",
+    "try_challenge": "https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1",
+    "solution": "https://www.frontendmentor.io/solutions/intro-component-with-signup-form-hFVxI4wvEl",
+    "test_state": ":x:"
+  },
+  {
+    "id": "single-price-grid-component",
+    "title": "Single price grid component",
+    "description": "In this challenge, you will build out the pricing component to the designs provided. This is perfect for beginners and people who want to complete a smaller challenge.",
+    "difficulty": { "color": "hsl(189, 50%, 61%)", "description": "newbie", "level": 1 },
+    "languages": ["HTML", "CSS"],
+    "images": {
+      "desktop_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/single-price-grid-component/design/desktop-design.jpg",
+      "desktop_preview": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/single-price-grid-component/design/desktop-preview.jpg",
+      "mobile_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/single-price-grid-component/design/mobile-design.jpg"
+    },
+    "live_preview": "https://rfmc.vercel.app/c/single-price-grid-component",
+    "source_code": "https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/single-price-grid-component",
+    "codesandbox": "https://codesandbox.io/s/single-price-grid-component-v2pdlx",
+    "try_challenge": "https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc",
+    "solution": "https://www.frontendmentor.io/solutions/single-price-grid-component-wqzYhETg04",
+    "test_state": ":triangular_flag_on_post:"
+  },
+  {
+    "id": "ping-single-column-coming-soon-page",
+    "title": "Ping single column coming soon page",
+    "description": "This challenge is great for beginners and offers a chance to practice basic client-side form validation.",
+    "difficulty": { "color": "hsl(189, 50%, 61%)", "description": "newbie", "level": 1 },
+    "languages": ["HTML", "CSS", "JS"],
+    "images": {
+      "desktop_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/ping-single-column-coming-soon-page/design/desktop-design.jpg",
+      "desktop_preview": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/ping-single-column-coming-soon-page/design/desktop-preview.jpg",
+      "mobile_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/ping-single-column-coming-soon-page/design/mobile-design.jpg"
+    },
+    "live_preview": "https://rfmc.vercel.app/c/ping-single-column-coming-soon-page",
+    "source_code": "https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/ping-single-column-coming-soon-page",
+    "codesandbox": "https://codesandbox.io/s/ping-single-column-coming-soon-page-mmgkiv",
+    "try_challenge": "https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da",
+    "solution": "https://www.frontendmentor.io/solutions/ping-single-column-coming-soon-page-sIycp6lX6Q",
+    "test_state": ":x:"
+  },
+  {
+    "id": "huddle-landing-page-with-a-single-introductory-section",
+    "title": "Huddle landing page with a single introductory section",
+    "description": "A perfect challenge for beginners, this project will get you working with a two column layout.",
+    "difficulty": { "color": "hsl(189, 50%, 61%)", "description": "newbie", "level": 1 },
+    "languages": ["HTML", "CSS"],
+    "images": {
+      "desktop_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/huddle-landing-page-with-a-single-introductory-section/design/desktop-design.jpg",
+      "desktop_preview": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/huddle-landing-page-with-a-single-introductory-section/design/desktop-preview.jpg",
+      "mobile_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/huddle-landing-page-with-a-single-introductory-section/design/mobile-design.jpg"
+    },
+    "live_preview": "https://rfmc.vercel.app/c/huddle-landing-page-with-a-single-introductory-section",
+    "source_code": "https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/huddle-landing-page-with-a-single-introductory-section",
+    "codesandbox": "https://codesandbox.io/s/huddle-landing-page-with-a-single-introductory-section-v3gmdb",
+    "try_challenge": "https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0",
+    "solution": "https://www.frontendmentor.io/solutions/huddle-landing-page-with-a-single-introductory-section-AbFllpYPzv",
+    "test_state": ":triangular_flag_on_post:"
+  },
+  {
+    "id": "advice-generator-app",
+    "title": "Advice generator app",
+    "description": "The perfect project if you're learning how to interact with 3rd-party APIs. This challenge uses the Advice Slip API to generate random quotes of advice.",
+    "difficulty": { "color": "hsl(78, 65%, 55%)", "description": "junior", "level": 2 },
+    "languages": ["HTML", "CSS", "JS", "API"],
+    "images": {
+      "desktop_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/advice-generator-app/design/desktop-design.jpg",
+      "desktop_preview": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/advice-generator-app/design/desktop-preview.jpg",
+      "mobile_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/advice-generator-app/design/mobile-design.jpg"
+    },
+    "live_preview": "https://rfmc.vercel.app/c/advice-generator-app",
+    "source_code": "https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/advice-generator-app",
+    "codesandbox": "https://codesandbox.io/s/advice-generator-app-5xcr0d",
+    "try_challenge": "https://www.frontendmentor.io/challenges/advice-generator-app-QdUG-13db",
+    "solution": "https://www.frontendmentor.io/solutions/advice-generator-app-EjsrPJtwZo",
+    "test_state": ":x:"
+  },
+  {
+    "id": "expenses-chart-component",
+    "title": "Expenses chart component",
+    "description": "In this challenge, you'll create a bar chart component from scratch. We provide a local JSON file, so you can add the chart data dynamically if you choose.",
+    "difficulty": { "color": "hsl(78, 65%, 55%)", "description": "junior", "level": 2 },
+    "languages": ["HTML", "CSS", "JS"],
+    "images": {
+      "desktop_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/expenses-chart-component/design/desktop-design.jpg",
+      "desktop_preview": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/expenses-chart-component/design/desktop-preview.jpg",
+      "mobile_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/expenses-chart-component/design/mobile-design.jpg"
+    },
+    "live_preview": "https://rfmc.vercel.app/c/expenses-chart-component",
+    "source_code": "https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/expenses-chart-component",
+    "codesandbox": "https://codesandbox.io/s/expenses-chart-component-e30ehu",
+    "try_challenge": "https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt",
+    "solution": "https://www.frontendmentor.io/solutions/expenses-chart-component-cLzHSD7asY",
+    "test_state": ":x:"
+  },
+  {
+    "id": "tip-calculator-app",
+    "title": "Tip calculator app",
+    "description": "This small app is perfect for anyone starting to get to grips with JavaScript. The calculator functionality will be a nice test!",
+    "difficulty": { "color": "hsl(78, 65%, 55%)", "description": "junior", "level": 2 },
+    "languages": ["HTML", "CSS", "JS"],
+    "images": {
+      "desktop_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/tip-calculator-app/design/desktop-design.jpg",
+      "desktop_preview": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/tip-calculator-app/design/desktop-preview.jpg",
+      "mobile_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/tip-calculator-app/design/mobile-design.jpg"
+    },
+    "live_preview": "https://rfmc.vercel.app/c/tip-calculator-app",
+    "source_code": "https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/tip-calculator-app",
+    "codesandbox": "https://codesandbox.io/s/tip-calculator-app-m3787n",
+    "try_challenge": "https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX",
+    "solution": "https://www.frontendmentor.io/solutions/tip-calculator-app-iMdttbN_Gn",
+    "test_state": ":x:"
+  },
+  {
+    "id": "testimonials-grid-section",
+    "title": "Testimonials grid section",
+    "description": "This challenge will be perfect practice for anyone wanting to test their CSS Grid skills. Grid is such a powerful addition to CSS, so it's worth getting to grips with it!",
+    "difficulty": { "color": "hsl(78, 65%, 55%)", "description": "junior", "level": 2 },
+    "languages": ["HTML", "CSS"],
+    "images": {
+      "desktop_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/testimonials-grid-section/design/desktop-design.jpg",
+      "desktop_preview": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/testimonials-grid-section/design/desktop-preview.jpg",
+      "mobile_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/testimonials-grid-section/design/mobile-design.jpg"
+    },
+    "live_preview": "https://rfmc.vercel.app/c/testimonials-grid-section",
+    "source_code": "https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/testimonials-grid-section",
+    "codesandbox": "https://codesandbox.io/s/testimonials-grid-section-b6rqqn",
+    "try_challenge": "https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7",
+    "solution": "https://www.frontendmentor.io/solutions/testimonials-grid-section-iAjaE4qFnF",
+    "test_state": ":triangular_flag_on_post:"
+  },
+  {
+    "id": "social-media-dashboard-with-theme-switcher-master",
+    "title": "Social media dashboard with theme switcher",
+    "description": "This challenge will be a perfect chance to practice your Grid skills. The color theme switcher also adds a nice additional test.",
+    "difficulty": { "color": "hsl(78, 65%, 55%)", "description": "junior", "level": 2 },
+    "languages": ["HTML", "CSS", "JS"],
+    "images": {
+      "desktop_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/social-media-dashboard-with-theme-switcher-master/design/desktop-design.jpg",
+      "desktop_preview": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/social-media-dashboard-with-theme-switcher-master/design/desktop-preview.jpg",
+      "mobile_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/social-media-dashboard-with-theme-switcher-master/design/mobile-design.jpg"
+    },
+    "live_preview": "https://rfmc.vercel.app/c/social-media-dashboard-with-theme-switcher-master",
+    "source_code": "https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/social-media-dashboard-with-theme-switcher-master",
+    "codesandbox": "https://codesandbox.io/s/social-media-dashboard-with-theme-switcher-j5vne0",
+    "try_challenge": "https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H",
+    "solution": "https://www.frontendmentor.io/solutions/social-media-dashboard-with-theme-switcher-NBoExQGMDt",
+    "test_state": ":triangular_flag_on_post:"
+  },
+  {
+    "id": "time-tracking-dashboard",
+    "title": "Time tracking dashboard",
+    "description": "A perfect opportunity to practice your CSS Grid skills. For anyone wanting to take it up a notch, we provide a JSON data file to practice working with data.",
+    "difficulty": { "color": "hsl(78, 65%, 55%)", "description": "junior", "level": 2 },
+    "languages": ["HTML", "CSS", "JS"],
+    "images": {
+      "desktop_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/time-tracking-dashboard/design/desktop-design.jpg",
+      "desktop_preview": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/time-tracking-dashboard/design/desktop-preview.jpg",
+      "mobile_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/time-tracking-dashboard/design/mobile-design.jpg"
+    },
+    "live_preview": "https://rfmc.vercel.app/c/time-tracking-dashboard",
+    "source_code": "https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/time-tracking-dashboard",
+    "codesandbox": "https://codesandbox.io/s/time-tracking-dashboard-j0e0cn",
+    "try_challenge": "https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw",
+    "solution": "https://www.frontendmentor.io/solutions/time-tracking-dashboard-V70uZ_-dsV",
+    "test_state": ":triangular_flag_on_post:"
+  },
+  {
+    "id": "age-calculator-app",
+    "title": "Age calculator app",
+    "description": "This challenge is designed to sharpen your JavaScript and form validation skills. Working with dates in JavaScript can be tricky, so this will be a nice test!",
+    "difficulty": { "color": "hsl(78, 65%, 55%)", "description": "junior", "level": 2 },
+    "languages": ["HTML", "CSS", "JS"],
+    "images": {
+      "desktop_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/age-calculator-app/design/desktop-design.jpg",
+      "desktop_preview": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/age-calculator-app/design/desktop-preview.jpg",
+      "mobile_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/age-calculator-app/design/mobile-design.jpg"
+    },
+    "live_preview": "https://rfmc.vercel.app/c/age-calculator-app",
+    "source_code": "https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/age-calculator-app",
+    "codesandbox": "https://codesandbox.io/s/age-calculator-app-4vtzgw",
+    "try_challenge": "https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q",
+    "solution": "https://www.frontendmentor.io/solutions/age-calculator-app-OWuaGlvZm6",
+    "test_state": ":hourglass_flowing_sand:"
+  },
+  {
+    "id": "calculator-app",
+    "title": "Calculator app",
+    "description": "This calculator app will be a great test of your CSS and JS skills especially. If you're wanting to practice using Grid, this challenge will be perfect for you!",
+    "languages": ["HTML", "CSS", "JS"],
+    "difficulty": { "color": "hsl(45.1, 96.7%, 48%)", "description": "intermediate", "level": 3 },
+    "images": {
+      "desktop_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/calculator-app/design/desktop-design.jpg",
+      "desktop_preview": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/calculator-app/design/desktop-preview.jpg",
+      "mobile_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/calculator-app/design/mobile-design.jpg"
+    },
+    "live_preview": "https://rfmc.vercel.app/c/calculator-app",
+    "source_code": "https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/calculator-app",
+    "codesandbox": "https://codesandbox.io/s/calculator-app-ncjn3v",
+    "try_challenge": "https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29",
+    "solution": "https://www.frontendmentor.io/solutions/calculator-app-0JVhYaDOct",
+    "test_state": ":hourglass_flowing_sand:"
+  },
+  {
+    "id": "todo-app",
+    "title": "Todo app",
+    "description": "The classic todo app with a few twists! This app includes a dark/light theme toggle and drag & drop reordering for anyone wanting an extra test.",
+    "difficulty": { "color": "hsl(45.1, 96.7%, 48%)", "description": "intermediate", "level": 3 },
+    "languages": ["HTML", "CSS", "JS"],
+    "images": {
+      "desktop_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/todo-app/design/desktop-design.jpg",
+      "desktop_preview": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/todo-app/design/desktop-preview.jpg",
+      "mobile_design": "https://raw.githubusercontent.com/javiluli/resolved-frontendmentor-challenges/master/src/challenges/todo-app/design/mobile-design.jpg"
+    },
+    "live_preview": "https://rfmc.vercel.app/c/todo-app",
+    "source_code": "https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/todo-app",
+    "codesandbox": "",
+    "try_challenge": "https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW",
+    "solution": "",
+    "test_state": ":x:"
+  }
+]

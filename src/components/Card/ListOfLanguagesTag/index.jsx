@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import MuiBox from '@mui/material/Box'
 import MuiStack from '@mui/material/Stack'
 

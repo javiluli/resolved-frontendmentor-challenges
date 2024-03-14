@@ -8,3 +8,5 @@ index.html
 netlify.toml
 package-lock.json
 package.json
+
+.eslintrc.json

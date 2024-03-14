@@ -1,11 +1,11 @@
 import { Box, Divider, Stack } from '@mui/material'
 import MuiTypography from '@mui/material/Typography'
 
-const Title = () => {
+const Title = ({ text }) => {
   return (
     <Stack>
       <MuiTypography component="h1" variant="h4" sx={{ color: 'text.primary', fontWeight: 900 }}>
-        Resolved frontendmentor.io challenges
+        {text}
       </MuiTypography>
 
       <Box

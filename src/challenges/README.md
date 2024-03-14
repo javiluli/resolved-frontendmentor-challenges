@@ -9,6 +9,9 @@
 │   ├───css
 │   │       fonts.css
 │   │
+│   ├───design
+│   │       desktop-preview.jpg
+│   │
 │   └───images
 │
 ├───components
@@ -18,11 +21,25 @@
 │           index.js
 │           [ComponentName].jsx
 │
-├───design
+├───layout
+│       challege-container.jsx
+│       index.js
 │
 └───themes
-        theme.js
+    │   index.js
+    │
+    └───theme
+        │   index.js
+        │
+        ├───base
+        │
+        ├───components
+        │
+        └───functions
 ```
+
+> [!NOTE]
+> Los nombre entre llaves `[]` son nombres guis, estos cambian seguna sea necesarios en el desarrollo.
 
 ## Fichero index.jsx
 

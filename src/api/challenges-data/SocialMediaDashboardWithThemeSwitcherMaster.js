@@ -2,7 +2,11 @@ import { JUNIOR } from '@@constant/challenge-difficulty.js'
 import { CSS, HTML, JS } from '@@constant/challenge-languages.js'
 import { NO_NEED } from '@@constant/challenge-test-state.js'
 import { SOCIAL_MEDIA_DASHBOARD_WITH_THEME_SWITCHER_MASTER } from '@@constant/challenges-id.js'
-import { GH_REPOSITORY, GH_REPOSITORY_FOLDER_DESIGN_IMAGES, URL_BASE_PREVIEW } from '@@constant/urls.js'
+import { GH_REPOSITORY, URL_BASE_PREVIEW } from '@@constant/urls.js'
+
+import desktopDesign from '@@challenges/social-media-dashboard-with-theme-switcher-master/assets/design/desktop-design-dark.jpg'
+import desktopPreview from '@@challenges/social-media-dashboard-with-theme-switcher-master/assets/design/desktop-preview.jpg'
+import mobileDesign from '@@challenges/social-media-dashboard-with-theme-switcher-master/assets/design/mobile-design-dark.jpg'
 
 export const SocialMediaDashboardWithThemeSwitcherMaster = {
   id: SOCIAL_MEDIA_DASHBOARD_WITH_THEME_SWITCHER_MASTER,
@@ -12,9 +16,9 @@ export const SocialMediaDashboardWithThemeSwitcherMaster = {
   difficulty: JUNIOR,
   languages: [HTML, CSS, JS],
   images: {
-    desktop_design: `${GH_REPOSITORY_FOLDER_DESIGN_IMAGES}/${SOCIAL_MEDIA_DASHBOARD_WITH_THEME_SWITCHER_MASTER}/design/desktop-design.jpg`,
-    desktop_preview: `${GH_REPOSITORY_FOLDER_DESIGN_IMAGES}/${SOCIAL_MEDIA_DASHBOARD_WITH_THEME_SWITCHER_MASTER}/design/desktop-preview.jpg`,
-    mobile_design: `${GH_REPOSITORY_FOLDER_DESIGN_IMAGES}/${SOCIAL_MEDIA_DASHBOARD_WITH_THEME_SWITCHER_MASTER}/design/mobile-design.jpg`,
+    desktop_design: desktopDesign,
+    desktop_preview: desktopPreview,
+    mobile_design: mobileDesign,
   },
   live_preview: `${URL_BASE_PREVIEW}/${SOCIAL_MEDIA_DASHBOARD_WITH_THEME_SWITCHER_MASTER}`,
   source_code: `${GH_REPOSITORY}/${SOCIAL_MEDIA_DASHBOARD_WITH_THEME_SWITCHER_MASTER}`,

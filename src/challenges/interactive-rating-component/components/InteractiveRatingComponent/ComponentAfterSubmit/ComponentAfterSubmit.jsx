@@ -20,7 +20,11 @@ const ComponentAfterSubmit = ({ rating, onRating }) => {
     >
       <MuiCardContent sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2em' }}>
         <MuiCardMedia sx={{ width: 150 }} component="img" image={imageIllustrationThankYou} />
-        <MuiChip sx={{ color: 'primary.main', backgroundColor: 'hsl(215, 18%, 18%)' }} label={`You selected ${rating} out of 5`} />
+        <MuiChip
+          data-testid="selected-out"
+          sx={{ color: 'primary.main', backgroundColor: 'hsl(215, 18%, 18%)' }}
+          label={`You selected ${rating} out of 5`}
+        />
       </MuiCardContent>
 
       <MuiCardContent sx={{ padding: '0.5em' }}>

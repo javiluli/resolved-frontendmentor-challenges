@@ -3,6 +3,7 @@
 ```bash
 /
 │   index.jsx
+│   App.jsx
 │   README.md
 │
 ├───assets
@@ -22,7 +23,7 @@
 │           [ComponentName].jsx
 │
 ├───layout
-│       challege-container.jsx
+│       ChallegeContainer.jsx
 │       index.js
 │
 └───themes
@@ -57,32 +58,30 @@ Fichero principal que contiene:
 Estructura del `index.jsx`.
 
 ```jsx
+export { default } from './App'
+```
+
+Estructura del `App.jsx`.
+
+```jsx
+import '@@challenges/qr-code-component/assets/css/fonts.css'
+
+import { Card } from '@@challenges/qr-code-component/components'
+import { ChallegeContainer } from '@@challenges/qr-code-component/layouts'
 import { ThemeProvider } from '@mui/material'
-import MuiStack from '@mui/material/Stack'
+import { theme } from '@@challenges/qr-code-component/themes'
 
-import './assets/css/fonts.css'
-import { [ComponentName] } from './components'
-import theme from './themes/theme'
-
-const Index = () => {
+const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <MuiStack
-        justifyContent="center"
-        alignItems="center"
-        sx={{
-          minHeight: '100vh',
-          backgroundColor: 'background.default',
-        }}
-      >
-        [<ComponentName />]
-      </MuiStack>
+      <ChallegeContainer>
+        <Card />
+      </ChallegeContainer>
     </ThemeProvider>
   )
 }
 
-export default Index
-
+export default App
 ```
 
 ## Fichero README.md
@@ -144,78 +143,14 @@ La imagen llamada `desktop-preview.jpg` será la utilizada en los `README.md` de
 
 Contiene un fichero `theme.jsx` cambiando el tema predefinido de [MUI](<[https://](https://mui.com/material-ui/customization/default-theme/)>), como los colores principales, fuentes, estilos de componentes.
 
-```jsx
-import { createTheme } from '@mui/material/styles'
-
-const theme = createTheme({
-  palette: {
-    type: 'light',
-    primary: {
-      main: '#1976d2',
-      light: '#42a5f5',
-    },
-    text: {
-      primary: 'rgba(0, 0, 0, 0.87)',
-      secondary: 'rgba(0, 0, 0, 0.6)',
-      disabled: 'rgba(0, 0, 0, 0.38)',
-    },
-    background: {
-      paper: '#fff',
-      default: '#fff',
-    },
-  },
-
-  components: {
-    MuiTypography: {
-      styleOverrides: {
-        root: {
-          fontFamily: 'Roboto',
-        },
-      },
-    },
-  },
-})
-
-export default theme
-```
-
-1. Modelo de caja
-
-   - display
-   - box-sizing
-   - width
-   - height
-   - margin
-   - padding
-   - border
-   - border-radius
-
-2. Tipografía
-
-   - font-family
-   - font-size
-   - font-weight
-   - font-style
-   - line-height
-   - text-align
-   - text-transform
-   - letter-spacing
-   - text-decoration
-
-3. Color y fondo
-
-   - color
-   - background-color
-   - background-image
-   - background-position
-   - background-size
-   - background-repeat
-   - border-color
-   - border-style
-
-4. Efectos
-   - box-shadow
-   - text-shadow
-   - transition
-   - transform
-   - scroll-behavior
+| 1. Modelo de caja      | 2. Tipografía            | 3. Color y fondo             | 4. Efectos               |
+| ---------------------- | ------------------------ | ---------------------------- | ------------------------ |
+| **1.1.** display       | **2.1.** font-family     | **3.1.** color               | **4.1.** box-shadow      |
+| **1.2.** box-sizing    | **2.2.** font-size       | **3.2.** background-color    | **4.2.** text-shadow     |
+| **1.3.** width         | **2.3.** font-weight     | **3.3.** background-image    | **4.3.** transition      |
+| **1.4.** height        | **2.4.** font-style      | **3.4.** background-position | **4.4.** transform       |
+| **1.5.** margin        | **2.5.** line-height     | **3.5.** background-size     | **4.5.** scroll-behavior |
+| **1.6.** padding       | **2.6.** text-align      | **3.6.** background-repeat   |                          |
+| **1.7.** border        | **2.7.** text-transform  | **3.7.** border-color        |                          |
+| **1.8.** border-radius | **2.8.** letter-spacing  | **3.8.** border-style        |                          |
+|                        | **2.9.** text-decoration |                              |                          |

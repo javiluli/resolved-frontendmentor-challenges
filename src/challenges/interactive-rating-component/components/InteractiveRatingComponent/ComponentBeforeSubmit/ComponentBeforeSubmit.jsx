@@ -10,6 +10,10 @@ import { useState } from 'react'
 const ComponentBeforeSubmit = ({ onRating }) => {
   const [value, setValue] = useState(2)
 
+  const handleChange = (e, newValue) => {
+    setValue(newValue)
+  }
+
   return (
     <MuiCard
       sx={{
@@ -39,16 +43,18 @@ const ComponentBeforeSubmit = ({ onRating }) => {
       <MuiCardActions sx={{ display: 'flex', flexDirection: 'column', gap: '1em' }}>
         <MuiRating
           sx={{ fontSize: '2.5em' }}
-          name="rating"
+          name="rating-pick"
           value={value}
-          onChange={(e, newValue) => {
-            setValue(newValue)
-          }}
+          defaultValue={value}
+          max={5}
+          onChange={handleChange}
           icon={<MuiStarRoundedIcon style={{ margin: '0 0.30em' }} fontSize="2.5em" />}
           emptyIcon={<MuiStarRoundedIcon style={{ margin: '0 0.30em' }} fontSize="2.5em" />}
         />
 
-        <MuiButton onClick={() => onRating(value)}>Submit</MuiButton>
+        <MuiButton role="submitbutton" onClick={() => onRating(value)}>
+          Submit
+        </MuiButton>
       </MuiCardActions>
     </MuiCard>
   )

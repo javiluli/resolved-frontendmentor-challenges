@@ -1,23 +1,17 @@
 import { ThemeProvider } from '@mui/material'
-import MuiStack from '@mui/material/Stack'
 
 import './assets/css/fonts.css'
+import { theme } from './themes'
+
 import { ProductPreviewCardComponent } from './components'
-import theme from './themes/theme'
+import { ChallegeContainer } from './layout'
 
 const Index = () => {
   return (
     <ThemeProvider theme={theme}>
-      <MuiStack
-        justifyContent="center"
-        alignItems="center"
-        sx={{
-          minHeight: '100vh',
-          backgroundColor: 'background.default',
-        }}
-      >
+      <ChallegeContainer>
         <ProductPreviewCardComponent />
-      </MuiStack>
+      </ChallegeContainer>
     </ThemeProvider>
   )
 }

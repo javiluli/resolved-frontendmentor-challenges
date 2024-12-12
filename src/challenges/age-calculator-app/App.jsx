@@ -1,7 +1,6 @@
-import { ThemeProvider } from '@mui/material'
-import MuiStack from '@mui/material/Stack'
-
 import { AgeCalculatorApp } from './components'
+import MuiStack from '@mui/material/Stack'
+import { ThemeProvider } from '@mui/material'
 import { theme } from './themes'
 
 const App = () => {
@@ -11,7 +10,6 @@ const App = () => {
         justifyContent="center"
         alignItems="center"
         sx={{
-          minHeight: '100vh',
           backgroundColor: 'background.default',
         }}
       >

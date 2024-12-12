@@ -2,7 +2,11 @@ import { JUNIOR } from '@@constant/challenge-difficulty.js'
 import { API, CSS, HTML, JS } from '@@constant/challenge-languages.js'
 import { NO_INIT } from '@@constant/challenge-test-state.js'
 import { ADVICE_GENERATOR_APP } from '@@constant/challenges-id.js'
-import { GH_REPOSITORY, GH_REPOSITORY_FOLDER_DESIGN_IMAGES, URL_BASE_PREVIEW } from '@@constant/urls.js'
+import { GH_REPOSITORY, URL_BASE_PREVIEW } from '@@constant/urls.js'
+
+import desktopDesign from '@@challenges/advice-generator-app/assets/design/desktop-design.jpg'
+import desktopPreview from '@@challenges/advice-generator-app/assets/design/desktop-preview.jpg'
+import mobileDesign from '@@challenges/advice-generator-app/assets/design/mobile-design.jpg'
 
 export const AdviceGeneratorApp = {
   id: ADVICE_GENERATOR_APP,
@@ -12,9 +16,9 @@ export const AdviceGeneratorApp = {
   difficulty: JUNIOR,
   languages: [HTML, CSS, JS, API],
   images: {
-    desktop_design: `${GH_REPOSITORY_FOLDER_DESIGN_IMAGES}/${ADVICE_GENERATOR_APP}/design/desktop-design.jpg`,
-    desktop_preview: `${GH_REPOSITORY_FOLDER_DESIGN_IMAGES}/${ADVICE_GENERATOR_APP}/design/desktop-preview.jpg`,
-    mobile_design: `${GH_REPOSITORY_FOLDER_DESIGN_IMAGES}/${ADVICE_GENERATOR_APP}/design/mobile-design.jpg`,
+    desktop_design: desktopDesign,
+    desktop_preview: desktopPreview,
+    mobile_design: mobileDesign,
   },
   live_preview: `${URL_BASE_PREVIEW}/${ADVICE_GENERATOR_APP}`,
   source_code: `${GH_REPOSITORY}/${ADVICE_GENERATOR_APP}`,

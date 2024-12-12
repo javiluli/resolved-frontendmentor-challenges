@@ -1,1 +1,1 @@
-export * from './ProductPreviewCardComponent'
+export * from './product-preview-card-component'

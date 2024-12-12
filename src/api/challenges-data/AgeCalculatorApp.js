@@ -2,7 +2,11 @@ import { JUNIOR } from '@@constant/challenge-difficulty.js'
 import { CSS, HTML, JS } from '@@constant/challenge-languages.js'
 import { IN_PROGRESS } from '@@constant/challenge-test-state.js'
 import { AGE_CALCULATOR_APP } from '@@constant/challenges-id.js'
-import { GH_REPOSITORY, GH_REPOSITORY_FOLDER_DESIGN_IMAGES, URL_BASE_PREVIEW } from '@@constant/urls.js'
+import { GH_REPOSITORY, URL_BASE_PREVIEW } from '@@constant/urls.js'
+
+import desktopDesign from '@@challenges/age-calculator-app/assets/design/desktop-design.jpg'
+import desktopPreview from '@@challenges/age-calculator-app/assets/design/desktop-preview.jpg'
+import mobileDesign from '@@challenges/age-calculator-app/assets/design/mobile-design.jpg'
 
 export const AgeCalculatorApp = {
   id: AGE_CALCULATOR_APP,
@@ -12,9 +16,9 @@ export const AgeCalculatorApp = {
   difficulty: JUNIOR,
   languages: [HTML, CSS, JS],
   images: {
-    desktop_design: `${GH_REPOSITORY_FOLDER_DESIGN_IMAGES}/${AGE_CALCULATOR_APP}/design/desktop-design.jpg`,
-    desktop_preview: `${GH_REPOSITORY_FOLDER_DESIGN_IMAGES}/${AGE_CALCULATOR_APP}/design/desktop-preview.jpg`,
-    mobile_design: `${GH_REPOSITORY_FOLDER_DESIGN_IMAGES}/${AGE_CALCULATOR_APP}/design/mobile-design.jpg`,
+    desktop_design: desktopDesign,
+    desktop_preview: desktopPreview,
+    mobile_design: mobileDesign,
   },
   live_preview: `${URL_BASE_PREVIEW}/${AGE_CALCULATOR_APP}`,
   source_code: `${GH_REPOSITORY}/${AGE_CALCULATOR_APP}`,

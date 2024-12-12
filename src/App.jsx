@@ -1,20 +1,24 @@
-import { Challenge, Home, Page404 } from '@@/pages'
+import { Route, Routes } from 'react-router-dom'
+
 import { ThemeProvider } from '@mui/material'
 import MuiBox from '@mui/material/Box'
-import { Route, Switch } from 'wouter'
-import theme from './themes/theme'
+
+import { ChallengePage } from '@/pages/challenge'
+import { HomePage } from '@/pages/home'
+import { NotFoundPage } from '@/pages/not-found'
+
+import { theme } from '@/themes/theme'
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <MuiBox sx={{ backgroundColor: 'background.default' }}>
-        <Switch>
-          <Route path="/" component={Home} />
+      <MuiBox sx={{ minHeight: '100vh', backgroundColor: 'background.default' }}>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/c/:id/*" element={<ChallengePage />} />
 
-          <Route path="/c/:id" component={Challenge} />
-
-          <Route path="*" component={Page404} />
-        </Switch>
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
       </MuiBox>
     </ThemeProvider>
   )

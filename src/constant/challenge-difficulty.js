@@ -15,3 +15,9 @@ export const INTERMEDIATE = {
   description: 'intermediate',
   level: 3,
 }
+
+export const ADVANCED = {
+  color: 'hsl(45.1, 96.7%, 48%)',
+  description: 'advanced',
+  level: 4,
+}

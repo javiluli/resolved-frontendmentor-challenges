@@ -2,7 +2,11 @@ import { NEWBIE } from '@@constant/challenge-difficulty.js'
 import { CSS, HTML } from '@@constant/challenge-languages.js'
 import { NO_NEED } from '@@constant/challenge-test-state.js'
 import { SOCIAL_PROOF_SECTION } from '@@constant/challenges-id.js'
-import { GH_REPOSITORY, GH_REPOSITORY_FOLDER_DESIGN_IMAGES, URL_BASE_PREVIEW } from '@@constant/urls.js'
+import { GH_REPOSITORY, URL_BASE_PREVIEW } from '@@constant/urls.js'
+
+import desktopDesign from '@@challenges/social-proof-section/assets/design/desktop-design.jpg'
+import desktopPreview from '@@challenges/social-proof-section/assets/design/desktop-preview.jpg'
+import mobileDesign from '@@challenges/social-proof-section/assets/design/mobile-design.jpg'
 
 export const SocialProofSection = {
   id: SOCIAL_PROOF_SECTION,
@@ -12,9 +16,9 @@ export const SocialProofSection = {
   difficulty: NEWBIE,
   languages: [HTML, CSS],
   images: {
-    desktop_design: `${GH_REPOSITORY_FOLDER_DESIGN_IMAGES}/${SOCIAL_PROOF_SECTION}/design/desktop-design.jpg`,
-    desktop_preview: `${GH_REPOSITORY_FOLDER_DESIGN_IMAGES}/${SOCIAL_PROOF_SECTION}/design/desktop-preview.jpg`,
-    mobile_design: `${GH_REPOSITORY_FOLDER_DESIGN_IMAGES}/${SOCIAL_PROOF_SECTION}/design/mobile-design.jpg`,
+    desktop_design: desktopDesign,
+    desktop_preview: desktopPreview,
+    mobile_design: mobileDesign,
   },
   live_preview: `${URL_BASE_PREVIEW}/${SOCIAL_PROOF_SECTION}`,
   source_code: `${GH_REPOSITORY}/${SOCIAL_PROOF_SECTION}`,

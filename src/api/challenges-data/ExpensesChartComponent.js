@@ -2,7 +2,11 @@ import { JUNIOR } from '@@constant/challenge-difficulty.js'
 import { CSS, HTML, JS } from '@@constant/challenge-languages.js'
 import { NO_INIT } from '@@constant/challenge-test-state.js'
 import { EXPENSES_CHART_COMPONENT } from '@@constant/challenges-id.js'
-import { GH_REPOSITORY, GH_REPOSITORY_FOLDER_DESIGN_IMAGES, URL_BASE_PREVIEW } from '@@constant/urls.js'
+import { GH_REPOSITORY, URL_BASE_PREVIEW } from '@@constant/urls.js'
+
+import desktopDesign from '@@challenges/expenses-chart-component/assets/design/desktop-design.jpg'
+import desktopPreview from '@@challenges/expenses-chart-component/assets/design/desktop-preview.jpg'
+import mobileDesign from '@@challenges/expenses-chart-component/assets/design/mobile-design.jpg'
 
 export const ExpensesChartComponent = {
   id: EXPENSES_CHART_COMPONENT,
@@ -12,9 +16,9 @@ export const ExpensesChartComponent = {
   difficulty: JUNIOR,
   languages: [HTML, CSS, JS],
   images: {
-    desktop_design: `${GH_REPOSITORY_FOLDER_DESIGN_IMAGES}/${EXPENSES_CHART_COMPONENT}/design/desktop-design.jpg`,
-    desktop_preview: `${GH_REPOSITORY_FOLDER_DESIGN_IMAGES}/${EXPENSES_CHART_COMPONENT}/design/desktop-preview.jpg`,
-    mobile_design: `${GH_REPOSITORY_FOLDER_DESIGN_IMAGES}/${EXPENSES_CHART_COMPONENT}/design/mobile-design.jpg`,
+    desktop_design: desktopDesign,
+    desktop_preview: desktopPreview,
+    mobile_design: mobileDesign,
   },
   live_preview: `${URL_BASE_PREVIEW}/${EXPENSES_CHART_COMPONENT}`,
   source_code: `${GH_REPOSITORY}/${EXPENSES_CHART_COMPONENT}`,

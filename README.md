@@ -7,15 +7,6 @@ Este proyecto junta los desafios de [Frontend Mentor](https://www.frontendmentor
 ![React_Router](https://img.shields.io/badge/react_router-v6.28-CA4245?labelColor=000000&style=for-the-badge&logo=react-router&logoColor=CA4245)
 ![ZOD](https://img.shields.io/badge/Zod-v3.24-3068B7?labelColor=000000&style=for-the-badge&logo=zod&logoColor=3068B7)
 
-### Leyenda de los iconos
-
-- :triangular_flag_on_post: No necesita test
-- :x: No se ahn iniciado los test
-- :hourglass_flowing_sand: Se esta trabajando en los test
-- :heavy_check_mark: Tests finalizados
-
-> Nota: no se considera necesarioa el test cuando no se manipulan datos o no hay modificaciones en la interfaz de forma directa por parte del usuario.
-
 ### Challenges Overview
 
 | Nº  | Challenge                                              | Source code      | Live preview     | Try challenge    |

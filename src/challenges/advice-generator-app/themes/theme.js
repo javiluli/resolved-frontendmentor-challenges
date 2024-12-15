@@ -3,6 +3,7 @@ import { createTheme } from '@mui/material/styles'
 const theme = createTheme({
   palette: {
     type: 'dark',
+
     text: {
       primary: 'hsl(193, 38%, 86%)',
       secondary: 'hsl(150, 100%, 66%)',

@@ -2,24 +2,13 @@ import challenges from '@/api'
 import { ChallengeCard } from '@/components/ui/challenge-card'
 import { Header } from '@/components/ui/header'
 
-import { Button, Checkbox, FormControlLabel, FormGroup, Menu, MenuItem, Typography } from '@mui/material'
 import MuiBox from '@mui/material/Box'
 import MuiContainer from '@mui/material/Container'
 import MuiDivider from '@mui/material/Divider'
-import { useState } from 'react'
 
 const challensDataArray = Object.values(challenges)
 
 export const HomePage = () => {
-  const [anchorEl, setAnchorEl] = useState<HTMLButtonElement | null>(null)
-  const open = Boolean(anchorEl)
-  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
-    setAnchorEl(event.currentTarget)
-  }
-  const handleClose = () => {
-    setAnchorEl(null)
-  }
-
   return (
     <>
       <MuiContainer>

@@ -2,7 +2,7 @@ const colors = {
   mode: 'light',
 
   transparent: {
-    main: 'transparent',
+    main: 'hsla(0, 0%, 0%, 0)',
   },
 
   primary: {

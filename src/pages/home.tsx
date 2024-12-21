@@ -27,7 +27,7 @@ export const HomePage = () => {
       </MuiContainer>
       <MuiDivider />
 
-      <MuiContainer>
+      {/* <MuiContainer>
         <div>
           <Button
             id="basic-button"
@@ -67,7 +67,7 @@ export const HomePage = () => {
             </FormGroup>
           </Menu>
         </div>
-      </MuiContainer>
+      </MuiContainer> */}
 
       <MuiBox
         sx={{

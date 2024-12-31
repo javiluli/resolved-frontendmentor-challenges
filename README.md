@@ -37,7 +37,7 @@ Este proyecto junta los desafios de [Frontend Mentor](https://www.frontendmentor
 | 24  | Age calculator app                                     | [:link:][code24] | [:link:][live24] | [:link:][challenge24] |
 | 25  | Calculator app                                         | [:link:][code25] | [:link:][live25] | [:link:][challenge25] |
 | 26  | Todo app                                               | [:link:][code26] | [:link:][live26] | [:link:][challenge26] |
-| 26  | REST Countries API with color theme switcher           | [:link:][code27] | [:link:][live27] | [:link:][challenge27] |
+| 27  | REST Countries API with color theme switcher           | [:link:][code27] | [:link:][live27] | [:link:][challenge27] |
 
 [code1]: https://github.com/javiluli/resolved-frontendmentor-challenges/tree/master/src/challenges/qr-code-component
 [live1]: https://rfmc.vercel.app/c/qr-code-component

@@ -24,6 +24,6 @@ export const RestCountriesApiWithColorThemeSwitcher: Challenge = {
   },
   frontendMentor: {
     tryChallenge: 'https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca',
-    solution: '',
+    solution: 'https://www.frontendmentor.io/solutions/rest-countries-api-with-color-theme-switcher-ew1nc6Yd25',
   },
 }

@@ -1,3 +1,4 @@
+import IconShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined'
 import MuiButton from '@mui/material/Button'
 import MuiCard from '@mui/material/Card'
 import MuiCardActions from '@mui/material/CardActions'
@@ -6,16 +7,12 @@ import MuiCardMedia from '@mui/material/CardMedia'
 import MuiGrid from '@mui/material/Grid'
 import MuiStack from '@mui/material/Stack'
 import MuiTypography from '@mui/material/Typography'
-
-import IconShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined'
-
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
 
-import { theme } from '../themes'
-
 import imgProductDesktop from '../assets/images/image-product-desktop.jpg'
 import imgProductMobile from '../assets/images/image-product-mobile.jpg'
+import { theme } from '../themes'
 
 const { functions } = theme
 

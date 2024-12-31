@@ -1,3 +1,5 @@
+import React, { useState } from 'react'
+
 import MuiBox from '@mui/material/Box'
 import MuiContainer from '@mui/material/Container'
 import MuiDivider from '@mui/material/Divider'
@@ -9,7 +11,6 @@ import MuiStack from '@mui/material/Stack'
 import SvgIcon from '@mui/material/SvgIcon'
 import MuiTextField from '@mui/material/TextField'
 import MuiTypography from '@mui/material/Typography'
-import React, { useState } from 'react'
 
 import { LAST_MONTH_NUMBER_FROM_YEAR, notBlankRegex, numberWithBlankRegex } from '../../constants'
 import colors from '../../themes/theme/base/colors'

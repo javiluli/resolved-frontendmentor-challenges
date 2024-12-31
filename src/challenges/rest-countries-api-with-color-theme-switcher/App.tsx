@@ -1,12 +1,11 @@
+import { useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
 
 import { ThemeProvider } from './components/providers/theme-provider'
-import { DetailsPage, HomePage } from './pages'
-
-import dataJson from './data/data.json'
-import { useEffect } from 'react'
-import { Country } from './types'
 import { useMaterialUIController } from './context'
+import dataJson from './data/data.json'
+import { DetailsPage, HomePage } from './pages'
+import { Country } from './types'
 
 const App = () => {
   const { setListOfCountries } = useMaterialUIController()

@@ -1,17 +1,15 @@
-import { createTheme, ThemeOptions } from '@mui/material/styles'
+import { ThemeOptions, createTheme } from '@mui/material/styles'
 
 import borders from './base/borders'
 import colors from './base/colors'
 import globals from './base/globals'
 import shadows from './base/shadows'
 import typography from './base/typography'
-
-import pxToRem from './functions/pxToRem'
-
 import card from './components/card'
 import cardActionArea from './components/card/cardActionArea'
 import cardContent from './components/card/cardContent'
 import divider from './components/divider'
+import pxToRem from './functions/pxToRem'
 
 // Define the type for functions
 interface CustomFunctions {

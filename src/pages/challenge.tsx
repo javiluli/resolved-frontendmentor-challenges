@@ -4,8 +4,8 @@ import { useParams } from 'react-router-dom'
 import MuiCircularProgress from '@mui/material/CircularProgress'
 import MuiStack from '@mui/material/Stack'
 
-import ErrorBoundary from '@/utils/ErrorBoundaries'
 import { CHALLENGE_SLUG } from '@/constant/challenges-slug'
+import ErrorBoundary from '@/utils/ErrorBoundaries'
 
 export const ChallengePage = () => {
   const { challengeSlug } = useParams()

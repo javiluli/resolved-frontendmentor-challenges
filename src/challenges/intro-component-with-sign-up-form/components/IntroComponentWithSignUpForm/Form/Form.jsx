@@ -1,4 +1,8 @@
 import { zodResolver } from '@hookform/resolvers/zod'
+import { object, string } from 'zod'
+
+import { useForm } from 'react-hook-form'
+
 import MuiErrorIcon from '@mui/icons-material/ErrorRounded'
 import MuiBox from '@mui/material/Box'
 import MuiButton from '@mui/material/Button'
@@ -7,8 +11,6 @@ import MuiPaper from '@mui/material/Paper'
 import MuiStack from '@mui/material/Stack'
 import MuiTextField from '@mui/material/TextField'
 import MuiTypography from '@mui/material/Typography'
-import { useForm } from 'react-hook-form'
-import { object, string } from 'zod'
 
 const registerSchema = object({
   'first-name': string().min(1, 'First name cannot be empty'),

@@ -1,13 +1,12 @@
-import { forwardRef } from 'react'
-
 // prop-types is a library for typechecking of props
 import PropTypes from 'prop-types'
 
-// Custom styles for CCCheckboxRoot
-import CCCheckboxRootRoot from './CCCheckboxRoot'
+import { forwardRef } from 'react'
 
 // Material Dashboard 2 React contexts
 import { useMaterialUIController } from '../../../context'
+// Custom styles for CCCheckboxRoot
+import CCCheckboxRootRoot from './CCCheckboxRoot'
 
 const CCCheckboxRoot = forwardRef(({ color, fontWeight, children, ...rest }, ref) => {
   const [controller] = useMaterialUIController()

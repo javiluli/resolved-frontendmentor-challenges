@@ -1,7 +1,6 @@
+import GitHubIcon from '@mui/icons-material/GitHub'
 import MuiIconButton from '@mui/material/IconButton'
 import MuiStack from '@mui/material/Stack'
-
-import GitHubIcon from '@mui/icons-material/GitHub'
 
 import { Title } from '@/components/ui/title'
 

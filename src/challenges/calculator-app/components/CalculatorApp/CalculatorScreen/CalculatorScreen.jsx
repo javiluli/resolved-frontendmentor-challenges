@@ -1,10 +1,10 @@
 import MuiBox from '@mui/material/Box'
 import MuiStack from '@mui/material/Stack'
 import MuiTypography from '@mui/material/Typography'
-import borders from '../../../themes/theme1/base/borders'
 
-import { useMaterialUIController } from '../../../context'
 import { OTHER_MESSAGE } from '../../../constant'
+import { useMaterialUIController } from '../../../context'
+import borders from '../../../themes/theme1/base/borders'
 
 const { borderRadius } = borders
 

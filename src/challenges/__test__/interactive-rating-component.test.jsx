@@ -1,6 +1,5 @@
-import { cleanup, fireEvent, render, screen } from '@testing-library/react'
-
 import InteractiveRatingComponent from '@challenges/interactive-rating-component'
+import { cleanup, fireEvent, render, screen } from '@testing-library/react'
 
 let ratingPick, ratingPick_1, ratingPick_2, ratingPick_3, ratingPick_4, ratingPick_5, btnSubmit
 

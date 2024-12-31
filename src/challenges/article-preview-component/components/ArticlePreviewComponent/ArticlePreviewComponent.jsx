@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 import MuiAvatar from '@mui/material/Avatar'
 import MuiBox from '@mui/material/Box'
 import MuiCard from '@mui/material/Card'
@@ -11,7 +13,6 @@ import MuiStack from '@mui/material/Stack'
 import MuiTypography from '@mui/material/Typography'
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
-import { useState } from 'react'
 
 import imgAvatarMichelle from '../../assets/images/avatar-michelle.jpg'
 import drawers from '../../assets/images/drawers.jpg'

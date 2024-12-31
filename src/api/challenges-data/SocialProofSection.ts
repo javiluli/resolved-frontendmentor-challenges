@@ -1,12 +1,12 @@
 // Types
-import { Challenge } from '@/types'
-// Constants
-import { CSS, GH_REPOSITORY, HTML, NEWBIE, URL_BASE_PREVIEW } from '@/constant'
-import { CHALLENGE_SLUG } from '@/constant/challenges-slug'
 // Links for images
 import desktopDesign from '@/challenges/social-proof-section/assets/design/desktop-design.jpg'
 import desktopPreview from '@/challenges/social-proof-section/assets/design/desktop-preview.jpg'
 import mobileDesign from '@/challenges/social-proof-section/assets/design/mobile-design.jpg'
+// Constants
+import { CSS, GH_REPOSITORY, HTML, NEWBIE, URL_BASE_PREVIEW } from '@/constant'
+import { CHALLENGE_SLUG } from '@/constant/challenges-slug'
+import { Challenge } from '@/types'
 
 export const SocialProofSection: Challenge = {
   id: '10',

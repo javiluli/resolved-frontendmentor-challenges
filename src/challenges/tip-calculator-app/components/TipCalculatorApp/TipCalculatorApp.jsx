@@ -1,9 +1,10 @@
+import { useEffect, useState } from 'react'
+
 import MuiBox from '@mui/material/Box'
 import MuiButton from '@mui/material/Button'
 import MuiPaper from '@mui/material/Paper'
 import MuiStack from '@mui/material/Stack'
 import MuiTypography from '@mui/material/Typography'
-import { useEffect, useState } from 'react'
 
 import BillSection from './BillSection/BillSection'
 import NumberOfPeopleSection from './NumberOfPeopleSection/NumberOfPeopleSection'

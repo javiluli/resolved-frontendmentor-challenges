@@ -1,8 +1,9 @@
 import './assets/css/fonts.css'
 
-import { BaseApparelComingSoonPage } from './components'
-import MuiStack from '@mui/material/Stack'
 import { ThemeProvider } from '@mui/material'
+import MuiStack from '@mui/material/Stack'
+
+import { BaseApparelComingSoonPage } from './components'
 import theme from './themes/theme'
 
 const Index = () => {

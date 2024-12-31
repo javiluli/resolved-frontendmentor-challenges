@@ -1,10 +1,11 @@
+import PropTypes from 'prop-types'
+
 import MuiButton from '@mui/material/Button'
 import MuiCard from '@mui/material/Card'
 import MuiCardActions from '@mui/material/CardActions'
 import MuiCardContent from '@mui/material/CardContent'
 import MuiCardMedia from '@mui/material/CardMedia'
 import MuiTypography from '@mui/material/Typography'
-import PropTypes from 'prop-types'
 
 const PreviewCard = ({ icon, title, paragraph, color }) => {
   return (

@@ -1,7 +1,8 @@
+import './assets/css/fonts.css'
+
 import CssBaseline from '@mui/material/CssBaseline'
 
 import App from './App'
-import './assets/css/fonts.css'
 
 const Index = () => {
   return (

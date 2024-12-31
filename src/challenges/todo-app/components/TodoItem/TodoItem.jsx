@@ -1,9 +1,11 @@
-import { Box, FormControlLabel, IconButton, Paper, Stack, SvgIcon, Typography, createSvgIcon } from '@mui/material'
-import DragIndicatorSharpIcon from '@mui/icons-material/DragIndicatorSharp'
 import { useSortable } from '@dnd-kit/sortable'
 import { CSS } from '@dnd-kit/utilities'
-import CCCheckboxRoot from '../custom/CCCheckbox'
+
+import DragIndicatorSharpIcon from '@mui/icons-material/DragIndicatorSharp'
+import { Box, FormControlLabel, IconButton, Paper, Stack, SvgIcon, Typography, createSvgIcon } from '@mui/material'
+
 import useHover from '../../hooks/useHover'
+import CCCheckboxRoot from '../custom/CCCheckbox'
 
 function TodoItem({ Todo }) {
   const [hoverRef, isHovered] = useHover()

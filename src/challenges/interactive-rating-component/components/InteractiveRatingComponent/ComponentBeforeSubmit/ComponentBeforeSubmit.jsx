@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 import MuiStarRoundedIcon from '@mui/icons-material/StarRounded'
 import MuiButton from '@mui/material/Button'
 import MuiCard from '@mui/material/Card'
@@ -5,7 +7,6 @@ import MuiCardActions from '@mui/material/CardActions'
 import MuiCardContent from '@mui/material/CardContent'
 import MuiRating from '@mui/material/Rating'
 import MuiTypography from '@mui/material/Typography'
-import { useState } from 'react'
 
 const ComponentBeforeSubmit = ({ onRating }) => {
   const [value, setValue] = useState(2)

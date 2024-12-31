@@ -1,6 +1,5 @@
-import { cleanup, findByText, fireEvent, render, screen } from '@testing-library/react'
-
 import AgeCalculatorApp from '@challenges/age-calculator-app'
+import { cleanup, findByText, fireEvent, render, screen } from '@testing-library/react'
 
 describe('Age Calculator App challenge test', () => {
   afterEach(cleanup)

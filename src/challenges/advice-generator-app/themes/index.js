@@ -5,9 +5,8 @@ import colors from './base/colors'
 import globals from './base/globals'
 import shadows from './base/shadows'
 import typography from './base/typography'
-
-import pxToRem from './functions/pxToRem'
 import iconButton from './components/iconButton'
+import pxToRem from './functions/pxToRem'
 
 export const theme = createTheme({
   palette: { ...colors },

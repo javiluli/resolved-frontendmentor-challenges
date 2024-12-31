@@ -4,5 +4,9 @@
   "trailingComma": "all",
   "singleQuote": true,
   "semi": false,
-  "useTabs": false
+  "useTabs": false,
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "importOrder": ["^react*", ".*fonts\\.css$", "^@mui/material/CssBaseline$", "^@mui/(.*)$", "^@/.*$", "^[./]"],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
 }

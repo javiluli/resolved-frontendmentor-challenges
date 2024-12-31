@@ -1,5 +1,7 @@
-import MuiStack from '@mui/material/Stack'
 import PropTypes from 'prop-types'
+
+import MuiStack from '@mui/material/Stack'
+
 import { theme } from '../../themes'
 
 export function ChallengeContainer({

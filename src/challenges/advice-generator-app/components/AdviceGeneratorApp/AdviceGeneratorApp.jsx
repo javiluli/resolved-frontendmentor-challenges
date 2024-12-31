@@ -6,7 +6,6 @@ import MuiCardMedia from '@mui/material/CardMedia'
 import MuiIconButton from '@mui/material/IconButton'
 import MuiStack from '@mui/material/Stack'
 import MuiTypography from '@mui/material/Typography'
-
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
 

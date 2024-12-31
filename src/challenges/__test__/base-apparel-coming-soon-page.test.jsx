@@ -1,7 +1,6 @@
-import { cleanup, fireEvent, render, screen } from '@testing-library/react'
-
 import BaseApparelComingSoonPage from '@challenges/base-apparel-coming-soon-page'
 import { ErrorMessage } from '@challenges/base-apparel-coming-soon-page/constants'
+import { cleanup, fireEvent, render, screen } from '@testing-library/react'
 
 let txtEmail, txtEmailHelperText, btnSubmit
 

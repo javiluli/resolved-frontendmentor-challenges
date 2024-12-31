@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react'
+
 import MuiMoreHorizIcon from '@mui/icons-material/MoreHoriz'
 import MuiBox from '@mui/material/Box'
 import MuiCard from '@mui/material/Card'
@@ -6,7 +8,6 @@ import MuiCardContent from '@mui/material/CardContent'
 import MuiIconButton from '@mui/material/IconButton'
 import MuiStack from '@mui/material/Stack'
 import MuiTypography from '@mui/material/Typography'
-import { useEffect, useState } from 'react'
 
 const TimeCard = ({ data }) => {
   const { title, time, lastWeek, color, icon } = data

@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types'
+
 import { ReactNode, createContext, useCallback, useContext, useMemo, useReducer } from 'react'
+
 import { Country, Region } from '../types'
 
 interface State {

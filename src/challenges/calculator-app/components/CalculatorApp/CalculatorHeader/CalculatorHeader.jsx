@@ -1,7 +1,8 @@
 import MuiStack from '@mui/material/Stack'
 import MuiTypography from '@mui/material/Typography'
-import { Switch3Themes } from './Switch3Themes'
+
 import { useMaterialUIController } from '../../../context'
+import { Switch3Themes } from './Switch3Themes'
 
 const CalculatorHeader = () => {
   const [controller] = useMaterialUIController()

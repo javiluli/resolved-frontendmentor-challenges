@@ -1,5 +1,6 @@
-import { Box, Button, Container, Typography } from '@mui/material'
 import React, { ReactNode } from 'react'
+
+import { Box, Button, Container, Typography } from '@mui/material'
 
 interface ErrorBoundaryProps {
   children: ReactNode

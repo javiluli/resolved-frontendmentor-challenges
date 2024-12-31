@@ -1,10 +1,11 @@
+import PropTypes from 'prop-types'
+
 import { alpha } from '@mui/material'
 import MuiBox from '@mui/material/Box'
 import MuiStack from '@mui/material/Stack'
 import MuiTooltip from '@mui/material/Tooltip'
 import MuiTypography from '@mui/material/Typography'
 import { useTheme } from '@mui/material/styles'
-import PropTypes from 'prop-types'
 
 const Bar = ({ weekday, expen, maxExpense }) => {
   const theme = useTheme()

@@ -1,8 +1,9 @@
 import './assets/css/fonts.css'
 
-import { ArticlePreviewComponent } from './components'
-import MuiStack from '@mui/material/Stack'
 import { ThemeProvider } from '@mui/material'
+import MuiStack from '@mui/material/Stack'
+
+import { ArticlePreviewComponent } from './components'
 import theme from './themes/theme'
 
 const Index = () => {

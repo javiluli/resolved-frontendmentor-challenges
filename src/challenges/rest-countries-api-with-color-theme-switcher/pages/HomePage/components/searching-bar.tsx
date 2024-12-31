@@ -1,9 +1,10 @@
+import { useEffect, useState } from 'react'
+
 import MuiSearchIcon from '@mui/icons-material/Search'
 import MuiBox from '@mui/material/Box'
 import MuiInputAdornment from '@mui/material/InputAdornment'
 import MuiTextField from '@mui/material/TextField'
 
-import { useEffect, useState } from 'react'
 import { useMaterialUIController } from '../../../context'
 import { useDebounce } from '../../../hooks/useDebounce'
 

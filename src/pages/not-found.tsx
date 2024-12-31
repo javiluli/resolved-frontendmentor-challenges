@@ -1,8 +1,8 @@
 import MuiBox from '@mui/material/Box'
 import MuiButton from '@mui/material/Button'
+import MuiContainer from '@mui/material/Container'
 import MuiStack from '@mui/material/Stack'
 import MuiTypography from '@mui/material/Typography'
-import MuiContainer from '@mui/material/Container'
 
 export function NotFoundPage() {
   return (

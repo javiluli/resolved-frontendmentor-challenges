@@ -1,12 +1,12 @@
 // Types
-import { Challenge } from '@/types'
+// Links for images
+import desktopDesign from '@/challenges/profile-card-component/assets/design/desktop-design.jpg'
+import desktopPreview from '@/challenges/profile-card-component/assets/design/desktop-preview.jpg'
+import mobileDesign from '@/challenges/profile-card-component/assets/design/mobile-design.jpg'
 // Constants
 import { CSS, GH_REPOSITORY, HTML, NEWBIE, URL_BASE_PREVIEW } from '@/constant'
 import { CHALLENGE_SLUG } from '@/constant/challenges-slug'
-// Links for images
-import desktopDesign from '@/challenges/profile-card-component/assets/design/desktop-design.jpg'
-import mobileDesign from '@/challenges/profile-card-component/assets/design/mobile-design.jpg'
-import desktopPreview from '@/challenges/profile-card-component/assets/design/desktop-preview.jpg'
+import { Challenge } from '@/types'
 
 export const ProfileCardComponent: Challenge = {
   id: '8',

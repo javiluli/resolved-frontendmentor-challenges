@@ -1,7 +1,7 @@
+import { ReactNode } from 'react'
+
 import { Stack } from '@mui/material'
 import MuiTypography from '@mui/material/Typography'
-
-import { ReactNode } from 'react'
 
 interface TitleProps {
   children: ReactNode

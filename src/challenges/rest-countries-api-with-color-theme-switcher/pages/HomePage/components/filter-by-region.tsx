@@ -1,11 +1,11 @@
-import MuiClearIcon from '@mui/icons-material/Clear'
+import { useMemo } from 'react'
 
+import MuiClearIcon from '@mui/icons-material/Clear'
 import MuiFormControl from '@mui/material/FormControl'
 import MuiIconButton from '@mui/material/IconButton'
 import MuiMenuItem from '@mui/material/MenuItem'
 import MuiSelect, { SelectChangeEvent } from '@mui/material/Select'
 
-import { useMemo } from 'react'
 import { useMaterialUIController } from '../../../context'
 import { Region } from '../../../types'
 

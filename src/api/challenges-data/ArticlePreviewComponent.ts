@@ -1,12 +1,12 @@
 // Types
-import { Challenge } from '@/types'
-// Constants
-import { CSS, GH_REPOSITORY, HTML, JS, NEWBIE, URL_BASE_PREVIEW } from '@/constant'
-import { CHALLENGE_SLUG } from '@/constant/challenges-slug'
 // Links for images
 import desktopDesign from '@/challenges/article-preview-component/assets/design/desktop-design.jpg'
 import desktopPreview from '@/challenges/article-preview-component/assets/design/desktop-preview.jpg'
 import mobileDesign from '@/challenges/article-preview-component/assets/design/mobile-design.jpg'
+// Constants
+import { CSS, GH_REPOSITORY, HTML, JS, NEWBIE, URL_BASE_PREVIEW } from '@/constant'
+import { CHALLENGE_SLUG } from '@/constant/challenges-slug'
+import { Challenge } from '@/types'
 
 export const ArticlePreviewComponent: Challenge = {
   id: '11',

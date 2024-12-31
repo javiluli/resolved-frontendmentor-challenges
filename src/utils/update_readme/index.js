@@ -1,7 +1,6 @@
 import { promises as fs } from 'fs'
 
 import * as challenges from '../../api/challenges-data/index.js'
-
 import { PLACEHOLDERS } from './const.js'
 import { getChallengesList } from './service.js'
 

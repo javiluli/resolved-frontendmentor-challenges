@@ -1,10 +1,10 @@
-import { ThemeProvider } from '@mui/material'
-
 import './assets/css/fonts.css'
-import { theme } from './themes'
+
+import { ThemeProvider } from '@mui/material'
 
 import { ProductPreviewCardComponent } from './components'
 import { ChallegeContainer } from './layout'
+import { theme } from './themes'
 
 const Index = () => {
   return (

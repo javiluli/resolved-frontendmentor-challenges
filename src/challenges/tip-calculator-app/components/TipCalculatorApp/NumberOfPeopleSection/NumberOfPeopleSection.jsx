@@ -1,10 +1,11 @@
+import { useState } from 'react'
+
 import MuiPersonRoundedIcon from '@mui/icons-material/PersonRounded'
 import MuiBox from '@mui/material/Box'
 import MuiInputAdornment from '@mui/material/InputAdornment'
 import MuiStack from '@mui/material/Stack'
 import MuiTextField from '@mui/material/TextField'
 import MuiTypography from '@mui/material/Typography'
-import { useState } from 'react'
 
 function NumberOfPeopleSection({ people, onSetPeople }) {
   const [error, setError] = useState(null)

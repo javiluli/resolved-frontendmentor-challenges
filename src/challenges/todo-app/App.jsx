@@ -1,5 +1,9 @@
 import { DndContext, closestCenter } from '@dnd-kit/core'
+import { restrictToVerticalAxis } from '@dnd-kit/modifiers'
 import { SortableContext, arrayMove, verticalListSortingStrategy } from '@dnd-kit/sortable'
+
+import { useState } from 'react'
+
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined'
 import {
   Button,
@@ -16,12 +20,11 @@ import {
 import MuiBox from '@mui/material/Box'
 import Checkbox from '@mui/material/Checkbox'
 import MuiStack from '@mui/material/Stack'
-import { useState } from 'react'
+
 import bgDesktopLight from './assets/images/bg-desktop-light.jpg'
 import TodoItem from './components/TodoItem/TodoItem'
 import { MockTodos } from './mocks/todos'
 import { theme } from './themes'
-import { restrictToVerticalAxis } from '@dnd-kit/modifiers'
 
 const label = { inputProps: { 'aria-label': 'Checkbox create a new todo' } }
 

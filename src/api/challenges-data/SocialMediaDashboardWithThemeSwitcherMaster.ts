@@ -1,12 +1,12 @@
 // Types
-import { Challenge } from '@/types'
-// Constants
-import { CSS, GH_REPOSITORY, HTML, JS, JUNIOR, URL_BASE_PREVIEW } from '@/constant'
-import { CHALLENGE_SLUG } from '@/constant/challenges-slug'
 // Links for images
 import desktopDesign from '@/challenges/social-media-dashboard-with-theme-switcher-master/assets/design/desktop-design-dark.jpg'
 import desktopPreview from '@/challenges/social-media-dashboard-with-theme-switcher-master/assets/design/desktop-preview.jpg'
 import mobileDesign from '@/challenges/social-media-dashboard-with-theme-switcher-master/assets/design/mobile-design-dark.jpg'
+// Constants
+import { CSS, GH_REPOSITORY, HTML, JS, JUNIOR, URL_BASE_PREVIEW } from '@/constant'
+import { CHALLENGE_SLUG } from '@/constant/challenges-slug'
+import { Challenge } from '@/types'
 
 export const SocialMediaDashboardWithThemeSwitcherMaster: Challenge = {
   id: '22',

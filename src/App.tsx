@@ -6,7 +6,6 @@ import MuiBox from '@mui/material/Box'
 import { ChallengePage } from '@/pages/challenge'
 import { HomePage } from '@/pages/home'
 import { NotFoundPage } from '@/pages/not-found'
-
 import { theme } from '@/theme'
 
 function App() {

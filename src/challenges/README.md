@@ -64,12 +64,13 @@ export { default } from './App'
 Estructura del `App.jsx`.
 
 ```jsx
-import '@@challenges/qr-code-component/assets/css/fonts.css'
-
 import { Card } from '@@challenges/qr-code-component/components'
 import { ChallegeContainer } from '@@challenges/qr-code-component/layouts'
-import { ThemeProvider } from '@mui/material'
 import { theme } from '@@challenges/qr-code-component/themes'
+
+import '@@challenges/qr-code-component/assets/css/fonts.css'
+
+import { ThemeProvider } from '@mui/material'
 
 const App = () => {
   return (

@@ -1,12 +1,12 @@
 // Types
-import { Challenge } from '@/types'
-// Constants
-import { API, CSS, GH_REPOSITORY, HTML, JS, JUNIOR, URL_BASE_PREVIEW } from '@/constant'
-import { CHALLENGE_SLUG } from '@/constant/challenges-slug'
 // Links for images
 import desktopDesign from '@/challenges/advice-generator-app/assets/design/desktop-design.jpg'
 import desktopPreview from '@/challenges/advice-generator-app/assets/design/desktop-preview.jpg'
 import mobileDesign from '@/challenges/advice-generator-app/assets/design/mobile-design.jpg'
+// Constants
+import { API, CSS, GH_REPOSITORY, HTML, JS, JUNIOR, URL_BASE_PREVIEW } from '@/constant'
+import { CHALLENGE_SLUG } from '@/constant/challenges-slug'
+import { Challenge } from '@/types'
 
 export const AdviceGeneratorApp: Challenge = {
   id: '18',

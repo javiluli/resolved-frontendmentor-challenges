@@ -1,10 +1,10 @@
-import challenges from '@/api'
-import { ChallengeCard } from '@/components/ui/challenge-card'
-import { Header } from '@/components/ui/header'
-
 import MuiBox from '@mui/material/Box'
 import MuiContainer from '@mui/material/Container'
 import MuiDivider from '@mui/material/Divider'
+
+import challenges from '@/api'
+import { ChallengeCard } from '@/components/ui/challenge-card'
+import { Header } from '@/components/ui/header'
 
 const challensDataArray = Object.values(challenges)
 

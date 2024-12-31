@@ -1,13 +1,13 @@
+import { evaluate, format, number, string } from 'mathjs'
+
 import MuiBox from '@mui/material/Box'
 import MuiGrid from '@mui/material/Grid'
 
 import { ERROR_MESSAGE, MATHEMATICAL_OPERATORS } from '../../../constant'
+import { setCalculateOperations, setErrorInOperation, setResult, useMaterialUIController } from '../../../context'
+import { ZeroDivisionError } from '../../../error'
 import borders from '../../../themes/theme1/base/borders'
 import Button from './Button'
-
-import { evaluate, format, number, string } from 'mathjs'
-import { setCalculateOperations, setResult, useMaterialUIController, setErrorInOperation } from '../../../context'
-import { ZeroDivisionError } from '../../../error'
 
 const { borderRadius } = borders
 

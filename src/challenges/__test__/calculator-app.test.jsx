@@ -1,7 +1,6 @@
-import { cleanup, fireEvent, render, screen } from '@testing-library/react'
-
 import CalculatorApp from '@challenges/calculator-app'
 import { OTHER_MESSAGE } from '@challenges/calculator-app/constant'
+import { cleanup, fireEvent, render, screen } from '@testing-library/react'
 
 let btn_1,
   btn_2,

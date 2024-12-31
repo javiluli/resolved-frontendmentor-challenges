@@ -1,7 +1,8 @@
+import './assets/css/fonts.css'
+
 import { ThemeProvider } from '@mui/material'
 import MuiStack from '@mui/material/Stack'
 
-import './assets/css/fonts.css'
 import { PingSingleColumnComingSoonPage } from './components'
 import theme from './themes/theme'
 

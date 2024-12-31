@@ -1,12 +1,12 @@
 // Types
-import { Challenge } from '@/types'
-// Constants
-import { CSS, GH_REPOSITORY, HTML, INTERMEDIATE, JS, URL_BASE_PREVIEW } from '@/constant'
-import { CHALLENGE_SLUG } from '@/constant/challenges-slug'
 // Links for images
 import desktopDesign from '@/challenges/todo-app/assets/design/desktop-design-light.jpg'
 import desktopPreview from '@/challenges/todo-app/assets/design/desktop-preview.jpg'
 import mobileDesign from '@/challenges/todo-app/assets/design/mobile-design-light.jpg'
+// Constants
+import { CSS, GH_REPOSITORY, HTML, INTERMEDIATE, JS, URL_BASE_PREVIEW } from '@/constant'
+import { CHALLENGE_SLUG } from '@/constant/challenges-slug'
+import { Challenge } from '@/types'
 
 export const TodoApp: Challenge = {
   id: '26',

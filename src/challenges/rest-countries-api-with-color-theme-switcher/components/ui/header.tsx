@@ -1,6 +1,6 @@
-import { useTheme } from '@mui/material'
 import MuiDarkModeIcon from '@mui/icons-material/DarkMode'
 import MuiDarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined'
+import { useTheme } from '@mui/material'
 import MuiAppBar from '@mui/material/AppBar'
 import MuiButton from '@mui/material/Button'
 import MuiToolbar from '@mui/material/Toolbar'

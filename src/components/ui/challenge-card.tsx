@@ -1,3 +1,7 @@
+import PropTypes from 'prop-types'
+
+import { Link } from 'react-router-dom'
+
 import {
   CardActionArea,
   Card as MuiCard,
@@ -5,8 +9,6 @@ import {
   CardMedia as MuiCardMedia,
   Typography as MuiTypography,
 } from '@mui/material'
-import PropTypes from 'prop-types'
-import { Link } from 'react-router'
 
 /**
  * Card component for displaying challenge data.
@@ -40,7 +42,7 @@ export function ChallengeCard({
 
         '&:hover': {
           borderColor: colors.main,
-          boxShadow: `0px 25px 50px -10px ${colors.transparent}`,
+          boxShadow: ` 0px 9px 30px ${colors.transparent}`,
           filter: 'grayscale(0) brightness(100%)',
         },
 

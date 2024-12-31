@@ -1,8 +1,6 @@
-import { createTheme, Shadows, ThemeOptions } from '@mui/material/styles'
-import { TypographyOptions } from '@mui/material/styles/createTypography'
+import { createTheme, ThemeOptions } from '@mui/material/styles'
 
 import borders from './base/borders'
-import breakpoints from './base/breakpoints'
 import colors from './base/colors'
 import globals from './base/globals'
 import shadows from './base/shadows'
@@ -26,15 +24,10 @@ interface CustomThemeOptions extends ThemeOptions {
   functions?: CustomFunctions
 }
 
-export const theme = createTheme({
-  breakpoints: { ...breakpoints },
+export const theme: CustomThemeOptions = createTheme({
   palette: { ...colors },
-  typography: { ...typography } as TypographyOptions,
-  shadows: { ...shadows } as Shadows,
-  borders: { ...borders },
-  functions: {
-    pxToRem,
-  },
+  typography: { ...typography },
+  shadows: { ...shadows },
 
   components: {
     MuiCssBaseline: {
@@ -48,4 +41,4 @@ export const theme = createTheme({
     MuiCardContent: { ...cardContent },
     MuiDivider: { ...divider },
   },
-} as CustomThemeOptions)
+})

@@ -1,15 +1,21 @@
 import { Suspense, lazy } from 'react'
-import { useParams } from 'react-router'
+import { useParams } from 'react-router-dom'
 
 import MuiCircularProgress from '@mui/material/CircularProgress'
 import MuiStack from '@mui/material/Stack'
 
 import ErrorBoundary from '@/utils/ErrorBoundaries'
+import { CHALLENGE_SLUG } from '@/constant/challenges-slug'
 
 export const ChallengePage = () => {
   const { challengeSlug } = useParams()
 
-  const LazyComponent = lazy(() => import(`../challenges/${challengeSlug}/index.jsx`))
+  let LazyComponent
+  if (CHALLENGE_SLUG.REST_COUNTRIES_API_WITH_COLOR_THEME_SWITCHER === challengeSlug) {
+    LazyComponent = lazy(() => import(`../challenges/${challengeSlug}/index.tsx`))
+  } else {
+    LazyComponent = lazy(() => import(`../challenges/${challengeSlug}/index.jsx`))
+  }
 
   return (
     <ErrorBoundary>

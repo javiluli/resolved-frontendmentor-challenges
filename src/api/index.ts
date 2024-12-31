@@ -1,7 +1,7 @@
-import * as challengesData from './challenges-data'
-
 import { ChallengeSlug } from '@/constant/challenges-slug'
 import { Challenge } from '@/types'
+
+import * as challengesData from './challenges-data'
 
 const challenges: Record<ChallengeSlug, Challenge> = {
   'qr-code-component': { ...challengesData.QrCodeComponent },
@@ -30,6 +30,7 @@ const challenges: Record<ChallengeSlug, Challenge> = {
   'age-calculator-app': { ...challengesData.AgeCalculatorApp },
   'calculator-app': { ...challengesData.CalculatorApp },
   'todo-app': { ...challengesData.TodoApp },
+  'rest-countries-api-with-color-theme-switcher': { ...challengesData.RestCountriesApiWithColorThemeSwitcher },
 }
 
 export default challenges

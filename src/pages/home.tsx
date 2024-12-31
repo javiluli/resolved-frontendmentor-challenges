@@ -16,48 +16,6 @@ export const HomePage = () => {
       </MuiContainer>
       <MuiDivider />
 
-      {/* <MuiContainer>
-        <div>
-          <Button
-            id="basic-button"
-            variant="contained"
-            aria-controls={open ? 'basic-menu' : undefined}
-            aria-haspopup="true"
-            aria-expanded={open ? 'true' : undefined}
-            onClick={handleClick}
-          >
-            Dashboard
-          </Button>
-          <Menu
-            id="basic-menu"
-            anchorEl={anchorEl}
-            open={open}
-            onClose={handleClose}
-            MenuListProps={{
-              'aria-labelledby': 'basic-button',
-            }}
-          >
-            <FormGroup>
-              <MenuItem disabled>
-                <Typography sx={{ fontStyle: 'italic' }}>Difficulty</Typography>
-              </MenuItem>
-              <MenuItem>
-                <FormControlLabel control={<Checkbox />} label="NEWBIE" />
-              </MenuItem>
-              <MenuItem>
-                <FormControlLabel control={<Checkbox />} label="JUNIOR" />
-              </MenuItem>
-              <MenuItem>
-                <FormControlLabel control={<Checkbox />} label="INTERMEDIATE" />
-              </MenuItem>
-              <MenuItem>
-                <FormControlLabel control={<Checkbox />} label="ADVANCED" />
-              </MenuItem>
-            </FormGroup>
-          </Menu>
-        </div>
-      </MuiContainer> */}
-
       <MuiBox
         sx={{
           display: 'grid',

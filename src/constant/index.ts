@@ -11,7 +11,7 @@ export const NEWBIE: Difficulty = {
   label: 'newbie',
   colors: {
     main: 'hsl(189, 50%, 61%)',
-    transparent: 'hsla(189, 50%, 61%, 0.25)',
+    transparent: 'hsla(189, 50%, 61%, 0.3)',
   },
 }
 
@@ -20,7 +20,7 @@ export const JUNIOR: Difficulty = {
   label: 'junior',
   colors: {
     main: 'hsl(78, 65%, 55%)',
-    transparent: 'hsla(78, 65%, 55%, 0.25)',
+    transparent: 'hsla(78, 65%, 55%, 0.3)',
   },
 }
 
@@ -29,7 +29,7 @@ export const INTERMEDIATE: Difficulty = {
   label: 'intermediate',
   colors: {
     main: 'hsl(45, 97%, 48%)',
-    transparent: 'hsla(45, 97%, 48%, 0.25)',
+    transparent: 'hsla(45, 97%, 48%, 0.3)',
   },
 }
 
@@ -38,7 +38,7 @@ export const ADVANCED: Difficulty = {
   label: 'advanced',
   colors: {
     main: 'hsl(29, 90%, 55%)',
-    transparent: 'hsla(29, 90%, 55%, 0.25)',
+    transparent: 'hsla(29, 90%, 55%, 0.3)',
   },
 }
 

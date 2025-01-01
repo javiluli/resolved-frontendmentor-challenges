@@ -1,6 +1,8 @@
-# Retos aun por hacer (free)
+# Retos de [Frontend Mentor](https://www.frontendmentor.io/challenges/) aún por hacer (free & free+)
 
-## NEWBIE
+Listado de los "challenges" aun por hacer organizados por dificultad.
+
+### NEWBIE
 
 - [ ] Results summary component
 - [ ] FAQ accordion
@@ -8,7 +10,7 @@
 - [ ] Social links profile
 - [ ] Recipe page
 
-## JUNIOR
+### JUNIOR
 
 - [ ] Huddle landing page with curved sections
 - [ ] Fylo landing page with two column layout
@@ -36,7 +38,7 @@
 - [ ] Bento grid
 - [ ] Conference ticket generator
 
-## INTERMEDIATE
+### INTERMEDIATE
 
 - [ ] Bookmark landing page
 - [ ] URL shortening API landing page
@@ -51,7 +53,7 @@
 - [ ] Space tourism multi-page website (free+)
 - [ ] Interactive comments section
 
-## ADVANCED
+### ADVANCED
 
 - [ ] Rock, Paper, Scissors game
 - [ ] Multi-step form

@@ -2,11 +2,9 @@ import MuiBox from '@mui/material/Box'
 import MuiContainer from '@mui/material/Container'
 import MuiDivider from '@mui/material/Divider'
 
-import challenges from '@/api'
+import { challenges } from '@/api'
 import { ChallengeCard } from '@/components/ui/challenge-card'
 import { Header } from '@/components/ui/header'
-
-const challensDataArray = Object.values(challenges)
 
 export const HomePage = () => {
   return (
@@ -33,7 +31,7 @@ export const HomePage = () => {
           margin: '0 auto',
         }}
       >
-        {challensDataArray.map((item, index) => (
+        {challenges.map((item, index) => (
           <ChallengeCard key={index} id={item.slug} image={item.images.desktopPreview} title={item.title} difficulty={item.difficulty} />
         ))}
       </MuiBox>

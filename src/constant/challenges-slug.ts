@@ -27,5 +27,3 @@ export const CHALLENGE_SLUG = {
   TODO_APP: 'todo-app',
   REST_COUNTRIES_API_WITH_COLOR_THEME_SWITCHER: 'rest-countries-api-with-color-theme-switcher',
 } as const
-
-export type ChallengeSlug = (typeof CHALLENGE_SLUG)[keyof typeof CHALLENGE_SLUG]

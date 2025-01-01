@@ -1,4 +1,4 @@
-import { ChallengeSlug } from '@/constant/challenges-slug'
+import { CHALLENGE_SLUG } from '@/constant/challenges-slug'
 
 export type DifficultyColors = {
   main: string
@@ -19,6 +19,8 @@ export type Language = {
   label: 'html' | 'css' | 'js' | 'api'
   colors: LanguageColors
 }
+
+export type ChallengeSlug = (typeof CHALLENGE_SLUG)[keyof typeof CHALLENGE_SLUG]
 
 export type Challenge = {
   id: string

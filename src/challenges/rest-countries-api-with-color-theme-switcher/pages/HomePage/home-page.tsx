@@ -7,7 +7,7 @@ import MuiTypography from '@mui/material/Typography'
 
 import { ChallegeContainer } from '../../components/layouts'
 import { Header } from '../../components/ui/header'
-import { useMaterialUIController } from '../../context'
+import { useContextController } from '../../context'
 import { Country } from '../../types'
 import { FilterByRegion } from './components/filter-by-region'
 import { ListOfCountryCard } from './components/list-of-country-card'
@@ -15,7 +15,7 @@ import { SearchingBar } from './components/searching-bar'
 import HomeSkeleton from './home-page.skeleton'
 
 function HomePage() {
-  const { state } = useMaterialUIController()
+  const { state } = useContextController()
   const { filteredRegion, searchCountry, listOfCountries } = state
 
   const countries = useMemo<Country[]>(() => {

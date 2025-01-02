@@ -6,13 +6,13 @@ import MuiIconButton from '@mui/material/IconButton'
 import MuiMenuItem from '@mui/material/MenuItem'
 import MuiSelect, { SelectChangeEvent } from '@mui/material/Select'
 
-import { useMaterialUIController } from '../../../context'
+import { useContextController } from '../../../context'
 import { Region } from '../../../types'
 
-const regions: Region[] = ['Africa', 'Americas', 'Asia', 'Europe', 'Oceania']
+const regions = Object.values(Region)
 
 export function FilterByRegion() {
-  const { state, setFilteredRegion, setClearFilteredRegion } = useMaterialUIController()
+  const { state, setFilteredRegion, setClearFilteredRegion } = useContextController()
   const { filteredRegion } = state
 
   const handleChange = (event: SelectChangeEvent<typeof filteredRegion>) => {

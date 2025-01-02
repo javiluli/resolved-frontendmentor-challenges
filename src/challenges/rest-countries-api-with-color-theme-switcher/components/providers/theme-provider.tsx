@@ -2,7 +2,7 @@ import { ReactNode } from 'react'
 
 import { ThemeProvider as MUIThemeProvider, Theme } from '@mui/material'
 
-import { useMaterialUIController } from '../../context'
+import { useContextController } from '../../context'
 import darkTheme from '../../themes/dark-theme'
 import lightTheme from '../../themes/light-theme'
 
@@ -13,7 +13,7 @@ interface ThemeProviderProps {
 export const ThemeProvider = ({ children }: ThemeProviderProps): JSX.Element => {
   const {
     state: { darkMode },
-  } = useMaterialUIController()
+  } = useContextController()
 
   const theme: Theme = darkMode ? darkTheme : lightTheme
 

@@ -1,4 +1,13 @@
-export type Region = 'Africa' | 'Americas' | 'Asia' | 'Europe' | 'Oceania'
+export enum Region {
+  Africa = 'Africa',
+  Americas = 'Americas',
+  Antarctic = 'Antarctic',
+  'Antarctic Ocean' = 'Antarctic Ocean',
+  Asia = 'Asia',
+  Europe = 'Europe',
+  Oceania = 'Oceania',
+  Polar = 'Polar',
+}
 
 type Currencies = {
   name: string
@@ -12,7 +21,7 @@ export type Country = {
   flag: string
   name: string
   population: number
-  region: string
+  region: Region
   capital?: string
   alpha3Code: string
   nativeName: string

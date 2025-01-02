@@ -26,9 +26,9 @@ interface ContextValue {
   setSearchCountry: (value: string | null) => void
 }
 
-const MaterialUIContext = createContext<ContextValue | undefined>(undefined)
+const Context = createContext<ContextValue | undefined>(undefined)
 
-MaterialUIContext.displayName = 'MaterialUIContext'
+Context.displayName = 'Context'
 
 function reducer(state: State, action: Action): State {
   const REDUCER_OPTIONS: { [key: string]: State } = {
@@ -40,11 +40,11 @@ function reducer(state: State, action: Action): State {
   return REDUCER_OPTIONS[action.type] || state
 }
 
-interface MaterialUIControllerProviderProps {
+interface ContextControllerProviderProps {
   children: ReactNode
 }
 
-export const MaterialUIControllerProvider = ({ children }: MaterialUIControllerProviderProps) => {
+export const ContextControllerProvider = ({ children }: ContextControllerProviderProps) => {
   const initialState: State = {
     darkMode: false,
     listOfCountries: null,
@@ -78,22 +78,22 @@ export const MaterialUIControllerProvider = ({ children }: MaterialUIControllerP
     () => ({ state, setDarkMode, setListOfCountries, setFilteredRegion, setClearFilteredRegion, setSearchCountry }),
     [state, setDarkMode, setListOfCountries, setFilteredRegion, setClearFilteredRegion, setSearchCountry],
   )
-  return <MaterialUIContext.Provider value={value}>{children}</MaterialUIContext.Provider>
+  return <Context.Provider value={value}>{children}</Context.Provider>
 }
 
 // Hook to use the MaterialUIController context
 // eslint-disable-next-line react-refresh/only-export-components
-export const useMaterialUIController = (): ContextValue => {
-  const context = useContext(MaterialUIContext)
+export const useContextController = (): ContextValue => {
+  const context = useContext(Context)
 
   if (!context) {
-    throw new Error('useMaterialUIController must be used within a MaterialUIControllerProvider')
+    throw new Error('useContextController must be used within a ContextControllerProvider')
   }
 
   return context
 }
 
-// Typechecking props for the MaterialUIControllerProvider
-MaterialUIControllerProvider.propTypes = {
+// Typechecking props for the ContextControllerProvider
+ContextControllerProvider.propTypes = {
   children: PropTypes.node.isRequired,
 }

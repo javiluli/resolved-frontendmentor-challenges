@@ -5,14 +5,14 @@ import MuiBox from '@mui/material/Box'
 import MuiInputAdornment from '@mui/material/InputAdornment'
 import MuiTextField from '@mui/material/TextField'
 
-import { useMaterialUIController } from '../../../context'
+import { useContextController } from '../../../context'
 import { useDebounce } from '../../../hooks/useDebounce'
 
 export function SearchingBar() {
   const [inputValue, setInputValue] = useState('')
   const debouncedSearchTerm = useDebounce(inputValue, 500)
 
-  const { setSearchCountry } = useMaterialUIController()
+  const { setSearchCountry } = useContextController()
 
   useEffect(() => {
     if (!debouncedSearchTerm) {

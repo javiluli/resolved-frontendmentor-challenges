@@ -6,13 +6,13 @@ import MuiButton from '@mui/material/Button'
 import MuiToolbar from '@mui/material/Toolbar'
 import MuiTypography from '@mui/material/Typography'
 
-import { useMaterialUIController } from '../../context'
+import { useContextController } from '../../context'
 
 export function Header() {
   const theme = useTheme()
   const { typography } = theme
 
-  const { state, setDarkMode } = useMaterialUIController()
+  const { state, setDarkMode } = useContextController()
 
   const handleDarkMode = () => {
     setDarkMode(!state.darkMode)
@@ -25,7 +25,7 @@ export function Header() {
           Where in the world?
         </MuiTypography>
 
-        <MuiButton onClick={handleDarkMode} startIcon={state.darkMode ? <MuiDarkModeOutlinedIcon /> : <MuiDarkModeIcon />}>
+        <MuiButton onClick={handleDarkMode} startIcon={state.darkMode ? <MuiDarkModeIcon /> : <MuiDarkModeOutlinedIcon />}>
           Dark Mode
         </MuiButton>
       </MuiToolbar>

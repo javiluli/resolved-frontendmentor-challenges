@@ -9,13 +9,14 @@ import MuiCardMedia from '@mui/material/CardMedia'
 import MuiTypography from '@mui/material/Typography'
 
 import { InfoTypography } from '../../../components/ui/info-typography'
+import { Region } from '../../../types'
 import { agregarComas } from '../../../utility'
 
 interface CountryCardProps {
   image: string
   name: string
   population: number
-  region: string
+  region: Region
   capital?: string
 }
 

@@ -2,23 +2,21 @@ import { useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
 
 import { ThemeProvider } from './components/providers/theme-provider'
-import { useMaterialUIController } from './context'
+import { useContextController } from './context'
 import dataJson from './data/data.json'
 import { DetailsPage, HomePage } from './pages'
-import { Country } from './types'
+import { Country, Region } from './types'
 
-const App = () => {
-  const { setListOfCountries } = useMaterialUIController()
+export function ChallengeApp() {
+  const { setListOfCountries } = useContextController()
 
   useEffect(() => {
     const countryMap = new Map<string, string>()
 
-    // Crear un mapa de código de país a nombre para facilitar el acceso
     dataJson.forEach((country) => {
       countryMap.set(country.alpha3Code, country.name)
     })
 
-    // Mapear datos y agregar los nombres de los países fronterizos
     const data: Country[] = dataJson.map((country) => {
       const { flag, name, population, region, capital, alpha3Code, nativeName, subregion, topLevelDomain, currencies, languages, borders } =
         country
@@ -29,7 +27,7 @@ const App = () => {
         flag,
         name,
         population,
-        region,
+        region: region as Region,
         capital,
         alpha3Code,
         nativeName,
@@ -54,5 +52,3 @@ const App = () => {
     </ThemeProvider>
   )
 }
-
-export default App

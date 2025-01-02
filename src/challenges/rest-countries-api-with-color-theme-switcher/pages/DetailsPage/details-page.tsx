@@ -12,7 +12,7 @@ import MuiTypography from '@mui/material/Typography'
 import { ChallegeContainer } from '../../components/layouts'
 import { Header } from '../../components/ui/header'
 import { InfoTypography } from '../../components/ui/info-typography'
-import { useMaterialUIController } from '../../context'
+import { useContextController } from '../../context'
 import { Country } from '../../types'
 import { agregarComas } from '../../utility'
 import ImageComponent from './components/image-component'
@@ -21,7 +21,7 @@ import ListOfBorderCountries from './components/list-of-border-countries'
 function DetailsPage() {
   const { countryName } = useParams()
 
-  const { state } = useMaterialUIController()
+  const { state } = useContextController()
   const { listOfCountries } = state
 
   const country = useMemo<Country | null>(() => {
@@ -74,7 +74,7 @@ function DetailsPage() {
 
                     <MuiStack direction={{ mobile: 'column', desktop: 'row' }} spacing={2}>
                       <MuiTypography sx={{ minWidth: 'fit-content' }}>Border Countries</MuiTypography>
-                      <MuiStack direction="row" useFlexGap spacing={{ mobile: 1, desktop: 2 }} sx={{ flexWrap: 'wrap' }}>
+                      <MuiStack direction="row" useFlexGap spacing={2} sx={{ flexWrap: 'wrap' }}>
                         {country.nameOfBorderCountries ? <ListOfBorderCountries list={country.nameOfBorderCountries} /> : null}
                       </MuiStack>
                     </MuiStack>

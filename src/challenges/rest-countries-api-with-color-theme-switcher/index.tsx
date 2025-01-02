@@ -1,14 +1,14 @@
 import './assets/css/fonts.css'
 
-import App from './App'
-import { MaterialUIControllerProvider } from './context'
+import { ChallengeApp } from './challenge-app'
+import { ContextControllerProvider } from './context'
 
-const IndexApp = () => {
+function ChallengeIndex() {
   return (
-    <MaterialUIControllerProvider>
-      <App />
-    </MaterialUIControllerProvider>
+    <ContextControllerProvider>
+      <ChallengeApp />
+    </ContextControllerProvider>
   )
 }
 
-export default IndexApp
+export default ChallengeIndex
